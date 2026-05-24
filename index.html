@@ -3,125 +3,80 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>APRL | DGIST</title>
-    <meta
-      name="description"
-      content="Autonomy and Perceptual Robotics Lab (APRL), Department of Robotics and Mechatronics Engineering, DGIST."
-    />
+    <title>APRL | Autonomy and Perceptual Robotics Lab</title>
+    <meta name="description" content="Autonomy and Perceptual Robotics Lab (APRL), DGIST." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" aria-label="Site header">
-      <a class="brand" href="/" aria-label="APRL home">
-        <img
-          src="https://avatars.githubusercontent.com/u/210038767?v=4"
-          alt=""
-          width="40"
-          height="40"
-        />
-        <span>APRL</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <header class="site-header">
+      <div class="institution-bar">
+        <div class="header-inner institution-inner">
+          <a class="dgist-wordmark" href="https://www.dgist.ac.kr/eng/"><span>Daegu Gyeongbuk Institute of Science &amp; Technology (DGIST)</span></a>
+          <a class="dept-link" href="https://www.dgist.ac.kr/robot/">Robotics and Mechatronics Engineering</a>
+        </div>
+      </div>
+      <div class="header-inner lab-header">
+        <a class="lab-mark" href="/"><img src="https://avatars.githubusercontent.com/u/207951739?v=4" alt="" /><span><strong>Autonomy and Perceptual Robotics Lab</strong><small>DGIST Robotics and Mechatronics Engineering</small></span></a>
+      </div>
+      <nav class="header-inner primary-nav" aria-label="Primary navigation">
+        <a href="/">Home</a><a href="joining-aprl.html">Joining APRL</a><a href="team.html">Team</a><a href="news.html">News</a><a href="publications.html">Publications</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="teaching.html">Teaching</a><a href="#resources">Resources</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">DGIST Robotics and Mechatronics Engineering</p>
-          <h1>Autonomy and Perceptual Robotics Lab</h1>
-          <p class="lead">
-            APRL studies perception, localization, mapping, and autonomous robot
-            systems that operate reliably in real environments.
-          </p>
-          <div class="actions" aria-label="Main links">
-            <a class="button primary" href="https://github.com/team-aprl">GitHub</a>
-            <a class="button secondary" href="#contact">Contact</a>
+    <main class="page home-page">
+      <section class="home-hero">
+        <div class="home-hero-copy">
+          <p class="home-kicker">Welcome to APRL DGIST</p>
+          <h1>Autonomy and Perceptual Robotics Lab (APRL)</h1>
+          <p>APRL explores challenges in autonomous navigation and constructing world models for intelligent robots.</p>
+          <div class="home-hero-links">
+            <a href="https://aprl.dgist.ac.kr">aprl.dgist.ac.kr</a>
+            <a href="https://www.dgist.ac.kr/robot/">Dept. of Robotics and Mechatronics Engineering</a>
+            <a href="https://www.dgist.ac.kr/eng/">DGIST</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Research focus summary">
-          <div class="panel-heading">
-            <span>Research Focus</span>
-          </div>
+        <div class="home-hero-media"><img src="assets/home/welcome-1.png" alt="APRL welcome visual" /></div>
+      </section>
+
+      <section class="home-about">
+        <div>
+          <h2>About APRL</h2>
           <ul>
-            <li>Robot perception and scene understanding</li>
-            <li>Localization, mapping, and spatial intelligence</li>
-            <li>Field-ready autonomy for mobile robot systems</li>
+            <li><a href="https://www.youtube.com/@APRL-DGIST">Autonomy and Perceptual Robotics Lab (APRL, &#47196;&#48391;&#51064;&#49885; &#48143; &#51088;&#50984;&#54868; &#50672;&#44396;&#49892;) at DGIST</a> has been started in Dec 2024 by <a href="team.html">Giseop Kim</a>.</li>
+            <li>Our mission is to explore autonomous navigation and robot world models for intelligent robots.</li>
           </ul>
         </div>
+        <img src="assets/home/welcome-2.png" alt="APRL research and lab overview" />
       </section>
 
-      <section id="research" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Building robot autonomy from perception to action</h2>
-        </div>
-        <div class="research-grid">
-          <article>
-            <h3>Perception</h3>
-            <p>
-              Learning and geometric methods for robust sensing, recognition,
-              and environment interpretation.
-            </p>
-          </article>
-          <article>
-            <h3>Localization and Mapping</h3>
-            <p>
-              Spatial estimation pipelines for robots navigating changing,
-              uncertain, and large-scale environments.
-            </p>
-          </article>
-          <article>
-            <h3>Autonomous Systems</h3>
-            <p>
-              Integrated autonomy stacks that connect perception, planning, and
-              control for practical robotic platforms.
-            </p>
-          </article>
-        </div>
+      <section class="home-news">
+        <div class="home-section-heading"><h2>Latest News</h2><a href="news.html">All news</a></div>
+        <ol>
+          <li><time datetime="2026-05">May 2026</time><p>Three workshop papers from our lab have been accepted to ICRA 2026. Congrats to Doyeon and Nayak+Hyoseok for their papers accepted to the <a href="https://xingxingzuo.github.io/MM-SpatialAI/">MM-SpatialAI Workshop</a>, and to Hoyun for his paper accepted to the <a href="https://icra2026-planetary-robotics.github.io/">Workshop on Perceptual Challenges for Planetary Exploration</a>.</p></li>
+          <li><time datetime="2026-03">Mar 2026</time><p>Our lab has been awarded the NRF Young Researcher Program (Type B) grant from the Ministry of Science and ICT, supporting research on <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing">multi-robot autonomy with implicit human-robot interaction (Project title: AIMS) for four years (2026-2029)</a>.</p></li>
+          <li><time datetime="2026-03">Mar 2026</time><p>Welcome new members joining APRL: Doyeon Kim (PhD student), Beomsu Kim (MS student), and Hoyun Kim (MS student).</p></li>
+          <li><time datetime="2026-02">Feb 2026</time><p><a href="https://scalemaster-dataset.github.io/">One paper accepted to ICRA 2026</a>. Congratulations to Hyoseok.</p></li>
+          <li><time datetime="2026-02">Feb 2026</time><p>Giseop has been selected as an <a href="https://kros.org/Conference/ConferenceView.asp?AC=0&amp;CODE=CC20250902&amp;CpPage=299#CONF">early-career researcher for KRoC 2026</a>. He will present his recent work on memory-augmented spatial intelligence for long-term autonomous robot navigation.</p></li>
+          <li><time datetime="2025-10">Oct 2025</time><p><a href="https://www.dropbox.com/scl/fo/dz1m3bmpiiyb2ho8xku8x/ANYZ1dryKAzS2Lg_Z_Q5aQU?rlkey=5wt0uhmzp2s4zia7p1x79ansp&amp;dl=0">Jiseon received the Best Poster Award</a> at the <a href="https://heai-iros25-workshop.github.io/">HEAI Workshop</a> of IROS 2025.</p></li>
+          <li><time datetime="2025-09">Sep 2025</time><p>The <a href="https://www.etnews.com/20250911000013">Robotics and Mechatronics Research Institute of DGIST has been selected for the Ministry of Education's Glocal Lab program</a>. Our lab will conduct research on sensor fusion, robot perception, and cognitive AI for augmented human robots.</p></li>
+          <li><time datetime="2025-06">Jun 2025</time><p><a href="https://www.hellodd.com/news/articleView.html?idxno=108224">DGIST has been selected for Korea's InnoCORE initiative</a> on <a href="https://www.idaegu.com/news/articleView.html?idxno=640484">Bio-Embodied Physical AI</a>. Our lab, as part of the DGIST team, is recruiting talented postdocs in SLAM, 3D vision, and vision-language navigation.</p></li>
+          <li><time datetime="2025-05">May 2025</time><p>Our lab is supported by <a href="https://www.irobotnews.com/news/articleView.html?idxno=40067">the AI Star Fellowship from Ministry of Science and ICT</a> for the <a href="https://www.irobotnews.com/news/articleView.html?idxno=38442">next six years (2025-2030)</a>.</p></li>
+        </ol>
       </section>
 
-      <section id="projects" class="section split">
-        <div>
-          <p class="eyebrow">Open Work</p>
-          <h2>Public repositories</h2>
-          <p>
-            Selected public materials and code from Team APRL are available on
-            GitHub. More project pages can be added here as releases become
-            public.
-          </p>
-        </div>
-        <div class="repo-list">
-          <a href="https://github.com/team-aprl/MR.ScaleMaster">
-            <span>MR.ScaleMaster</span>
-            <small>Public repository</small>
-          </a>
-          <a href="https://github.com/team-aprl/lecture-RT604-public">
-            <span>lecture-RT604-public</span>
-            <small>Advanced mobile systems course material</small>
-          </a>
-        </div>
+      <section class="home-media-row">
+        <a class="home-video-card" href="https://www.youtube.com/@APRL-DGIST"><img src="assets/home/youtube-channel.png" alt="APRL-DGIST YouTube channel" /><span>APRL-DGIST YouTube Channel</span></a>
+        <div class="home-vision-card"><h2>APRL's 5-Year Vision and Research Expertise</h2><p>The lab's 2026-2030 research plan and expertise are available as a research statement.</p><a href="research.html">View research</a></div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>APRL, DGIST</h2>
-          <p>
-            Department of Robotics and Mechatronics Engineering, Daegu
-            Gyeongbuk Institute of Science and Technology.
-          </p>
-        </div>
-        <a class="button primary" href="https://github.com/team-aprl">Visit Team APRL on GitHub</a>
+      <section id="resources" class="home-link-grid" aria-label="Quick links">
+        <a href="team.html"><b>Team</b><span>Members and PI profile</span></a>
+        <a href="publications.html"><b>Publications</b><span>Papers, workshops, and resources</span></a>
+        <a href="projects.html"><b>Funded Projects</b><span>Current and completed projects</span></a>
+        <a href="joining-aprl.html"><b>Joining APRL</b><span>Open positions and application guide</span></a>
       </section>
     </main>
 
-    <footer>
-      <span>Autonomy and Perceptual Robotics Lab</span>
-      <span>DGIST</span>
-    </footer>
+    <footer class="site-footer"><a href="/">Home</a><a href="contact.html">Contact</a><a href="#">Impressum & Privacy Policy</a></footer>
   </body>
 </html>
