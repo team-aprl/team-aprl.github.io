@@ -828,6 +828,7 @@ h1 {
   color: #0b1f33;
   font-size: 1.02rem;
   line-height: 1.25;
+  text-align: center;
 }
 
 .team-member-card h3 a {
@@ -846,6 +847,10 @@ h1 {
   margin: 0;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.team-member-card p {
+  text-align: center;
 }
 
 .team-simple-list {
@@ -1116,11 +1121,11 @@ h1 {
 }
 
 .project-card .publication-figure {
-  min-height: 178px;
+  min-height: 202px;
 }
 
 .project-card .publication-figure img {
-  max-height: 166px;
+  max-height: 190px;
 }
 
 .project-current-list {
@@ -1132,11 +1137,11 @@ h1 {
 }
 
 .project-current-list .project-card {
-  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-columns: minmax(0, 7fr) minmax(300px, 3fr);
 }
 
 .project-completed-list .project-card {
-  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-columns: minmax(0, 7fr) minmax(300px, 3fr);
 }
 
 .project-current-list .publication-figure {
@@ -1911,10 +1916,6 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 8px;
   font-size: 0.88rem;
-}
-
-.project-current-list .project-card {
-  grid-template-columns: minmax(0, 1fr) 260px;
 }
 
 .publication-body {
