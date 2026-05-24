@@ -8,9 +8,12 @@
   --dgist-navy: #082f57;
   --dgist-blue: #005bac;
   --dgist-sky: #28a8e0;
-  --header-accent: #0069a6;
-  --header-mid: #243447;
-  --header-start: #1f2933;
+  --header-accent: #00aeea;
+  --header-mid: #26323a;
+  --header-start: #101820;
+  --aprl-yellow: #f7c600;
+  --aprl-coral: #f26a21;
+  --aprl-pink: #ef3f72;
   --paper: #ffffff;
   --wash: #f6f7f8;
 }
@@ -83,7 +86,7 @@ main img:not([data-lightbox="off"]) {
 
 .site-header {
   position: sticky;
-  top: -150px;
+  top: -174px;
   z-index: 100;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
@@ -98,8 +101,14 @@ main img:not([data-lightbox="off"]) {
 }
 
 .institution-bar {
-  color: #fff;
-  background: linear-gradient(90deg, var(--header-start), var(--header-mid) 54%, var(--header-accent));
+  position: relative;
+  color: var(--text);
+  background: #fff;
+  border-bottom: 1px solid var(--light-line);
+}
+
+.institution-bar::after {
+  display: none;
 }
 
 .institution-inner {
@@ -113,26 +122,26 @@ main img:not([data-lightbox="off"]) {
 .dgist-wordmark {
   display: inline-flex;
   align-items: center;
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
 }
 
 .dgist-wordmark:hover,
 .dgist-wordmark:focus-visible {
-  color: #fff;
+  color: var(--header-accent);
   text-decoration: none;
 }
 
 .dgist-wordmark span,
 .dept-link {
-  color: rgba(255, 255, 255, 0.82);
+  color: #40505f;
   font-size: 0.92rem;
   font-weight: 650;
 }
 
 .dept-link:hover,
 .dept-link:focus-visible {
-  color: #fff;
+  color: var(--header-accent);
   text-decoration: none;
 }
 
@@ -141,8 +150,8 @@ main img:not([data-lightbox="off"]) {
   align-items: center;
   justify-content: space-between;
   min-height: 132px;
-  background: #f7f8fa;
-  box-shadow: 0 0 0 100vmax #f7f8fa;
+  background: #fff;
+  box-shadow: 0 0 0 100vmax #fff;
   clip-path: inset(0 -100vmax);
 }
 
@@ -303,17 +312,22 @@ h1 {
   gap: 22px;
 }
 
+.home-rule {
+  border-top: 1px solid var(--line);
+}
+
 .home-hero {
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
   align-items: start;
-  padding-top: 26px;
+  padding-top: 8px;
 }
 
 .home-kicker {
   margin: 0 0 8px;
   color: var(--link);
+  font-size: 1.15rem;
   font-weight: 900;
 }
 
@@ -1418,7 +1432,7 @@ h1 {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
   gap: 14px;
 }
 
@@ -2025,10 +2039,11 @@ h1 {
   padding: 20px 24px 36px;
   color: var(--muted);
   font-size: 0.94rem;
+  text-align: center;
 }
 
 .site-footer a {
-  margin-right: 18px;
+  margin: 0 9px;
 }
 
 @media (max-width: 900px) {
