@@ -8,6 +8,9 @@
   --dgist-navy: #082f57;
   --dgist-blue: #005bac;
   --dgist-sky: #28a8e0;
+  --header-accent: #0069a6;
+  --header-mid: #243447;
+  --header-start: #1f2933;
   --paper: #ffffff;
   --wash: #f6f7f8;
 }
@@ -96,7 +99,7 @@ main img:not([data-lightbox="off"]) {
 
 .institution-bar {
   color: #fff;
-  background: linear-gradient(90deg, var(--dgist-navy), #0b4678 58%, var(--dgist-blue));
+  background: linear-gradient(90deg, var(--header-start), var(--header-mid) 54%, var(--header-accent));
 }
 
 .institution-inner {
@@ -138,8 +141,8 @@ main img:not([data-lightbox="off"]) {
   align-items: center;
   justify-content: space-between;
   min-height: 132px;
-  background: #f4f8fb;
-  box-shadow: 0 0 0 100vmax #f4f8fb;
+  background: #f7f8fa;
+  box-shadow: 0 0 0 100vmax #f7f8fa;
   clip-path: inset(0 -100vmax);
 }
 
@@ -167,7 +170,7 @@ main img:not([data-lightbox="off"]) {
 
 .lab-title-link:hover,
 .lab-title-link:focus-visible {
-  color: var(--dgist-blue);
+  color: var(--header-accent);
   text-decoration: none;
 }
 
@@ -254,13 +257,13 @@ main img:not([data-lightbox="off"]) {
 
 .primary-nav a:hover,
 .primary-nav a:focus-visible {
-  color: var(--dgist-blue);
+  color: var(--header-accent);
   text-decoration: none;
 }
 
 .primary-nav a:hover::after,
 .primary-nav a:focus-visible::after {
-  background: var(--dgist-blue);
+  background: var(--header-accent);
 }
 
 .page {

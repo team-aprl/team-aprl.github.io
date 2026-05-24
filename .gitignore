@@ -1,2 +1,7 @@
 tmp/
 *-preview.png
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/bundle/
+.bundle/
