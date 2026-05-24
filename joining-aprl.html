@@ -16,10 +16,20 @@
         </div>
       </div>
       <div class="header-inner lab-header">
-        <a class="lab-mark" href="/"><img src="https://avatars.githubusercontent.com/u/207951739?v=4" alt="" /><span><strong>Autonomy and Perceptual Robotics Lab</strong><small>DGIST Robotics and Mechatronics Engineering</small></span></a>
+        <div class="lab-mark"><a class="lab-logo-link" href="assets/site/aprl-avatar.png" aria-label="View APRL logo"><img src="assets/site/aprl-avatar.png" alt="APRL logo" /></a><a class="lab-title-link" href="/"><strong>Autonomy and Perceptual Robotics Lab</strong><small>&nbsp;DGIST Robotics and Mechatronics Engineering</small></a></div>
       </div>
       <nav class="header-inner primary-nav" aria-label="Primary navigation">
-        <a href="/">Home</a><a href="joining-aprl.html">Joining APRL</a><a href="team.html">Team</a><a href="news.html">News</a><a href="publications.html">Publications</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="teaching.html">Teaching</a><a href="/#resources">Resources</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+        <a class="nav-home" href="/" aria-label="Home" title="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></a>
+        <a href="research.html">Research</a>
+        <a href="joining-aprl.html">Joining APRL</a>
+        <a href="team.html">Team</a>
+        <a href="news.html">News</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="datasets.html">Datasets</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -34,23 +44,28 @@
 
         <div class="joining-notice">
           <p>Students interested in applying for Master's/Ph.D. programs should follow the steps in the English version guide document.</p>
-          <a href="https://docs.google.com/document/d/1Sv3dCz6BLQA7xsFETn8O0Sx8C_Nm_-lU/edit?usp=sharing&amp;ouid=107903562265205069957&amp;rtpof=true&amp;sd=true">English version guide document</a>
+          <a href="joining-guide.html">English version guide document</a>
         </div>
 
         <section class="joining-card">
           <h2>Current Lab Openings</h2>
           <ul>
             <li>No available positions for 2026.</li>
-            <li>2027 Available Positions: 로봇및기계전자공학과 or 학제학과 인공지능전공, 0-1 PhD student</li>
-            <li>1 Postdoc (InnoCORE 바이오 체화형 피지컬 AI 연구단)</li>
-            <li>[Closed] 26 summer interns, 27 MS student</li>
+            <li>
+              2027 Available Positions: 로봇및기계전자공학과 or 학제학과 인공지능전공
+              <ul>
+                <li class="position-open">0-1 PhD student</li>
+                <li class="position-open">1 Postdoc (InnoCORE 바이오 체화형 피지컬 AI 연구단)</li>
+                <li class="position-closed">[Closed] 26 summer interns, 27 MS student</li>
+              </ul>
+            </li>
           </ul>
           <div class="embed-placeholder drive-embed">
             <strong>Open Position Details (MS/PhD/Integrated/Postdoc)</strong>
+            <p>SLAM + Embodied AI (e.g., VLA or VLN) for AIMS project, 2026-2029.</p>
             <iframe src="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/preview" title="Open Position Details" allow="autoplay"></iframe>
-            <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing">Open linked document</a>
+            <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open linked document</a>
           </div>
-          <p>SLAM + Embodied AI (e.g., VLA or VLN) for AIMS project, 2026-2029.</p>
         </section>
 
         <section class="joining-card">
@@ -59,7 +74,7 @@
           <p>SLAM, localization, mapping, SfM, reconstruction, calibration, NeRF, Gaussian splatting, place recognition, occupancy prediction, depth estimation, local feature matching, inertial navigation, state estimation, sensor fusion, pose-graph optimization, failure detection, robust nonlinear least-square optimization, field robotics, visual-language navigation, etc.</p>
           <p>위의 연구 키워드에 해당하는 실습들을 수행해보고 흥미가 가는지 스스로 점검해보세요. 처음부터 이해하려고 하지 않아도 좋습니다. 원리를 모르고 실습했을 때도 재미가 느껴지는지 스스로에게 물어보세요. 깊은 흥미만이 차별화된 스펙입니다.</p>
           <div class="joining-links">
-            <a href="https://dgist-slam.github.io/main-building/">SLAM practice example</a>
+            <a href="https://dgist-slam.github.io">SLAM practice example</a>
             <a href="https://drive.google.com/open?id=1i--v90HGY3Itt3lfF7iR8eS7TMWPPjEBYoac3QN4LUQ">aprl-research-interests-guide</a>
             <a href="https://www.youtube.com/@gskim/videos">김기섭 교수 YouTube videos</a>
             <a href="https://github.com/team-aprl/lecture-RT604-public">최근(2026봄) 수업자료</a>
@@ -133,7 +148,8 @@
     <footer class="site-footer">
       <a href="/">Home</a>
       <a href="contact.html">Contact</a>
-      <a href="#">Impressum &amp; Privacy Policy</a>
+
     </footer>
+    <script src="lightbox.js?v=20260525-logo-close"></script>
   </body>
 </html>
