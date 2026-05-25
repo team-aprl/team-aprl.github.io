@@ -2091,6 +2091,10 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    top: -138px;
+  }
+
   .home-hero h1 {
     font-size: 1.18rem;
   }
@@ -2106,33 +2110,81 @@ h1 {
     padding-right: 18px;
   }
 
+  .institution-inner {
+    flex-direction: column;
+    gap: 1px;
+    justify-content: center;
+    min-height: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .dgist-wordmark span,
+  .dept-link {
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .lab-header {
+    min-height: 96px;
+  }
+
   .lab-mark {
-    align-items: flex-start;
-    gap: 12px;
+    grid-template-columns: 54px minmax(0, 1fr) 54px;
+    gap: 10px;
+    align-items: center;
   }
 
   .lab-mark img {
-    width: 48px;
-    height: 48px;
+    width: 54px;
+    height: 54px;
   }
 
   .lab-mark strong {
-    font-size: 1.32rem;
-    line-height: 1.08;
+    font-size: 1.26rem;
+    line-height: 1.05;
   }
 
   .lab-mark small {
-    font-size: 0.88rem;
+    margin-top: 6px;
+    font-size: 0.78rem;
+    line-height: 1.25;
   }
 
-  nav a {
-    min-height: 38px;
-    padding: 0 10px;
+  .primary-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-right: 18px;
+    padding-left: 18px;
+    scrollbar-width: none;
+  }
+
+  .primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .primary-nav a {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 0 12px;
+    font-size: 0.92rem;
+    white-space: nowrap;
     border-right: 0;
   }
 
-  nav a:first-child {
+  .primary-nav a:first-child {
     padding-left: 0;
+  }
+
+  .primary-nav a:first-child::after {
+    left: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .image-grid,
