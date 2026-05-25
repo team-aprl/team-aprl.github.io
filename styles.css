@@ -437,7 +437,6 @@ h1 {
 .home-recruiting,
 .home-news,
 .home-research-videos,
-.home-video-card,
 .home-vision-card,
 .home-link-grid a {
   background: #fff;
@@ -598,34 +597,15 @@ h1 {
   line-height: 1.5;
 }
 
-.home-media-row {
-  display: grid;
-  grid-template-columns: 320px;
-  gap: 10px;
-}
-
-.home-video-card,
 .home-vision-card,
 .home-link-grid a {
   padding: 14px;
 }
 
-.home-video-card img {
-  display: block;
-  width: 86px;
-  height: 86px;
-  margin-bottom: 10px;
-}
-
-.home-video-card span,
 .home-link-grid b {
   display: block;
   color: var(--ink);
   font-weight: 900;
-}
-
-.home-video-card span {
-  white-space: nowrap;
 }
 
 .home-link-grid {
@@ -2275,7 +2255,6 @@ h1 {
   .research-method-card,
   .home-hero,
   .home-about,
-  .home-media-row,
   .home-link-grid,
   .gallery-list,
   .gallery-grid,
