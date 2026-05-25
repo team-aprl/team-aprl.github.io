@@ -436,6 +436,7 @@ h1 {
 .home-image-pair a,
 .home-recruiting,
 .home-news,
+.home-research-videos,
 .home-video-card,
 .home-vision-card,
 .home-link-grid a {
@@ -539,6 +540,25 @@ h1 {
 
 .home-news {
   padding: 16px;
+}
+
+.home-research-videos {
+  padding: 16px;
+}
+
+.home-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.home-video-grid iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f7f8fa;
+  border: 0;
+  border-radius: 6px;
 }
 
 .home-section-heading {
@@ -2435,6 +2455,10 @@ h1 {
   .home-news li {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .home-video-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-grid {
