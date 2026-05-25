@@ -560,6 +560,32 @@ h1 {
   border-radius: 6px;
 }
 
+.home-video-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.home-video-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 14px;
+  color: #fff;
+  background: var(--link);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-video-actions a:hover,
+.home-video-actions a:focus-visible {
+  color: #fff;
+  background: var(--link-dark);
+  text-decoration: none;
+}
+
 .home-section-heading {
   display: flex;
   gap: 10px;
