@@ -10,10 +10,16 @@ lang: "ko"
         <div class="publications-heading">
           <div>
             <h1>A Guide to Joining APRL</h1>
-            <p>연구실 및 석박사과정 진학문의 또는 관련분야 진로상담을 원하는 학생들을 위한 안내입니다.</p>
+            <p class="joining-subtitle" data-text-ko="연구실 및 석박사과정 진학문의 또는 관련분야 진로상담을 원하는 학생들을 위한 안내입니다." data-text-en="This guide is for students interested in joining APRL for graduate study or seeking career counseling in related fields.">연구실 및 석박사과정 진학문의 또는 관련분야 진로상담을 원하는 학생들을 위한 안내입니다.</p>
           </div>
         </div>
 
+        <div class="joining-language-tabs" role="tablist" aria-label="Guide language">
+          <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="joining-ko" data-joining-language="ko">KOR</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="joining-en" data-joining-language="en">ENG</button>
+        </div>
+
+        <div id="joining-ko" class="joining-language-panel is-active" role="tabpanel">
         <section class="joining-card">
           <h2>Current Lab Openings</h2>
           <ul>
@@ -23,7 +29,7 @@ lang: "ko"
               <ul>
                 <li class="position-open">0-1 PhD student</li>
                 <li class="position-open">1 Postdoc (InnoCORE 바이오 체화형 피지컬 AI 연구단)</li>
-                <li class="position-closed">[Closed] 26 summer interns, 27 MS student</li>
+                <li class="position-closed">[Closed] 2026 summer interns and 2027 MS student</li>
               </ul>
             </li>
           </ul>
@@ -36,11 +42,6 @@ lang: "ko"
             <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open linked document</a>
           </div>
         </section>
-
-        <div class="joining-notice">
-          <p>Students interested in applying for Master's/Ph.D. programs should follow the steps in the English version guide document.</p>
-          <a href="joining-guide.html">English version guide document</a>
-        </div>
 
         <section class="joining-card">
           <h2>1. APRL 연구분야를 내가 좋아하는지 알아보기</h2>
@@ -66,7 +67,7 @@ lang: "ko"
           <h2>2. 같은 분야를 연구하는 다른 연구실의 논문들도 함께 찾아보기</h2>
           <p>아래 연구실들에서 출간된 탑티어 컨퍼런스/저널 논문들을 읽어보세요.</p>
           <p>주요 venue: <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a>, <a href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros">IROS</a>, <a href="https://www.corl.org/">CoRL</a>, <a href="https://roboticsconference.org/">RSS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369">RA-L</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860">T-RO</a>, <a href="https://journals.sagepub.com/home/ijr">IJRR</a>.</p>
-          <p><a href="https://drive.google.com/open?id=1LYJ5idH0GIyVtvEmQ1A0zfE3AvhY4eoqstrUtrzfEUY">aprl-similar-labs</a></p>
+          <p><a href="aprl-similar-labs.html">aprl-similar-labs</a></p>
         </section>
 
         <section class="joining-card">
@@ -83,7 +84,7 @@ lang: "ko"
 
         <section class="joining-card">
           <h2>4. 지도교수에 대해 알아보기</h2>
-          <p>지도교수(Giseop Kim)가 나랑 맞을 것 같은 사람인지 가늠해보세요.</p>
+          <p><a href="https://gisbi-kim.github.io/">지도교수(Giseop Kim)</a>가 나랑 맞을 것 같은 사람인지 가늠해보세요.</p>
           <div class="joining-links">
             <a href="https://docs.google.com/spreadsheets/d/1K6xR-CiUZex9eF2j6FrT3dTzzGVsKckb9X4mz2fB0ck/edit?gid=0#gid=0">연구자 혹은 로봇공학자의 길에 대한 생각</a>
             <a href="https://gsk1m.github.io/daily/2022/11/12/robotics-engineer.html">Robotics Engineer로서 자주하는 생각들</a>
@@ -91,6 +92,7 @@ lang: "ko"
             <a href="https://gsk1m.github.io/productivity/2024/04/09/for-the-qualification.html">박사과정을 하면서 도움이 되었던 마인드 5가지</a>
             <a href="https://gsk1m.github.io/productivity/2024/05/25/entering-research.html">연구길의 초입에서</a>
             <a href="https://drive.google.com/file/d/1iuaPLiIPfuC60yNRa1hFNmiPdgalY1vB/view?usp=sharing">Teaching Statement</a>
+            <a class="joining-links-accent" href="https://gisbi-kim.github.io/essays/">More Essays</a>
           </div>
         </section>
 
@@ -115,8 +117,132 @@ lang: "ko"
           <p>보내셔도 됩니다. 필요한 경우 연구상담을 해드릴 수는 있습니다. 다만 모든 분들께 답을 드리지 못할 수도 있습니다. 좋은 질문이 있으면 보내주세요.</p>
           <h3>지도교수의 지도 역량이 궁금합니다</h3>
           <p><a href="https://scholar.google.com/citations?user=9mKOLX8AAAAJ&amp;hl=ko">Google Scholar</a>에서 논문 목록과 임팩트를 확인할 수 있습니다. 네이버랩스 재직 시절 데이터센터 자율주행 셔틀버스 개발 및 네이버 지도 거리뷰 3D 프로젝트에 참여했습니다. 학생이 학계뿐 아니라 졸업 후 산업계에서도 세계적 수준의 엔지니어가 되기 위해 필요한 역량을 함께 지도할 것입니다.</p>
+          <h3>연구실생활에 대해 질문이 있습니다</h3>
+          <p><a href="team.html#current-lab-members">연구실 구성원</a>들에게 메일을 보내 물어보세요.</p>
           <h3>입학 절차 / 선발 기준 / TO가 궁금합니다</h3>
           <p>위 1-5 절차를 통해 면담을 완료한 학생들에 대해 안내합니다.</p>
         </section>
+        </div>
+
+        <div id="joining-en" class="joining-language-panel" role="tabpanel" hidden>
+        <section class="joining-card">
+          <h2>Current Lab Openings</h2>
+          <ul>
+            <li>No available positions for 2026.</li>
+            <li>
+              2027 Available Positions: Department of Robotics and Mechatronics Engineering or Interdisciplinary Program in Artificial Intelligence
+              <ul>
+                <li class="position-open">0-1 PhD student</li>
+                <li class="position-open">1 Postdoc (InnoCORE Bio-Embodied Physical AI Research Group)</li>
+                <li class="position-closed">[Closed] 2026 summer interns and 2027 MS student</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="embed-placeholder drive-embed">
+            <strong>Open Position Details (MS/PhD/Integrated/Postdoc)</strong>
+            <ul>
+              <li>SLAM + Embodied AI (e.g., VLA or VLN) for AIMS project, 2026-2029.</li>
+            </ul>
+            <iframe src="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/preview" title="Open Position Details" allow="autoplay"></iframe>
+            <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open linked document</a>
+          </div>
+        </section>
+
+        <section class="joining-card">
+          <h2>1. Explore APRL's Research Areas</h2>
+          <p>APRL works on the following research keywords and related topics. The list is not exhaustive.</p>
+          <div class="keyword-chip-list" aria-label="APRL research keywords">
+            <span>SLAM</span><span>Localization</span><span>Mapping</span><span>SfM</span><span>Reconstruction</span><span>Calibration</span><span>NeRF</span><span>Gaussian Splatting</span><span>Place Recognition</span><span>Occupancy Prediction</span><span>Depth Estimation</span><span>Local Feature Matching</span><span>Inertial Navigation</span><span>State Estimation</span><span>Sensor Fusion</span><span>Pose-Graph Optimization</span><span>Failure Detection</span><span>Robust Nonlinear Least-Square Optimization</span><span>Field Robotics</span><span>Visual-Language Navigation</span>
+          </div>
+          <p>Try the hands-on materials below and ask yourself whether the topics are enjoyable. You do not need to understand every principle from the beginning. Deep interest is the only differentiating credential.</p>
+          <div class="joining-links">
+            <a href="https://dgist-slam.github.io">SLAM practice example</a>
+            <a href="https://drive.google.com/open?id=1i--v90HGY3Itt3lfF7iR8eS7TMWPPjEBYoac3QN4LUQ">aprl-research-interests-guide</a>
+            <a href="https://www.youtube.com/@gskim/videos">Giseop Kim YouTube videos</a>
+            <a href="https://github.com/team-aprl/lecture-RT604-public">Recent course materials (Spring 2026)</a>
+          </div>
+        </section>
+
+        <section class="joining-card">
+          <h2>2. Explore Papers by Other Labs</h2>
+          <p>Read papers from top-tier conferences and journals by labs working on related problems.</p>
+          <p>Major venues: <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a>, <a href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros">IROS</a>, <a href="https://www.corl.org/">CoRL</a>, <a href="https://roboticsconference.org/">RSS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369">RA-L</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860">T-RO</a>, <a href="https://journals.sagepub.com/home/ijr">IJRR</a>.</p>
+          <p><a href="aprl-similar-labs.html">aprl-similar-labs</a></p>
+        </section>
+
+        <section class="joining-card">
+          <h2>3. Understand Ongoing Projects at APRL</h2>
+          <p>First, refer to the research descriptions under the Research tab and the Open Position Details slides.</p>
+          <ul>
+            <li>How can five heterogeneous robots autonomously explore the entire DGIST Consilience Hall and understand the space within a single day?</li>
+            <li>What technologies are needed for a humanoid robot to safely travel from Gangnam to DGIST using public transportation?</li>
+            <li>How should verbal and non-verbal human expressions be integrated into planning and decision-making for navigation?</li>
+            <li>APRL defines SLAM 2.0 as a foundation for these goals and develops the individual technologies needed to achieve them.</li>
+          </ul>
+          <p>Beyond these examples, you are welcome to propose interesting topics in mobile robot autonomy and perception. We are looking for students who can formulate good questions together, even before finding answers.</p>
+        </section>
+
+        <section class="joining-card">
+          <h2>4. Learn About the Advisor</h2>
+          <p>Consider whether <a href="https://gisbi-kim.github.io/">the advisor (Giseop Kim)</a> would be a good fit for you.</p>
+          <div class="joining-links">
+            <a href="https://docs.google.com/spreadsheets/d/1K6xR-CiUZex9eF2j6FrT3dTzzGVsKckb9X4mz2fB0ck/edit?gid=0#gid=0">Thoughts on the path of a researcher or roboticist</a>
+            <a href="https://gsk1m.github.io/daily/2022/11/12/robotics-engineer.html">Thoughts as a robotics engineer</a>
+            <a href="https://gsk1m.github.io/productivity/2023/10/02/being-goto-brand-in-academia.html">How to become a go-to brand in academia</a>
+            <a href="https://gsk1m.github.io/productivity/2024/04/09/for-the-qualification.html">Five mindsets that helped during the Ph.D.</a>
+            <a href="https://gsk1m.github.io/productivity/2024/05/25/entering-research.html">At the entrance to research</a>
+            <a href="https://drive.google.com/file/d/1iuaPLiIPfuC60yNRa1hFNmiPdgalY1vB/view?usp=sharing">Teaching Statement</a>
+            <a class="joining-links-accent" href="https://gisbi-kim.github.io/essays/">More Essays</a>
+          </div>
+        </section>
+
+        <section class="joining-card">
+          <h2>5. Send a Contact or Counseling Request Email</h2>
+          <p>For lab admission inquiries or counseling requests, email <a href="mailto:gsk@dgist.ac.kr">gsk@dgist.ac.kr</a>. Include the following information:</p>
+          <ul>
+            <li>[Required] Name / current status (e.g., undergraduate senior at DGIST)</li>
+            <li>[Required] Self-introduction within 500 characters</li>
+            <li>[Required] Two interesting papers, with a brief summary and why they interested you</li>
+            <li>[Required] Complete list of robotics and computer vision related courses taken; do not include GPA</li>
+            <li>[Required] Experience solving a problem and experience failing to solve a problem, within 500 characters each</li>
+            <li>[Required] One project you are proud of that used AI assistants</li>
+            <li>[Optional] Mechanical or electrical hands-on experience</li>
+          </ul>
+          <p>Use the prefix <strong>[DGIST RME APRL Contact Inquiry]</strong> or <strong>[DGIST RME APRL Counseling Request]</strong> in the email subject. Interview scheduling will be coordinated by email afterward.</p>
+        </section>
+
+        <section class="joining-card">
+          <h2>6. FAQ</h2>
+          <h3>Can I send a contact email even if there are no remaining slots?</h3>
+          <p>Yes. Research counseling may be possible when needed, although we may not be able to reply to everyone. Please send good questions if you have them.</p>
+          <h3>I am curious about the advisor's guidance capabilities.</h3>
+          <p>You can check the publication list and impact on <a href="https://scholar.google.com/citations?user=9mKOLX8AAAAJ&amp;hl=en">Google Scholar</a>. During his time at NAVER LABS, he worked on data-center autonomous shuttle development and NAVER Map street-view 3D projects. The lab aims to help students develop the capabilities needed to become world-class engineers in academia and industry.</p>
+          <h3>I have questions about lab life.</h3>
+          <p>Please email <a href="team.html#current-lab-members">current lab members</a> and ask them.</p>
+          <h3>I want to know about the admission process, selection criteria, and available slots.</h3>
+          <p>These will be shared with students who complete Steps 1-5 and interviews.</p>
+        </section>
+        </div>
       </section>
     </main>
+    <script>
+      const joiningTabButtons = Array.from(document.querySelectorAll("[data-joining-language]"));
+      const joiningPanels = Array.from(document.querySelectorAll(".joining-language-panel"));
+      const joiningSubtitle = document.querySelector(".joining-subtitle");
+      joiningTabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const language = button.dataset.joiningLanguage;
+          joiningTabButtons.forEach((tab) => {
+            const active = tab.dataset.joiningLanguage === language;
+            tab.classList.toggle("is-active", active);
+            tab.setAttribute("aria-selected", active ? "true" : "false");
+          });
+          joiningPanels.forEach((panel) => {
+            const active = panel.id === `joining-${language}`;
+            panel.classList.toggle("is-active", active);
+            panel.hidden = !active;
+          });
+          if (joiningSubtitle) joiningSubtitle.textContent = joiningSubtitle.dataset[`text${language.charAt(0).toUpperCase() + language.slice(1)}`];
+        });
+      });
+    </script>
