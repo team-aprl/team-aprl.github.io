@@ -1252,6 +1252,7 @@ h1 {
 
 .project-card {
   min-height: 232px;
+  scroll-margin-top: 120px;
 }
 
 .project-card h3 {
