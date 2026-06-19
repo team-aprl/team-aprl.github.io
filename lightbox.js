@@ -140,10 +140,15 @@
     }
 
     const logoLink = event.target.closest(".lab-logo-link");
-    const image = logoLink ? logoLink.querySelector("img") : event.target.closest(images);
+    const figureLink = event.target.closest("a.publication-figure");
+    const image = logoLink
+      ? logoLink.querySelector("img")
+      : figureLink
+        ? figureLink.querySelector("img")
+        : event.target.closest(images);
     if (!image) return;
 
-    const link = logoLink || image.closest("a");
+    const link = logoLink || figureLink || image.closest("a");
     if (link && link.contains(image)) event.preventDefault();
 
     openLightbox(image);
