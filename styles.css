@@ -1446,6 +1446,16 @@ h1 {
   font-weight: 650;
 }
 
+.teaching-projects {
+  margin-top: 30px;
+}
+
+.teaching-projects-meta {
+  margin: -10px 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .news-page {
   padding: 28px 0 42px;
   border-top: 1px solid var(--line);
