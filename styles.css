@@ -1196,7 +1196,8 @@ h1 {
 }
 
 .publication-year.is-hidden,
-.publication-card.is-hidden {
+.publication-card.is-hidden,
+.publication-list.is-hidden {
   display: none;
 }
 
@@ -1210,16 +1211,80 @@ h1 {
   font-size: 1.2rem;
 }
 
+.project-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: -2px 0 16px;
+}
+
+.project-language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.project-language-toggle > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.project-language-buttons {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: #f7f8fa;
+  border: 1px solid var(--light-line);
+  border-radius: 999px;
+}
+
+.project-language-buttons button {
+  min-width: 72px;
+  min-height: 32px;
+  padding: 4px 12px;
+  color: #40505f;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.project-language-buttons button.is-active {
+  color: #fff;
+  background: var(--link);
+}
+
 .project-status-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
-  margin-bottom: 16px;
+  margin: 0;
   padding: 12px 14px;
   background: #f7f8fa;
   border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 8px;
+  text-align: right;
+}
+
+.project-status-row button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.project-status-row .project-summary-label {
+  padding: 0;
+  color: #333;
+  background: transparent;
 }
 
 .project-status-row span {
@@ -1228,7 +1293,7 @@ h1 {
   font-weight: 800;
 }
 
-.project-status-row b {
+.project-status-row button:not(.project-summary-label) {
   display: inline-flex;
   align-items: center;
   min-height: 24px;
@@ -1238,6 +1303,17 @@ h1 {
   border: 1px solid var(--light-line);
   border-radius: 999px;
   font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.project-status-row button.is-active:not(.project-summary-label) {
+  color: #fff;
+  background: var(--link);
+  border-color: var(--link);
+}
+
+.project-status-row .project-summary-label.is-active span {
+  color: var(--link);
 }
 
 .project-current {
@@ -2370,6 +2446,19 @@ h1 {
 @media (max-width: 640px) {
   .site-header {
     top: -138px;
+  }
+
+  .project-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .project-language-toggle {
+    justify-content: flex-start;
+  }
+
+  .project-status-row {
+    justify-content: flex-end;
   }
 
   .home-hero h1 {
