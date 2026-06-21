@@ -1201,6 +1201,12 @@ h1 {
   display: none;
 }
 
+#publications > .publication-list + .publication-year {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .projects-section .publications-heading h1 {
   margin-bottom: 4px;
   font-size: 1.9rem;
@@ -1209,6 +1215,12 @@ h1 {
 
 .projects-section .publication-year {
   font-size: 1.2rem;
+}
+
+.projects-section .project-current-list + .publication-year {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .project-controls {
@@ -1412,6 +1424,19 @@ h1 {
   gap: 12px;
 }
 
+.teaching-section > .teaching-list + .publication-year {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.teaching-semester {
+  margin: 12px 0 10px;
+  color: #313131;
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
 .teaching-card {
   min-height: 164px;
   padding: 16px;
@@ -1447,7 +1472,9 @@ h1 {
 }
 
 .teaching-projects {
-  margin-top: 30px;
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
 }
 
 .teaching-projects-meta {
@@ -1508,6 +1535,12 @@ h1 {
   color: #fff;
   background: var(--link);
   border-color: var(--link);
+}
+
+.news-page > .news-list + .publication-year {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .news-list {
@@ -2034,6 +2067,13 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+.dataset-image-grid-empty {
+  min-height: 128px;
+  background: #f7f8fa;
+  border: 1px dashed var(--light-line);
+  border-radius: 8px;
 }
 
 .dataset-image-grid a {
