@@ -1107,12 +1107,46 @@ h1 {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 999px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  cursor: pointer;
   font: inherit;
   font-size: 0.85rem;
   font-weight: 650;
+  transition: transform 120ms ease, box-shadow 120ms ease, color 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.publication-filter-panel button:hover,
+.publication-facets button:hover {
+  border-color: rgba(0, 95, 163, 0.34);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.publication-filter-panel button:active,
+.publication-filter-panel button.is-pressed,
+.publication-facets button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.22);
+  transform: translateY(1px) scale(0.98);
 }
 
 .publication-filter-panel button.is-active {
+  color: #fff;
+  background: var(--link);
+  border-color: var(--link);
+}
+
+.publication-filter-panel .publication-filter-actions {
+  margin-top: 2px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.publication-filter-panel .publication-filter-actions button {
+  color: var(--link);
+  border-color: rgba(0, 95, 163, 0.28);
+}
+
+.publication-filter-panel .publication-filter-actions button.is-pressed {
   color: #fff;
   background: var(--link);
   border-color: var(--link);
@@ -1172,10 +1206,12 @@ h1 {
   background: #f7f8fa;
   border: 1px solid var(--light-line);
   border-radius: 999px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
   font: inherit;
   font-size: 0.88rem;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, color 120ms ease, background 120ms ease, border-color 120ms ease;
 }
 
 .publication-facets button.is-active {
