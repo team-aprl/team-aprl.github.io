@@ -1128,9 +1128,13 @@ h1 {
 
 .facet-row {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   gap: 10px;
   align-items: start;
+}
+
+.facet-row > span {
+  white-space: nowrap;
 }
 
 .facet-buttons {
