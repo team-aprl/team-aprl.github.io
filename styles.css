@@ -2111,9 +2111,27 @@ h1 {
 
 .dataset-image-grid-empty {
   min-height: 128px;
-  background: #f7f8fa;
-  border: 1px dashed var(--light-line);
+  background: #f4f8fb;
+  border: 1px dashed #bfd4e3;
   border-radius: 8px;
+}
+
+.dataset-placeholder-note {
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  min-height: 128px;
+  color: #5c6b78;
+  text-align: center;
+}
+
+.dataset-placeholder-note strong {
+  color: #0b1f33;
+  font-size: 1rem;
+}
+
+.dataset-placeholder-note span {
+  font-size: 0.9rem;
 }
 
 .dataset-image-grid a {
