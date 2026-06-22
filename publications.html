@@ -116,6 +116,7 @@ lang: "en"
         </div>
       </section></main>
 <script>
+      document.querySelectorAll("#publications a[href]").forEach((link) => { link.target = "_blank"; link.rel = "noopener"; });
       const defaultPublicationFilters = { region: "international", type: ["journal", "conference", "book", "preprint"], aprl: "aprl", year: "all", venue: "all" };
       const publicationFilters = { ...defaultPublicationFilters, type: [...defaultPublicationFilters.type] }; let publicationSearchQuery = "";
       const publicationCards = Array.from(document.querySelectorAll(".publication-card"));
