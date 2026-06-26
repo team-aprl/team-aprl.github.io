@@ -3070,7 +3070,7 @@ body.theme-dark .document-lightbox-panel {
 
   .institution-inner {
     flex-direction: column;
-    gap: 1px;
+    gap: 7px;
     justify-content: center;
     min-height: 42px;
     padding-top: 5px;
