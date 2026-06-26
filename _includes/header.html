@@ -21,7 +21,11 @@
       <a class="lab-title-link" href="{{ '/' | relative_url }}"><strong>Autonomy and Perceptual Robotics Lab (APRL)</strong><small>DGIST Robotics and Mechatronics Engineering</small></a>
     </div>
   </div>
-  <nav class="header-inner primary-nav" aria-label="Primary navigation">
+  <button class="header-inner nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+    <span class="nav-toggle-icon" aria-hidden="true"></span>
+    <span>Menu</span>
+  </button>
+  <nav class="header-inner primary-nav" id="primary-navigation" aria-label="Primary navigation">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/team.html' | relative_url }}">Team</a>
     <a href="{{ '/research.html' | relative_url }}">Research</a>
