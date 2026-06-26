@@ -1,5 +1,5 @@
 (function () {
-  document.querySelectorAll("a[href]").forEach(function (link) {
+  document.querySelectorAll("main.team-page a[href]").forEach(function (link) {
     link.setAttribute("target", "_blank");
 
     var relValues = new Set(
