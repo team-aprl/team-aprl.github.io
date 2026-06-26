@@ -1030,6 +1030,12 @@ h1 {
   color: #0b1f33;
 }
 
+.team-collaborator-note {
+  margin: -2px 0 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .team-collaborator-list {
   columns: 2;
   margin: 0;
