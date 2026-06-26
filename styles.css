@@ -420,7 +420,7 @@ body.header-compact-sticky .dgist-wordmark span {
 
 .lab-mark strong {
   display: block;
-  font-size: 2.12rem;
+  font-size: clamp(1.55rem, 4.2vw, 2.12rem);
   line-height: 1;
   font-weight: 650;
   letter-spacing: 0;
@@ -430,7 +430,7 @@ body.header-compact-sticky .dgist-wordmark span {
   display: block;
   margin-top: 10px;
   color: var(--muted);
-  font-size: 1.16rem;
+  font-size: clamp(0.9rem, 2.3vw, 1.16rem);
 }
 
 .primary-nav {
@@ -3130,13 +3130,13 @@ body.theme-dark .document-lightbox-panel {
   }
 
   .lab-mark strong {
-    font-size: 1.26rem;
+    font-size: clamp(1.16rem, 4.1vw, 1.55rem);
     line-height: 1.05;
   }
 
   .lab-mark small {
     margin-top: 6px;
-    font-size: 0.78rem;
+    font-size: clamp(0.74rem, 2.5vw, 0.9rem);
     line-height: 1.25;
   }
 
