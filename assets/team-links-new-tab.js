@@ -1,5 +1,10 @@
 (function () {
   document.querySelectorAll("main.team-page a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    var url = new URL(href, window.location.href);
+
+    if (url.origin === window.location.origin) return;
+
     link.setAttribute("target", "_blank");
 
     var relValues = new Set(
