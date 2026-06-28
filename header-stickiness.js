@@ -21,6 +21,13 @@
       wordmark.href = compact ? wordmark.dataset.compactHref : wordmark.dataset.defaultHref;
       wordmarkText.textContent = compact ? wordmark.dataset.compactLabel : wordmark.dataset.defaultLabel;
       wordmark.setAttribute("aria-label", wordmarkText.textContent);
+      if (compact) {
+        wordmark.removeAttribute("target");
+        wordmark.removeAttribute("rel");
+      } else {
+        wordmark.setAttribute("target", "_blank");
+        wordmark.setAttribute("rel", "noopener noreferrer");
+      }
     }
   }
 
