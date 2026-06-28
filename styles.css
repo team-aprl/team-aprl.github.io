@@ -1959,6 +1959,31 @@ h1 {
   line-height: 1.15;
 }
 
+.teaching-course-search {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 12px;
+  color: var(--link);
+  background: #f7f9fb;
+  border: 1px solid rgba(0, 95, 163, 0.24);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 140ms ease, background 140ms ease, border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+}
+
+.teaching-course-search:hover,
+.teaching-course-search:focus-visible {
+  color: #fff;
+  background: var(--link);
+  border-color: var(--link);
+  box-shadow: 0 2px 8px rgba(0, 95, 163, 0.18);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
 .teaching-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3351,6 +3376,19 @@ body.theme-dark .team-member-card,
 body.theme-dark .team-simple-list {
   background: var(--panel);
   border-color: var(--line);
+}
+
+body.theme-dark .teaching-course-search {
+  color: #d7ecff;
+  background: color-mix(in srgb, var(--link) 12%, var(--panel));
+  border-color: color-mix(in srgb, var(--link) 34%, var(--line));
+}
+
+body.theme-dark .teaching-course-search:hover,
+body.theme-dark .teaching-course-search:focus-visible {
+  color: #07111a;
+  background: var(--link);
+  border-color: var(--link);
 }
 
 body.theme-dark .publication-filter-panel,
