@@ -1469,8 +1469,22 @@ h1 {
   color: var(--link);
 }
 
-.publication-facets button.is-active b {
+.publication-facets .facet-count-current {
+  color: var(--link);
+}
+
+.publication-facets .facet-count-total {
+  color: #71808d;
+  font-weight: 700;
+}
+
+.publication-facets button.is-active b,
+.publication-facets button.is-active .facet-count-current {
   color: #fff;
+}
+
+.publication-facets button.is-active .facet-count-total {
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .publication-year {
