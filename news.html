@@ -24,6 +24,10 @@ lang: "en"
             <button type="button" data-news-filter="people" aria-pressed="false">People</button>
           </div>
         </div>
+        <div class="news-collapse-actions" aria-label="News year visibility controls">
+          <button type="button" data-news-collapse-all>Collapse all</button>
+          <button type="button" data-news-expand-all>Expand all</button>
+        </div>
 
         <div class="publication-year" data-news-year>2026</div>
         <ol class="news-list">
@@ -145,6 +149,46 @@ lang: "en"
     const items = Array.from(document.querySelectorAll("[data-news-category]"));
     const count = document.querySelector("#news-filter-count");
     const validFilters = new Set(filters.map((button) => button.dataset.newsFilter));
+    const yearHeadings = Array.from(document.querySelectorAll("[data-news-year]"));
+
+    function syncNewsYearCollapse(yearHeading) {
+      const list = yearHeading.nextElementSibling;
+      const toggle = yearHeading.querySelector("[data-news-year-toggle]");
+      const collapsed = yearHeading.dataset.collapsed === "true";
+      if (list) list.classList.toggle("is-collapsed", collapsed);
+      if (toggle) {
+        toggle.textContent = collapsed ? "▸" : "▾";
+        toggle.setAttribute("aria-label", collapsed ? `Expand ${yearHeading.dataset.yearLabel}` : `Collapse ${yearHeading.dataset.yearLabel}`);
+        toggle.setAttribute("aria-expanded", collapsed ? "false" : "true");
+      }
+    }
+
+    yearHeadings.forEach((yearHeading) => {
+      const label = yearHeading.textContent.trim();
+      yearHeading.dataset.yearLabel = label;
+      yearHeading.textContent = "";
+      const yearText = document.createElement("span");
+      yearText.textContent = label;
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.dataset.newsYearToggle = "";
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", `Collapse ${label}`);
+      toggle.textContent = "▾";
+      toggle.addEventListener("click", () => {
+        yearHeading.dataset.collapsed = yearHeading.dataset.collapsed === "true" ? "false" : "true";
+        syncNewsYearCollapse(yearHeading);
+      });
+      yearHeading.append(yearText, toggle);
+      yearHeading.dataset.collapsed = "false";
+    });
+
+    function setAllNewsYearsCollapsed(collapsed) {
+      yearHeadings.forEach((yearHeading) => {
+        yearHeading.dataset.collapsed = collapsed ? "true" : "false";
+        syncNewsYearCollapse(yearHeading);
+      });
+    }
 
     function applyNewsFilter(category) {
       let visible = 0;
@@ -154,10 +198,12 @@ lang: "en"
         if (matches) visible += 1;
       });
 
-      document.querySelectorAll("[data-news-year]").forEach((yearHeading) => {
+      yearHeadings.forEach((yearHeading) => {
         const list = yearHeading.nextElementSibling;
         const hasVisibleItems = list && list.querySelector("[data-news-category]:not(.is-hidden)");
         yearHeading.classList.toggle("is-hidden", !hasVisibleItems);
+        if (list) list.classList.toggle("is-hidden", !hasVisibleItems);
+        syncNewsYearCollapse(yearHeading);
       });
 
       filters.forEach((button) => {
@@ -188,6 +234,9 @@ lang: "en"
         updateNewsQuery(category);
       });
     });
+
+    document.querySelector("[data-news-collapse-all]")?.addEventListener("click", () => setAllNewsYearsCollapsed(true));
+    document.querySelector("[data-news-expand-all]")?.addEventListener("click", () => setAllNewsYearsCollapsed(false));
 
     const initialCategory = new URLSearchParams(window.location.search).get("category");
     applyNewsFilter(validFilters.has(initialCategory) ? initialCategory : "all");
