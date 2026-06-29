@@ -1881,7 +1881,13 @@ h1 {
 
 .project-card {
   min-height: 232px;
-  scroll-margin-top: 120px;
+  scroll-margin-top: calc(var(--sticky-utility-height, 0px) + var(--sticky-nav-height, 0px) + 96px);
+}
+
+.project-card:target {
+  background: linear-gradient(135deg, #fff7c2 0%, #fffbeb 100%);
+  border-color: #facc15;
+  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.28), 0 12px 28px rgba(31, 41, 51, 0.08);
 }
 
 .project-card h3 {
@@ -2438,6 +2444,30 @@ h1 {
 
 .embed-placeholder p {
   margin: 0;
+}
+
+.embed-placeholder .joining-position-note {
+  padding: 10px 12px;
+  color: #405060;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 105, 166, 0.16);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.embed-placeholder .joining-position-note a {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  color: var(--link);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .drive-embed iframe {
@@ -3378,6 +3408,12 @@ body.theme-dark .team-simple-list {
   border-color: var(--line);
 }
 
+body.theme-dark .project-card:target {
+  background: linear-gradient(135deg, color-mix(in srgb, #facc15 28%, var(--panel)) 0%, color-mix(in srgb, #facc15 12%, var(--panel)) 100%);
+  border-color: #facc15;
+  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.2), 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
 body.theme-dark .teaching-course-search {
   color: #d7ecff;
   background: color-mix(in srgb, var(--link) 12%, var(--panel));
@@ -3675,6 +3711,12 @@ body.theme-dark .joining-card p,
 body.theme-dark .joining-card ul,
 body.theme-dark .embed-placeholder {
   color: #dce8f4;
+}
+
+body.theme-dark .embed-placeholder .joining-position-note {
+  color: #dce8f4;
+  background: color-mix(in srgb, #ffffff 5%, var(--panel));
+  border-color: var(--line);
 }
 
 body.theme-dark .position-closed {
