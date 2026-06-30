@@ -4,6 +4,13 @@
   let overlayImage;
   let documentOverlay;
   let documentFrame;
+  let carouselOverlay;
+  let carouselImage;
+  let carouselCaption;
+  let carouselTitle;
+  let carouselTrigger;
+  let carouselIndex = 0;
+  let carouselImages = [];
   let copyToast;
   let copyToastTimer;
   let previousFocus;
@@ -30,6 +37,97 @@
     documentFrame.removeAttribute("src");
     document.body.classList.remove("lightbox-open");
     if (previousFocus) previousFocus.focus();
+  };
+
+  const closeCarouselLightbox = () => {
+    if (!carouselOverlay || carouselOverlay.hidden) return;
+    carouselOverlay.hidden = true;
+    carouselImage.removeAttribute("src");
+    document.body.classList.remove("lightbox-open");
+    if (carouselTrigger) carouselTrigger.setAttribute("aria-expanded", "false");
+    if (previousFocus) previousFocus.focus();
+  };
+
+  const updateCarouselLightbox = () => {
+    if (!carouselImages.length) return;
+    carouselImage.src = carouselImages[carouselIndex];
+    carouselImage.alt = `${carouselTitle} image ${carouselIndex + 1}`;
+    carouselCaption.textContent = `${carouselIndex + 1} / ${carouselImages.length}`;
+  };
+
+  const shiftCarouselLightbox = (step) => {
+    carouselIndex = (carouselIndex + step + carouselImages.length) % carouselImages.length;
+    updateCarouselLightbox();
+  };
+
+  const ensureCarouselLightbox = () => {
+    if (carouselOverlay) return;
+
+    carouselOverlay = document.createElement("div");
+    carouselOverlay.className = "image-carousel-lightbox";
+    carouselOverlay.hidden = true;
+    carouselOverlay.setAttribute("role", "dialog");
+    carouselOverlay.setAttribute("aria-modal", "true");
+
+    const panel = document.createElement("div");
+    panel.className = "image-carousel-panel";
+
+    const previousButton = document.createElement("button");
+    previousButton.type = "button";
+    previousButton.className = "image-carousel-button";
+    previousButton.textContent = "Prev";
+    previousButton.setAttribute("aria-label", "Show previous image");
+    previousButton.addEventListener("click", () => shiftCarouselLightbox(-1));
+
+    const nextButton = document.createElement("button");
+    nextButton.type = "button";
+    nextButton.className = "image-carousel-button";
+    nextButton.textContent = "Next";
+    nextButton.setAttribute("aria-label", "Show next image");
+    nextButton.addEventListener("click", () => shiftCarouselLightbox(1));
+
+    const closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.className = "image-carousel-close";
+    closeButton.textContent = "x";
+    closeButton.setAttribute("aria-label", "Close image carousel");
+    closeButton.addEventListener("click", closeCarouselLightbox);
+
+    const stage = document.createElement("div");
+    stage.className = "image-carousel-stage";
+
+    carouselImage = document.createElement("img");
+    carouselCaption = document.createElement("div");
+    carouselCaption.className = "image-carousel-caption";
+
+    stage.append(carouselImage, carouselCaption);
+    panel.append(previousButton, stage, nextButton, closeButton);
+    carouselOverlay.append(panel);
+    carouselOverlay.addEventListener("click", (event) => {
+      if (event.target === carouselOverlay || event.target === carouselImage) closeCarouselLightbox();
+    });
+    document.body.append(carouselOverlay);
+  };
+
+  const openCarouselLightbox = (button) => {
+    ensureCarouselLightbox();
+    if (!carouselOverlay.hidden && carouselTrigger === button) {
+      closeCarouselLightbox();
+      return;
+    }
+
+    carouselImages = (button.dataset.carouselImages || "").split("|").filter(Boolean);
+    if (!carouselImages.length) return;
+
+    carouselTrigger = button;
+    carouselTitle = button.dataset.carouselTitle || button.textContent.trim() || "Publication";
+    carouselIndex = 0;
+    previousFocus = document.activeElement;
+    updateCarouselLightbox();
+    carouselOverlay.hidden = false;
+    document.body.classList.add("lightbox-open");
+    button.setAttribute("aria-expanded", "true");
+    carouselOverlay.querySelector(".image-carousel-close").focus();
   };
 
   const openLightbox = (image) => {
@@ -126,6 +224,13 @@
   };
 
   document.addEventListener("click", (event) => {
+    const carouselButton = event.target.closest("[data-carousel-images]");
+    if (carouselButton) {
+      event.preventDefault();
+      openCarouselLightbox(carouselButton);
+      return;
+    }
+
     const emailButton = event.target.closest(".member-email-link[data-email]");
     if (emailButton) {
       copyText(emailButton.dataset.email).then(() => showCopyToast(event));
@@ -158,6 +263,11 @@
     if (event.key === "Escape") {
       closeLightbox();
       closeDocumentLightbox();
+      closeCarouselLightbox();
+    } else if (carouselOverlay && !carouselOverlay.hidden && event.key === "ArrowLeft") {
+      shiftCarouselLightbox(-1);
+    } else if (carouselOverlay && !carouselOverlay.hidden && event.key === "ArrowRight") {
+      shiftCarouselLightbox(1);
     }
   });
 })();
