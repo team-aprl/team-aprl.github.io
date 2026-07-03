@@ -15,9 +15,15 @@
   let copyToastTimer;
   let previousFocus;
 
+  const isImageHref = (href) => /\.(avif|gif|jpe?g|png|webp|svg)(\?.*)?$/i.test(href);
+
   const imageSource = (image) => {
+    if (image.matches?.("a") && isImageHref(image.href)) {
+      return image.href;
+    }
+
     const link = image.closest("a");
-    if (link && /\.(avif|gif|jpe?g|png|webp|svg)(\?.*)?$/i.test(link.href)) {
+    if (link && isImageHref(link.href)) {
       return link.href;
     }
     return image.currentSrc || image.src;
@@ -146,7 +152,7 @@
 
     previousFocus = document.activeElement;
     overlayImage.src = imageSource(image);
-    overlayImage.alt = image.alt || "";
+    overlayImage.alt = image.alt || image.textContent?.trim() || "";
     overlay.hidden = false;
     document.body.classList.add("lightbox-open");
     overlay.focus();
@@ -241,6 +247,13 @@
     if (documentLink) {
       event.preventDefault();
       openDocumentLightbox(documentLink);
+      return;
+    }
+
+    const imageLink = event.target.closest("a[href]");
+    if (imageLink && isImageHref(imageLink.href)) {
+      event.preventDefault();
+      openLightbox(imageLink.querySelector("img") || imageLink);
       return;
     }
 
