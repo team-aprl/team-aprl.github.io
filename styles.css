@@ -2916,16 +2916,54 @@ h1 {
 
 .research-recent-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 6px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 10px;
 }
 
 .research-recent-list article {
-  padding: 15px 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 34%);
+  gap: 18px;
+  min-height: 190px;
+  overflow: hidden;
+  padding: 0;
   background: #fff;
   border: 1px solid var(--light-line);
   border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(30, 45, 68, 0.08);
+}
+
+.research-recent-visual {
+  display: block;
+  order: 2;
+  height: 100%;
+  min-height: 190px;
+  overflow: hidden;
+  background: #eef2f5;
+  border-left: 1px solid var(--light-line);
+}
+
+.research-recent-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  transition: transform 0.22s ease;
+}
+
+.research-recent-list article:hover .research-recent-visual img,
+.research-recent-list article:focus-within .research-recent-visual img {
+  transform: scale(1.025);
+}
+
+.research-recent-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 24px 8px 24px 26px;
 }
 
 .research-recent-list span {
@@ -2938,8 +2976,9 @@ h1 {
 }
 
 .research-recent-list h3 {
-  margin: 0 0 8px;
-  font-size: 1.05rem;
+  max-width: 760px;
+  margin: 0 0 10px;
+  font-size: 1.28rem;
   line-height: 1.25;
 }
 
@@ -2955,10 +2994,11 @@ h1 {
 }
 
 .research-recent-list p {
+  max-width: 760px;
   margin: 0;
   color: #344455;
-  font-size: 0.94rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .research-interest-panel {
@@ -3879,6 +3919,11 @@ body.theme-dark .document-lightbox-panel {
   background: var(--panel);
 }
 
+body.theme-dark .research-recent-visual {
+  background: #162235;
+  border-color: var(--line);
+}
+
 @media (max-width: 900px) {
   .content-layout,
   .section-row,
@@ -4209,11 +4254,30 @@ body.theme-dark .document-lightbox-panel {
   }
 
   .research-interest-panel,
-  .research-recent-list article,
   .research-interest-grid article,
   .research-method-card,
   .research-statement {
     padding: 12px;
+  }
+
+  .research-recent-list article {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .research-recent-visual {
+    order: 0;
+    min-height: 210px;
+    border-left: 0;
+    border-bottom: 1px solid var(--light-line);
+  }
+
+  .research-recent-visual img {
+    min-height: 210px;
+  }
+
+  .research-recent-copy {
+    padding: 18px 18px 20px;
   }
 
   .research-statement {
