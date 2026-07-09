@@ -607,6 +607,28 @@ body.header-compact-sticky .primary-nav {
   left: 18px;
 }
 
+.primary-nav .primary-nav-join {
+  min-height: 34px;
+  align-self: center;
+  margin-left: 8px;
+  padding: 0 16px;
+  border: 1px solid color-mix(in srgb, var(--header-accent) 45%, var(--line));
+  border-radius: 999px;
+  color: var(--dgist-navy);
+  background: color-mix(in srgb, var(--header-accent) 7%, var(--header-surface));
+}
+
+.primary-nav .primary-nav-join:hover,
+.primary-nav .primary-nav-join:focus-visible {
+  color: var(--dgist-navy);
+  background: color-mix(in srgb, var(--header-accent) 14%, var(--header-surface));
+  border-color: var(--header-accent);
+}
+
+.primary-nav .primary-nav-join::after {
+  display: none;
+}
+
 .primary-nav a:hover,
 .primary-nav a:focus-visible,
 .header-youtube-link:hover,
@@ -4133,6 +4155,13 @@ body.theme-dark .research-recent-visual {
 
   .primary-nav a::after {
     display: none;
+  }
+
+  .primary-nav .primary-nav-join {
+    min-height: 36px;
+    margin-left: 0;
+    border-color: color-mix(in srgb, var(--header-accent) 45%, var(--line));
+    border-radius: 6px;
   }
 
   .primary-nav a:hover,
