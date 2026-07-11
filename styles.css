@@ -3137,12 +3137,21 @@ h1 {
   line-height: 1.45;
 }
 
-.research-question-text {
+.research-question-text,
+.research-question-list {
   margin: 0;
   color: #203040;
   font-size: 1.05rem;
   font-weight: 800;
   line-height: 1.45;
+}
+
+.research-question-list {
+  padding-left: 1.4rem;
+}
+
+.research-question-list li + li {
+  margin-top: 10px;
 }
 
 .research-links {
@@ -3728,7 +3737,8 @@ body.theme-dark .research-question-intro {
   color: #b5c6d7;
 }
 
-body.theme-dark .research-question-text {
+body.theme-dark .research-question-text,
+body.theme-dark .research-question-list {
   color: #edf5fc;
 }
 
