@@ -3154,6 +3154,10 @@ h1 {
   margin-top: 10px;
 }
 
+.research-question-list .research-links {
+  margin-top: 4px;
+}
+
 .research-links {
   display: flex;
   flex-wrap: wrap;
