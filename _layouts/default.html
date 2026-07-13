@@ -7,7 +7,7 @@
     <meta name="description" content="{{ page.description }}" />
     <link rel="icon" type="image/png" href="{{ '/assets/site/aprl-avatar.png' | relative_url }}" />
     <link rel="apple-touch-icon" href="{{ '/assets/site/aprl-avatar.png' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
   </head>
   <body>
     {% include header.html %}
