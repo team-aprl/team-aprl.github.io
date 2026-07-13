@@ -3247,11 +3247,18 @@ h1 {
   grid-template-columns: minmax(0, 1fr) 166px;
   gap: 12px;
   min-height: 204px;
+  scroll-margin-top: calc(var(--sticky-utility-height, 0px) + var(--sticky-nav-height, 0px) + 96px);
   padding: 12px 14px;
   color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 8px;
   font-size: 0.88rem;
+}
+
+.publication-card:target {
+  background: linear-gradient(135deg, #fff3a3 0%, #fffbdf 100%);
+  border-color: #eab308;
+  box-shadow: 0 0 0 5px rgba(250, 204, 21, 0.34), 0 12px 28px rgba(31, 41, 51, 0.1);
 }
 
 .publication-card-text-only {
@@ -3335,6 +3342,14 @@ h1 {
   font-size: 0.95rem;
   line-height: 1.34;
   font-weight: 800;
+}
+
+.publication-title-en {
+  margin: -2px 0 10px;
+  color: #52606d;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .publication-title-button {
@@ -3600,6 +3615,16 @@ body.theme-dark .project-card:target {
   background: linear-gradient(135deg, color-mix(in srgb, #facc15 28%, var(--panel)) 0%, color-mix(in srgb, #facc15 12%, var(--panel)) 100%);
   border-color: #facc15;
   box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.2), 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+body.theme-dark .publication-card:target {
+  background: linear-gradient(135deg, color-mix(in srgb, #facc15 30%, var(--panel)) 0%, color-mix(in srgb, #facc15 12%, var(--panel)) 100%);
+  border-color: #facc15;
+  box-shadow: 0 0 0 5px rgba(250, 204, 21, 0.24), 0 12px 28px rgba(0, 0, 0, 0.24);
+}
+
+body.theme-dark .publication-title-en {
+  color: #b8c5d1;
 }
 
 body.theme-dark .teaching-course-search {
