@@ -11,6 +11,7 @@
   </head>
   <body>
     {% include header.html %}
+    <script src="{{ '/header-dalgu-continuity.js?v=20260713' | relative_url }}"></script>
     {{ content }}
     {% include footer.html %}
     {% for script in page.extra_scripts %}
