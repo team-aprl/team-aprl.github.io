@@ -272,6 +272,7 @@ main img:not([data-lightbox="off"]) {
   position: sticky;
   top: -158px;
   z-index: 100;
+  overflow-x: clip;
   background: var(--header-surface);
   border-bottom: 1px solid var(--line);
   box-shadow: 0 2px 8px var(--shadow);
