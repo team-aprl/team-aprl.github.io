@@ -5,6 +5,7 @@
   const nav = document.querySelector(".primary-nav");
   const wordmark = document.querySelector(".dgist-wordmark");
   const wordmarkText = wordmark && wordmark.querySelector("span");
+  let preserveHashAlignment = false;
   if (!header || !institution || !lab || !nav) return;
 
   function setHeaderMetrics() {
@@ -24,7 +25,7 @@
   function updateCompactHeader() {
     setHeaderMetrics();
     const threshold = institution.offsetHeight + lab.offsetHeight;
-    const compact = window.scrollY >= threshold || Boolean(getHashTarget());
+    const compact = window.scrollY >= threshold || preserveHashAlignment;
     document.body.classList.toggle("header-compact-sticky", compact);
     if (wordmark && wordmarkText) {
       wordmark.href = compact ? wordmark.dataset.compactHref : wordmark.dataset.defaultHref;
@@ -42,7 +43,13 @@
 
   function alignHashTarget() {
     const target = getHashTarget();
-    if (!target) return;
+    if (!target) {
+      preserveHashAlignment = false;
+      updateCompactHeader();
+      return;
+    }
+
+    preserveHashAlignment = true;
 
     requestAnimationFrame(() => {
       updateCompactHeader();
@@ -52,10 +59,18 @@
     });
   }
 
+  function releaseHashAlignment() {
+    preserveHashAlignment = false;
+  }
+
   window.addEventListener("scroll", updateCompactHeader, { passive: true });
   window.addEventListener("resize", updateCompactHeader);
   window.addEventListener("hashchange", alignHashTarget);
   window.addEventListener("pageshow", alignHashTarget);
+  window.addEventListener("wheel", releaseHashAlignment, { passive: true });
+  window.addEventListener("touchstart", releaseHashAlignment, { passive: true });
+  window.addEventListener("pointerdown", releaseHashAlignment, { passive: true });
+  window.addEventListener("keydown", releaseHashAlignment);
   updateCompactHeader();
 
   if (document.readyState === "complete") {
