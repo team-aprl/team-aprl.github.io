@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Open position at APRL</title>
-  <desc id="desc">A clean placeholder graphic for open APRL lab positions.</desc>
+  <title id="title">Open postdoc position at APRL</title>
+  <desc id="desc">A clean placeholder graphic for an open APRL postdoc position.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8fafc"/>
@@ -14,8 +14,9 @@
   <rect width="512" height="512" rx="28" fill="url(#bg)"/>
   <circle cx="256" cy="184" r="76" fill="#ffffff" stroke="#d7dde3" stroke-width="8"/>
   <path d="M122 416c16-86 68-132 134-132s118 46 134 132" fill="#ffffff" stroke="#d7dde3" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="256" cy="184" r="22" fill="url(#accent)"/>
-  <path d="M256 148v72M220 184h72" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M214 152h84a14 14 0 0 1 14 14v58h-112v-58a14 14 0 0 1 14-14z" fill="url(#accent)"/>
+  <path d="M232 152v-14a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v14" fill="none" stroke="#0f766e" stroke-width="10" stroke-linecap="round"/>
+  <path d="M200 184h112" fill="none" stroke="#ffffff" stroke-width="8"/>
   <rect x="134" y="374" width="244" height="48" rx="24" fill="url(#accent)" opacity="0.95"/>
-  <text x="256" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">OPEN POSITION</text>
+  <text x="256" y="406" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">POSTDOC OPENING</text>
 </svg>
