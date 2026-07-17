@@ -3163,7 +3163,7 @@ h1 {
 
 .research-vision-panel {
   margin: 0 0 38px;
-  padding: 24px 0 26px;
+  padding: 24px 20px 26px;
   color: #173047;
   background: transparent;
   border-top: 1px solid var(--light-line);
@@ -4594,7 +4594,7 @@ body.theme-dark .research-recent-visual {
   }
 
   .research-vision-panel {
-    padding: 22px 0 24px;
+    padding: 22px 14px 24px;
   }
 
   .research-vision-pillars {
