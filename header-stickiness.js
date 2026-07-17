@@ -55,6 +55,7 @@
   window.addEventListener("scroll", updateCompactHeader, { passive: true });
   window.addEventListener("resize", updateCompactHeader);
   window.addEventListener("hashchange", alignHashTarget);
+  window.addEventListener("pageshow", alignHashTarget);
   updateCompactHeader();
 
   if (document.readyState === "complete") {
