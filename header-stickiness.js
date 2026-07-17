@@ -12,10 +12,19 @@
     document.documentElement.style.setProperty("--sticky-nav-height", `${nav.offsetHeight}px`);
   }
 
+  function getHashTarget() {
+    if (!window.location.hash) return null;
+    try {
+      return document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    } catch (_error) {
+      return null;
+    }
+  }
+
   function updateCompactHeader() {
     setHeaderMetrics();
     const threshold = institution.offsetHeight + lab.offsetHeight;
-    const compact = window.scrollY >= threshold;
+    const compact = window.scrollY >= threshold || Boolean(getHashTarget());
     document.body.classList.toggle("header-compact-sticky", compact);
     if (wordmark && wordmarkText) {
       wordmark.href = compact ? wordmark.dataset.compactHref : wordmark.dataset.defaultHref;
@@ -31,7 +40,26 @@
     }
   }
 
+  function alignHashTarget() {
+    const target = getHashTarget();
+    if (!target) return;
+
+    requestAnimationFrame(() => {
+      updateCompactHeader();
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ block: "start" });
+      });
+    });
+  }
+
   window.addEventListener("scroll", updateCompactHeader, { passive: true });
   window.addEventListener("resize", updateCompactHeader);
+  window.addEventListener("hashchange", alignHashTarget);
   updateCompactHeader();
+
+  if (document.readyState === "complete") {
+    alignHashTarget();
+  } else {
+    window.addEventListener("load", alignHashTarget, { once: true });
+  }
 })();
