@@ -967,6 +967,24 @@ h1 {
   transition: color 140ms ease, text-decoration-color 140ms ease;
 }
 
+.home-vision-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  margin-right: 7px;
+  padding: 2px 7px;
+  color: #0f766e;
+  background: #edf8f5;
+  border: 1px solid #9bc9bf;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.035em;
+  line-height: 1;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+}
+
 .home-guiding-question-link:hover,
 .home-guiding-question-link:focus-visible {
   color: var(--link);
@@ -3751,6 +3769,12 @@ body.theme-dark .team-member p {
 
 body.theme-dark .home-news p {
   color: #dce8f4;
+}
+
+body.theme-dark .home-vision-label {
+  color: #99f6e4;
+  background: color-mix(in srgb, #0f766e 22%, var(--panel));
+  border-color: #3f7f76;
 }
 
 body.theme-dark .page p,
