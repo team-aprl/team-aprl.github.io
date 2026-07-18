@@ -3091,6 +3091,44 @@ h1 {
   line-height: 1.2;
 }
 
+.research-target-heading {
+  margin-top: 24px;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.research-target-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 16px 20px;
+  color: var(--link);
+  background: var(--panel);
+  border: 1px solid var(--light-line);
+  border-left: 4px solid var(--dgist-sky);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px var(--shadow);
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.research-target-link:hover,
+.research-target-link:focus-visible {
+  color: var(--link-dark);
+  border-left-color: var(--dgist-blue);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.research-target-link-icon {
+  flex: 0 0 auto;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 .research-recent-list {
   display: grid;
   grid-template-columns: 1fr;
