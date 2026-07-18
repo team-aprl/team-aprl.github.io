@@ -126,6 +126,11 @@ main img:not([data-lightbox="off"]) {
   object-fit: contain;
 }
 
+.image-lightbox img.team-member-placeholder-preview {
+  width: min(470px, calc(100vw - 48px), calc(100vh - 48px));
+  height: min(470px, calc(100vw - 48px), calc(100vh - 48px));
+}
+
 .document-lightbox {
   position: fixed;
   inset: 0;

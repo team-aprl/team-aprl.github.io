@@ -153,6 +153,10 @@
     previousFocus = document.activeElement;
     overlayImage.src = imageSource(image);
     overlayImage.alt = image.alt || image.textContent?.trim() || "";
+    overlayImage.classList.toggle(
+      "team-member-placeholder-preview",
+      image.classList?.contains("team-member-placeholder")
+    );
     overlay.hidden = false;
     document.body.classList.add("lightbox-open");
     overlay.focus();
