@@ -962,7 +962,8 @@ h1 {
   text-decoration: none;
 }
 
-.home-guiding-question-link {
+.home-guiding-question-link,
+.home-reference-link {
   color: inherit;
   font-weight: inherit;
   text-decoration-color: color-mix(in srgb, var(--link) 32%, transparent);
@@ -991,7 +992,9 @@ h1 {
 }
 
 .home-guiding-question-link:hover,
-.home-guiding-question-link:focus-visible {
+.home-guiding-question-link:focus-visible,
+.home-reference-link:hover,
+.home-reference-link:focus-visible {
   color: var(--link);
   text-decoration-color: var(--link);
 }
