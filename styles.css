@@ -976,14 +976,14 @@ h1 {
 .home-vision-label {
   display: inline-flex;
   align-items: center;
-  min-height: 22px;
+  min-height: 24px;
   margin-right: 7px;
-  padding: 2px 7px;
+  padding: 3px 8px;
   color: #0f766e;
   background: #edf8f5;
   border: 1px solid #9bc9bf;
   border-radius: 4px;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 850;
   letter-spacing: 0.035em;
   line-height: 1;
