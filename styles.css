@@ -1519,6 +1519,7 @@ h1 {
   display: grid;
   width: 100%;
   aspect-ratio: 1 / 0.9;
+  margin-bottom: 14px;
   place-content: center;
   justify-items: center;
   gap: 4px;
