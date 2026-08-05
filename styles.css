@@ -1591,6 +1591,11 @@ h1 {
   border-radius: 999px;
 }
 
+.member-contact-links .member-home-link.member-home-link-placeholder {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
 .member-contact-links .member-home-link svg {
   width: 1em;
   height: 1em;
