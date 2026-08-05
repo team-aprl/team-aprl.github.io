@@ -1518,7 +1518,7 @@ h1 {
 .team-open-position-mark {
   display: grid;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 0.9;
   place-content: center;
   justify-items: center;
   gap: 4px;
