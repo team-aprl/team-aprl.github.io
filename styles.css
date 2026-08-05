@@ -1587,6 +1587,10 @@ h1 {
   margin: 0 0 8px;
 }
 
+.profile-contact-links {
+  margin: 12px 0 0;
+}
+
 .member-contact-links .member-email-link {
   position: relative;
   display: inline-flex;
