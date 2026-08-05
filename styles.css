@@ -1493,6 +1493,10 @@ h1 {
   gap: 12px;
 }
 
+.team-open-position-grid {
+  margin-top: 12px;
+}
+
 .team-member-card {
   min-height: 264px;
   padding: 14px 16px;
