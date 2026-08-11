@@ -1,4 +1,49 @@
 <footer class="site-footer">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+  <div class="footer-inner">
+    <div class="footer-main">
+      <section class="footer-brand" aria-labelledby="footer-lab-name">
+        <a class="footer-brand-mark" href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/site/aprl-avatar.png' | relative_url }}" alt="" />
+          <span id="footer-lab-name">APRL</span>
+        </a>
+        <p>Autonomy and Perceptual<br />Robotics Lab</p>
+        <a class="footer-join-link" href="{{ '/joining-aprl.html' | relative_url }}">Join our lab <span aria-hidden="true">&rarr;</span></a>
+      </section>
+
+      <section class="footer-column" aria-labelledby="footer-affiliation-title">
+        <h2 id="footer-affiliation-title">Affiliation</h2>
+        <p>
+          <a href="https://www.dgist.ac.kr/robot/" target="_blank" rel="noopener noreferrer">Department of Robotics and<br />Mechatronics Engineering</a>
+        </p>
+        <p><a href="https://www.dgist.ac.kr/eng/" target="_blank" rel="noopener noreferrer">DGIST</a></p>
+      </section>
+
+      <section class="footer-column" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">Contact</h2>
+        <address>
+          <a href="mailto:gsk@dgist.ac.kr">gsk@dgist.ac.kr</a>
+          <a href="tel:+82537856232">(+82) 53-785-6232</a>
+        </address>
+      </section>
+
+      <section class="footer-column footer-address" aria-labelledby="footer-address-title">
+        <h2 id="footer-address-title">Address</h2>
+        <address>
+          Room 610, E5, DGIST<br />
+          333 Techno Jungang-daero,<br />
+          Hyeonpung-eup, Dalseong-gun,<br />
+          Daegu 42988, Republic of Korea
+        </address>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} APRL, DGIST. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="{{ '/research.html' | relative_url }}">Research</a>
+        <a href="{{ '/publications.html' | relative_url }}">Publications</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </div>
 </footer>
