@@ -1591,6 +1591,22 @@ h1 {
   margin: 12px 0 0;
 }
 
+/* Give the principal investigator's contact shortcuts more visual weight. */
+.member-contact-links.profile-contact-links .member-email-link,
+.member-contact-links.profile-contact-links .member-scholar-link,
+.member-contact-links.profile-contact-links .member-home-link {
+  width: 2.15em;
+  height: 2.15em;
+  font-size: 1em;
+}
+
+.member-contact-links.profile-contact-links .member-email-link svg,
+.member-contact-links.profile-contact-links .member-scholar-link svg,
+.member-contact-links.profile-contact-links .member-home-link svg {
+  width: 1.08em;
+  height: 1.08em;
+}
+
 .member-contact-links .member-email-link {
   position: relative;
   display: inline-flex;
@@ -1692,6 +1708,15 @@ h1 {
   color: #fff;
   background: var(--link);
   text-decoration: none;
+}
+
+/* Keep all team-member contact shortcuts comfortably legible. */
+.member-contact-links .member-email-link,
+.member-contact-links .member-scholar-link,
+.member-contact-links .member-home-link {
+  width: 1.9em;
+  height: 1.9em;
+  font-size: 1em;
 }
 
 .copy-toast {
