@@ -966,6 +966,23 @@ h1 {
   line-height: 1.52;
 }
 
+.home-framework-overview-link {
+  padding: 0.03em 0.16em 0.08em;
+  color: #0f6f64;
+  background: linear-gradient(to top, #dff3ee 42%, transparent 42%);
+  border-bottom: 1px solid #7db9ab;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+
+.home-framework-overview-link:hover,
+.home-framework-overview-link:focus-visible {
+  color: #0a594f;
+  background: #dff3ee;
+  border-bottom-color: #2c8d7c;
+}
+
 .home-framework-link {
   padding: 0.05em 0.25em 0.09em;
   color: #075985;
@@ -3412,7 +3429,7 @@ h1 {
   scroll-margin-top: calc(var(--sticky-utility-height, 38px) + var(--sticky-nav-height, 44px) + 12px);
 }
 
-#current-research-vision:target + .research-vision-panel {
+#current-research-vision:target + .research-reading-pathway {
   background: linear-gradient(135deg, #f2faf8 0%, #f8fafc 100%);
   border-color: #86b6ac;
   box-shadow: inset 4px 0 0 #0f766e, 0 8px 22px rgba(31, 41, 51, 0.05);
@@ -3489,6 +3506,7 @@ h1 {
   padding: 24px 0 28px;
   border-top: 1px solid var(--light-line);
   border-bottom: 1px solid var(--light-line);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .research-reading-pathway-heading {
@@ -4279,6 +4297,19 @@ body.theme-dark .home-framework-link:focus-visible {
   border-bottom-color: #74c0e3;
 }
 
+body.theme-dark .home-framework-overview-link {
+  color: #99f6e4;
+  background: linear-gradient(to top, color-mix(in srgb, #0f766e 35%, var(--panel)) 42%, transparent 42%);
+  border-bottom-color: #4d8178;
+}
+
+body.theme-dark .home-framework-overview-link:hover,
+body.theme-dark .home-framework-overview-link:focus-visible {
+  color: #ccfbf1;
+  background: color-mix(in srgb, #0f766e 28%, var(--panel));
+  border-bottom-color: #5eead4;
+}
+
 body.theme-dark .page p,
 body.theme-dark .page li,
 body.theme-dark .page td,
@@ -4503,7 +4534,7 @@ body.theme-dark .research-vision-panel {
   border-color: var(--line);
 }
 
-body.theme-dark #current-research-vision:target + .research-vision-panel {
+body.theme-dark #current-research-vision:target + .research-reading-pathway {
   background: linear-gradient(135deg, color-mix(in srgb, #0f766e 16%, var(--panel)) 0%, color-mix(in srgb, #ffffff 5%, var(--panel)) 100%);
   border-color: #4d8178;
   box-shadow: inset 4px 0 0 #2dd4bf, 0 8px 22px rgba(0, 0, 0, 0.2);
