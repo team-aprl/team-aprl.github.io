@@ -4141,6 +4141,12 @@ h1 {
   object-fit: contain;
 }
 
+.publication-figure--lt-mem img {
+  height: 140px;
+  object-fit: cover;
+  object-position: center 8%;
+}
+
 .contact-row {
   border-bottom: 1px solid var(--line);
 }
