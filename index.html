@@ -48,7 +48,7 @@ lang: "en"
             })
             .then((html) => {
               const doc = new DOMParser().parseFromString(html, "text/html");
-              const items = Array.from(doc.querySelectorAll("[data-home-reveal='true']"));
+              const items = Array.from(doc.querySelectorAll("[data-home-reveal='true']")).slice(0, 10);
               list.replaceChildren(...items.map((item) => item.cloneNode(true)));
             })
             .catch(() => {
