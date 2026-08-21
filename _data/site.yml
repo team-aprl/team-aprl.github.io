@@ -1,0 +1,23 @@
+institution:
+  name: Daegu Gyeongbuk Institute of Science & Technology (DGIST)
+  url: https://www.dgist.ac.kr/eng/
+lab:
+  short_name: APRL
+  name: Autonomy and Perceptual Robotics Lab (APRL)
+  logo: /assets/site/aprl-avatar.png
+department:
+  name: DGIST Robotics and Mechatronics Engineering
+  url: https://www.dgist.ac.kr/robot/
+contact:
+  email: gsk@dgist.ac.kr
+  phone_label: (+82) 53-785-6232
+  phone_href: tel:+82537856232
+  address_lines:
+    - Room 610, E5, DGIST
+    - 333 Techno Jungang-daero,
+    - Hyeonpung-eup, Dalseong-gun,
+    - Daegu 42988, Republic of Korea
+  office_address_en: Room 610, E5, DGIST, 333, Techno Jungang Daero, Hyeonpung-Eup, Dalseong-Gun, Daegu, 42988
+  office_address_ko: 대구광역시 달성군 현풍읍 테크노중앙대로 333 DGIST (42988), E5, 610호
+social:
+  youtube: https://www.youtube.com/@APRL-DGIST

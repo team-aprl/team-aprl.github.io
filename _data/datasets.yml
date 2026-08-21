@@ -1,0 +1,42 @@
+- id: dataset-1
+  title: LT-Mem Dataset
+  venue: IROS 2026
+  website: https://lt-mem.github.io/
+  images:
+  - href: assets/datasets/lt-mem-paper-overview.png
+    src: assets/datasets/lt-mem-paper-overview.png?v=20260820
+    alt: LT-Mem paper overview contrasting state-only memory with volatility-aware Tri-Memory
+  - href: assets/datasets/lt-mem-lt-vqa-environments.png
+    src: assets/datasets/lt-mem-lt-vqa-environments.png?v=20260820
+    alt: LT-VQA dataset environments with aligned 3D maps and multi-session trajectories
+  - href: assets/datasets/lt-mem-tri-memory-example.png
+    src: assets/datasets/lt-mem-tri-memory-example.png?v=20260820
+    alt: LT-Mem Tri-Memory example tracking robot-dog movement across sessions
+- id: dataset-2
+  title: Mag4D-SLAM Dataset
+  venue: IROS 2026
+  website: https://mag4d-dataset.github.io/Mag4d-Dataset/
+  images:
+  - href: assets/datasets/mag4d-slam-dataset-1.png
+    src: assets/datasets/mag4d-slam-dataset-1.png?v=20260619
+    alt: Mag4D-SLAM Dataset overview 1
+  - href: assets/datasets/mag4d-slam-dataset-2.png
+    src: assets/datasets/mag4d-slam-dataset-2.png?v=20260619
+    alt: Mag4D-SLAM Dataset overview 2
+  - href: assets/datasets/mag4d-slam-dataset-3.png
+    src: assets/datasets/mag4d-slam-dataset-3.png?v=20260619
+    alt: Mag4D-SLAM Dataset overview 3
+- id: dataset-3
+  title: ScaleMaster Dataset
+  venue: ICRA 2026
+  website: https://scalemaster-dataset.github.io/
+  images:
+  - href: assets/datasets/scalemaster-overview.png
+    src: assets/datasets/scalemaster-overview.png?v=20260525
+    alt: ScaleMaster Dataset trajectory visualization
+  - href: assets/datasets/scalemaster-pgo-1.png
+    src: assets/datasets/scalemaster-pgo-1.png?v=20260525
+    alt: ScaleMaster Dataset pose graph optimization result 1
+  - href: assets/datasets/scalemaster-pgo-2.png
+    src: assets/datasets/scalemaster-pgo-2.png?v=20260525
+    alt: ScaleMaster Dataset pose graph optimization result 2

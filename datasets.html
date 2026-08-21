@@ -14,53 +14,6 @@ lang: "en"
           </div>
         </div>
 
-        <article class="dataset-card">
-          <div class="dataset-card-header">
-            <div>
-              <h2><a href="https://lt-mem.github.io/">LT-Mem Dataset</a></h2>
-              <p>IROS 2026</p>
-            </div>
-            <a href="https://lt-mem.github.io/">Website</a>
-          </div>
-
-          <div class="dataset-image-grid">
-            <a href="assets/datasets/lt-mem-paper-overview.png"><img src="assets/datasets/lt-mem-paper-overview.png?v=20260820" alt="LT-Mem paper overview contrasting state-only memory with volatility-aware Tri-Memory" loading="lazy" /></a>
-            <a href="assets/datasets/lt-mem-lt-vqa-environments.png"><img src="assets/datasets/lt-mem-lt-vqa-environments.png?v=20260820" alt="LT-VQA dataset environments with aligned 3D maps and multi-session trajectories" loading="lazy" /></a>
-            <a href="assets/datasets/lt-mem-tri-memory-example.png"><img src="assets/datasets/lt-mem-tri-memory-example.png?v=20260820" alt="LT-Mem Tri-Memory example tracking robot-dog movement across sessions" loading="lazy" /></a>
-          </div>
-        </article>
-
-        <article class="dataset-card">
-          <div class="dataset-card-header">
-            <div>
-              <h2><a href="https://mag4d-dataset.github.io/Mag4d-Dataset/">Mag4D-SLAM Dataset</a></h2>
-              <p>IROS 2026</p>
-            </div>
-            <a href="https://mag4d-dataset.github.io/Mag4d-Dataset/">Website</a>
-          </div>
-
-          <div class="dataset-image-grid">
-            <a href="assets/datasets/mag4d-slam-dataset-1.png"><img src="assets/datasets/mag4d-slam-dataset-1.png?v=20260619" alt="Mag4D-SLAM Dataset overview 1" loading="lazy" /></a>
-            <a href="assets/datasets/mag4d-slam-dataset-2.png"><img src="assets/datasets/mag4d-slam-dataset-2.png?v=20260619" alt="Mag4D-SLAM Dataset overview 2" loading="lazy" /></a>
-            <a href="assets/datasets/mag4d-slam-dataset-3.png"><img src="assets/datasets/mag4d-slam-dataset-3.png?v=20260619" alt="Mag4D-SLAM Dataset overview 3" loading="lazy" /></a>
-          </div>
-        </article>
-
-        <article class="dataset-card">
-          <div class="dataset-card-header">
-            <div>
-              <h2><a href="https://scalemaster-dataset.github.io/">ScaleMaster Dataset</a></h2>
-              <p>ICRA 2026</p>
-            </div>
-            <a href="https://scalemaster-dataset.github.io/">Website</a>
-          </div>
-
-          <div class="dataset-image-grid">
-            <a href="assets/datasets/scalemaster-overview.png"><img src="assets/datasets/scalemaster-overview.png?v=20260525" alt="ScaleMaster Dataset trajectory visualization" loading="lazy" /></a>
-            <a href="assets/datasets/scalemaster-pgo-1.png"><img src="assets/datasets/scalemaster-pgo-1.png?v=20260525" alt="ScaleMaster Dataset pose graph optimization result 1" loading="lazy" /></a>
-            <a href="assets/datasets/scalemaster-pgo-2.png"><img src="assets/datasets/scalemaster-pgo-2.png?v=20260525" alt="ScaleMaster Dataset pose graph optimization result 2" loading="lazy" /></a>
-          </div>
-        </article>
-
+        {% for dataset in site.data.datasets %}{% include render/dataset-card.html item=dataset %}{% endfor %}
       </section>
     </main>

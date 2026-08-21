@@ -1,0 +1,29 @@
+{% assign site_content = site.data.site %}
+<header class="site-header">
+  <div class="institution-bar">
+    <div class="header-inner institution-inner">
+      <a class="dgist-wordmark" href="{{ site_content.institution.url }}" target="_blank" rel="noopener noreferrer" data-default-href="{{ site_content.institution.url }}" data-default-label="{{ site_content.institution.name | escape }}" data-compact-href="{{ '/' | relative_url }}" data-compact-label="{{ site_content.lab.name | escape }}"><span>{{ site_content.institution.name }}</span></a>
+      <div class="institution-actions">
+        <form class="site-search" role="search" action="search.html">
+          <label class="sr-only" for="site-search-input">Search APRL site</label>
+          <input id="site-search-input" type="search" name="q" placeholder="Search" autocomplete="off" />
+          <div class="site-search-results" role="listbox" hidden></div>
+        </form>
+        <a class="header-youtube-link" href="{{ site_content.social.youtube }}" target="_blank" rel="noopener noreferrer"><span class="header-youtube-icon" aria-hidden="true"></span>YouTube</a>
+        <button class="theme-toggle" type="button" aria-label="Current theme: Light. Switch to dark theme" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">&#9728;</span><span class="theme-toggle-text">Light</span></button>
+        <button class="dalgu-mode-toggle" type="button" aria-label="Change Dalgu mode" title="Change Dalgu mode"><span class="dalgu-mode-toggle-face" aria-hidden="true"><img src="{{ '/assets/site/dalgu-front.png' | relative_url }}" alt="" /></span></button>
+      </div>
+    </div>
+  </div>
+  <div class="header-inner lab-header">
+    <div class="header-dalgu-track" aria-hidden="true"><div class="header-dalgu"><picture><source class="header-dalgu-source" srcset="{{ '/assets/site/dalgu-walk.webp' | relative_url }}" type="image/webp" /><img class="header-dalgu-image" src="{{ '/assets/site/dalgu-walk-fallback.png' | relative_url }}" alt="" /></picture></div></div>
+    <div class="lab-mark">
+      <a class="lab-logo-link" href="{{ site_content.lab.logo | relative_url }}" aria-label="View APRL logo"><img src="{{ site_content.lab.logo | relative_url }}" alt="APRL logo" /></a>
+      <div class="lab-title-block"><a class="lab-title-link" href="{{ '/' | relative_url }}"><strong>{{ site_content.lab.name }}</strong></a><a class="lab-department-link" href="{{ site_content.department.url }}" target="_blank" rel="noopener noreferrer"><small>{{ site_content.department.name }}</small></a></div>
+    </div>
+  </div>
+  <button class="header-inner nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="nav-toggle-icon" aria-hidden="true"></span><span>Menu</span></button>
+  <nav class="header-inner primary-nav" id="primary-navigation" aria-label="Primary navigation">
+    {% for item in site.data.navigation.primary %}<a{% if item.href == '/joining-aprl.html' %} class="primary-nav-join"{% endif %} href="{{ item.href | relative_url }}">{{ item.label }}</a>{% endfor %}
+  </nav>
+</header>

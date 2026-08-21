@@ -3,6 +3,8 @@ layout: default
 title: "Joining APRL | APRL"
 description: "Guide for students interested in joining APRL at DGIST."
 lang: "ko"
+extra_scripts:
+  - "assets/js/pages/joining-aprl.js"
 ---
 
 <main class="page">
@@ -94,7 +96,7 @@ lang: "ko"
 
         <section class="joining-card">
           <h2>5. 컨택문의/상담요청 메일을 보내기</h2>
-          <p>랩 진학 관련 컨택문의/상담요청은 <a href="mailto:gsk@dgist.ac.kr">gsk@dgist.ac.kr</a>로 보내주세요. 메일에 포함해야 할 내용은 다음과 같습니다.</p>
+          <p>랩 진학 관련 컨택문의/상담요청은 <a href="mailto:{{ site.data.site.contact.email }}">{{ site.data.site.contact.email }}</a>로 보내주세요. 메일에 포함해야 할 내용은 다음과 같습니다.</p>
           <ul>
             <li>[필수] 이름/현재학적 (예: 달구/DGIST 학부4학년)</li>
             <li>[필수] 자기소개 (500자 이내)</li>
@@ -191,7 +193,7 @@ lang: "ko"
 
         <section class="joining-card">
           <h2>5. Send a Contact or Counseling Request Email</h2>
-          <p>For lab admission inquiries or counseling requests, email <a href="mailto:gsk@dgist.ac.kr">gsk@dgist.ac.kr</a>. Include the following information:</p>
+          <p>For lab admission inquiries or counseling requests, email <a href="mailto:{{ site.data.site.contact.email }}">{{ site.data.site.contact.email }}</a>. Include the following information:</p>
           <ul>
             <li>[Required] Name / current status (e.g., undergraduate senior at DGIST)</li>
             <li>[Required] Self-introduction within 500 characters</li>
@@ -218,24 +220,3 @@ lang: "ko"
         </div>
       </section>
     </main>
-    <script>
-      const joiningTabButtons = Array.from(document.querySelectorAll("[data-joining-language]"));
-      const joiningPanels = Array.from(document.querySelectorAll(".joining-language-panel"));
-      const joiningSubtitle = document.querySelector(".joining-subtitle");
-      joiningTabButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const language = button.dataset.joiningLanguage;
-          joiningTabButtons.forEach((tab) => {
-            const active = tab.dataset.joiningLanguage === language;
-            tab.classList.toggle("is-active", active);
-            tab.setAttribute("aria-selected", active ? "true" : "false");
-          });
-          joiningPanels.forEach((panel) => {
-            const active = panel.id === `joining-${language}`;
-            panel.classList.toggle("is-active", active);
-            panel.hidden = !active;
-          });
-          if (joiningSubtitle) joiningSubtitle.textContent = joiningSubtitle.dataset[`text${language.charAt(0).toUpperCase() + language.slice(1)}`];
-        });
-      });
-    </script>

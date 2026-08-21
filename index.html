@@ -11,7 +11,7 @@ lang: "en"
         <div class="home-hero-copy">
           <p class="home-kicker">Welcome to APRL DGIST!</p>
           <ul class="home-hero-points">
-            <li><strong>Autonomy and Perceptual Robotics Lab (APRL, &#47196;&#48391;&#51064;&#49885; &#48143; &#51088;&#50984;&#54868; &#50672;&#44396;&#49892;)</strong> at DGIST has been started in Dec 2024 by <a href="team.html">Giseop Kim</a>.</li>
+            <li><strong>{{ site.data.site.lab.name | remove: ')' }}, &#47196;&#48391;&#51064;&#49885; &#48143; &#51088;&#50984;&#54868; &#50672;&#44396;&#49892;)</strong> at DGIST has been started in Dec 2024 by <a href="team.html">Giseop Kim</a>.</li>
             <li class="home-vision-summary"><span class="home-vision-label">Our Vision</span><strong>APRL</strong> develops embodied intelligence through a <a class="home-framework-overview-link" href="research.html#current-research-vision">three-part research framework</a>: the <a class="home-framework-link" href="https://gisbi-kim.github.io/aprl-research-vision/" target="_blank" rel="noopener noreferrer">Research Vision</a>, which defines the qualities we seek—<strong>Persistent, Intent-Grounded, and Resilient Embodied Intelligence</strong>; the <a class="home-framework-link" href="https://gisbi-kim.github.io/situated-spatial-intelligence/" target="_blank" rel="noopener noreferrer">Research Statement</a>, which organizes the capabilities required to realize them as <strong>Situated Spatial Intelligence</strong>; and the <a class="home-framework-link" href="https://gisbi-kim.github.io/aprl-research-philosophy/" target="_blank" rel="noopener noreferrer">Research Philosophy</a>, which explains how experience becomes reliable action—and how action becomes better understanding.</li>
           </ul>
         </div>
@@ -33,29 +33,8 @@ lang: "en"
 
       <section class="home-news">
         <div class="home-section-heading"><h2>Selected Latest News</h2><a href="news.html">All news</a></div>
-        <ol id="home-news-list" aria-live="polite"></ol>
+        <ol id="home-news-list" aria-live="polite">{% assign home_news = site.data.news | where: "home_reveal", true %}{% for item in home_news limit:10 %}{% include render/news-item.html item=item %}{% endfor %}</ol>
       </section>
-
-      <script>
-        (() => {
-          const list = document.querySelector("#home-news-list");
-          if (!list) return;
-
-          fetch("news.html", { cache: "no-store" })
-            .then((response) => {
-              if (!response.ok) throw new Error(`HTTP ${response.status}`);
-              return response.text();
-            })
-            .then((html) => {
-              const doc = new DOMParser().parseFromString(html, "text/html");
-              const items = Array.from(doc.querySelectorAll("[data-home-reveal='true']")).slice(0, 10);
-              list.replaceChildren(...items.map((item) => item.cloneNode(true)));
-            })
-            .catch(() => {
-              list.innerHTML = '<li><p><a href="news.html">View all news</a></p></li>';
-            });
-        })();
-      </script>
 
       <section class="home-research-videos" aria-label="Latest research videos">
         <div class="home-section-heading"><h2>Latest Research Videos</h2></div>

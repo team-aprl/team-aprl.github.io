@@ -10,7 +10,7 @@ lang: "en"
         <div class="publications-heading">
           <div>
             <h1>Contact</h1>
-            <p>Autonomy and Perceptual Robotics Lab, DGIST.</p>
+            <p>{{ site.data.site.lab.name | remove: ' (APRL)' }}, DGIST.</p>
           </div>
         </div>
 
@@ -20,11 +20,11 @@ lang: "en"
             <dl>
               <div>
                 <dt>Email</dt>
-                <dd><a href="mailto:gsk@dgist.ac.kr">gsk@dgist.ac.kr</a></dd>
+                <dd><a href="mailto:{{ site.data.site.contact.email }}">{{ site.data.site.contact.email }}</a></dd>
               </div>
               <div>
                 <dt>Phone</dt>
-                <dd><a href="tel:+82537856232">(+82) 53-785-6232</a></dd>
+                <dd><a href="{{ site.data.site.contact.phone_href }}">{{ site.data.site.contact.phone_label }}</a></dd>
               </div>
             </dl>
           </section>
@@ -34,11 +34,11 @@ lang: "en"
             <dl>
               <div>
                 <dt>ENG</dt>
-                <dd>Room 610, E5, DGIST, 333, Techno Jungang Daero, Hyeonpung-Eup, Dalseong-Gun, Daegu, 42988</dd>
+                <dd>{{ site.data.site.contact.office_address_en }}</dd>
               </div>
               <div>
                 <dt>KOR</dt>
-                <dd>대구광역시 달성군 현풍읍 테크노중앙대로 333 DGIST (42988), E5, 610호</dd>
+                <dd>{{ site.data.site.contact.office_address_ko }}</dd>
               </div>
             </dl>
           </section>

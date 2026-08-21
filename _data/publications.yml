@@ -1,0 +1,1016 @@
+- id: lt-mem
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: iros
+  title: 'LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://2026.ieee-iros.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>
+  - label: Date
+    content_html: Sep 27 - Oct 1, 2026
+  - label: Authors
+    content_html: <strong>Yumin Lee</strong>*, <strong>Hyoseok Ju</strong>, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: accepted, to appear
+  actions:
+  - label: Project
+    href: https://lt-mem.github.io/
+  - label: Demo
+    href: https://lt-mem.github.io/DEMO/
+  - label: Paper
+    href: https://arxiv.org/abs/2608.19059
+  - label: Bib
+    bibtex: "@inproceedings{lee2026ltmem,\n  title={LT-Mem: Volatility-Aware Spatio-Temporal Memory for Lifelong Scene Understanding},\n  author={Lee, Yumin and Ju, Hyoseok and Kim, Giseop},\n  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n  year={2026}\n}"
+  figure:
+    href: assets/datasets/lt-mem-paper-overview.png
+    src: assets/datasets/lt-mem-paper-overview.png?v=20260820
+    alt: LT-Mem overview contrasting state-only memory with volatility-aware Tri-Memory across scene changes
+- id: mag4d-slam-dataset
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: iros
+  title: 'Mag4D-SLAM Dataset: A Repeated-Traversal Multi-Modal 4D Geomagnetic Dataset for Localization and Mapping'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://2026.ieee-iros.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>
+  - label: Date
+    content_html: Sep 27 - Oct 1, 2026
+  - label: Authors
+    content_html: <strong>Bibhutibhusan Nayak</strong>*, <strong>Hyoseok Ju</strong>*, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: accepted, to appear
+  actions:
+  - label: Project
+    href: https://mag4d-dataset.github.io/Mag4d-Dataset/
+  - label: Paper
+    href: https://arxiv.org/abs/2607.21986
+  figure:
+    href: assets/publications/mag4d-slam-dataset.png
+    src: assets/publications/mag4d-slam-dataset.png
+    alt: 'Figure for Mag4D-SLAM Dataset: A Repeated-Traversal Multi-Modal 4D Geomagnetic Dataset for Localization and Mapping'
+- id: streamocc
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2026
+  venue_key: eccv
+  title: Streaming Dense Voxel Representations for 3D Occupancy Prediction
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://eccv.ecva.net/Conferences/2026">European Conference on Computer Vision (ECCV)</a>
+  - label: Date
+    content_html: Sep 8-12, 2026
+  - label: Authors
+    content_html: <a href="https://moonseokha.github.io/">Seokha Moon</a>*, Janghyun Baek, Yujin Jeong, Daewon Chae, <strong>Giseop Kim</strong>, Jungbeom Lee, Jinkyu Kim†, Sunwook Choi†
+  - label: Collaboration
+    content_html: Korea University, NAVER LABS
+  - label: Note
+    content_html: accepted, to appear
+  actions:
+  - label: Project
+    href: https://moonseokha.github.io/StreamOcc/
+  - label: Paper
+    href: https://arxiv.org/abs/2503.22087
+  figure:
+    href: assets/publications/streamocc-eccv-2026.png?v=20260625-screenshot
+    src: assets/publications/streamocc-eccv-2026.png?v=20260625-screenshot
+    alt: Figure for Streaming Dense Voxel Representations for 3D Occupancy Prediction
+- id: publication-4
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: ifac
+  title: 'What Matters for Real-World Long-Horizon Robot Navigation?: An Experimental Study of Implicit Goals and Sparse Memory'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://www.ifac2026.org/fairDash.do">23rd IFAC World Congress</a>
+  - label: Date
+    content_html: Aug 23-28, 2026
+  - label: Authors
+    content_html: <strong>Bokeon Suh</strong>*, <strong>Hyoseok Ju</strong>, <strong>Giseop Kim</strong>†
+  actions:
+  - label: Paper
+    href: assets/publications/bsuh-long-horizon-navigation-ifac-2026.pdf
+  figure:
+    href: assets/publications/what-matters-long-horizon-robot-navigation.png
+    src: assets/publications/what-matters-long-horizon-robot-navigation.png
+    alt: 'Figure for What Matters for Real-World Long-Horizon Robot Navigation?: An Experimental Study of Implicit Goals and Sparse Memory'
+- id: vpr-distractor-condition-suppression
+  region: international
+  type: preprint
+  aprl: aprl
+  year: 2026
+  venue_key: arxiv
+  title: Are Visual Place Recognition Models Recognizing Places or Conditions? Distractor-Augmented Evaluation and Condition Suppression
+  metadata:
+  - label: Venue/Book
+    content_html: arXiv preprint
+  - label: Date
+    content_html: Aug 7, 2026
+  - label: Authors
+    content_html: <strong>Beomsu Kim</strong>*, <a href="https://minwoo0611.github.io/">Minwoo Jung</a>, <strong>Giseop Kim</strong>†
+  - label: Collaboration
+    content_html: SNU
+  actions:
+  - label: Paper
+    href: https://arxiv.org/abs/2608.06847
+  - label: Bib
+    bibtex: "@article{kim2026visual,\n  title={Are Visual Place Recognition Models Recognizing Places or Conditions? Distractor-Augmented Evaluation and Condition Suppression},\n  author={Kim, Beomsu and Jung, Minwoo and Kim, Giseop},\n  journal={arXiv preprint arXiv:2608.06847},\n  year={2026}\n}"
+  figure:
+    href: assets/publications/vpr-distractor-condition-suppression.png
+    src: assets/publications/vpr-distractor-condition-suppression.png
+    alt: Distractor-augmented evaluation reveals condition-biased visual place recognition
+- id: self-supervised-geometry-reasoning-lidar-slam
+  region: international
+  type: workshop
+  aprl: non-aprl
+  year: 2026
+  venue_key: rss-ws
+  title: Self-supervised Geometry Reasoning for LiDAR Simultaneous Localization and Mapping
+  metadata:
+  - label: Venue/Book
+    content_html: '<a href="https://rcba-workshop.github.io/rss2026/">From Perception to Action: Representation-Centric Robot Autonomy, RSS 2026 WS</a>'
+  - label: Date
+    content_html: Jul 13, 2026
+  - label: Authors
+    content_html: Jiwoo Kim*, Jinwoo Lee*, Woojae Shin, <strong>Giseop Kim</strong>, Hyondong Oh†
+  - label: Collaboration
+    content_html: KAIST
+  actions:
+  - label: Paper
+    href: https://arxiv.org/pdf/2606.30166
+  figure:
+    href: assets/publications/self-supervised-geometry-reasoning-lidar-slam.png
+    src: assets/publications/self-supervised-geometry-reasoning-lidar-slam.png
+    alt: Figure for Self-supervised Geometry Reasoning for LiDAR Simultaneous Localization and Mapping
+- id: publication-7
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2026
+  venue_key: rss
+  title: 'Learning Point Cloud Geometry as a Statistical Manifold: Theory and Practice'
+  metadata:
+  - label: Venue/Book
+    content_html: '<a href="https://roboticsconference.org/">Robotics: Science and Systems (RSS)</a>'
+  - label: Date
+    content_html: Jul 13-17, 2026
+  - label: Authors
+    content_html: Jinwoo Lee*, Jiwoo Kim*, WooJae Shin, <strong>Giseop Kim</strong>, Hyondong Oh†
+  - label: Collaboration
+    content_html: KAIST
+  actions:
+  - label: Paper
+    href: https://arxiv.org/abs/2605.10456
+  figure:
+    href: assets/publications/learning-point-cloud-geometry-statistical-manifold.png
+    src: assets/publications/learning-point-cloud-geometry-statistical-manifold.png
+    alt: 'Figure for Learning Point Cloud Geometry as a Statistical Manifold: Theory and Practice'
+- id: rubik-image-matcher-pareto
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: RUBIK 기반 18개 image matcher의 geometrical 강건성 및 속도-정확도 Pareto Frontier 분석
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>김현우</strong>*, <strong>김기섭</strong>†
+  - label: Note
+    content_html: non-archival
+  actions: []
+  figure:
+    href: assets/publications/rubik-image-matcher-robustness-pareto.png
+    src: assets/publications/rubik-image-matcher-robustness-pareto.png
+    alt: Figure for RUBIK 기반 18개 image matcher의 geometrical 강건성 및 속도-정확도 Pareto Frontier 분석
+- id: publication-9
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: 자율주행 VLA 모델 Alpamayo 1.5의 실내 환경 거동과 네비게이션 지시 응답
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>이아윤</strong>*, <strong>김기섭</strong>†
+  - label: Note
+    content_html: non-archival; Undergraduate Student Paper Award
+  actions: []
+  figure:
+    href: assets/publications/alpamayo-vla-indoor-navigation-instructions.png
+    src: assets/publications/alpamayo-vla-indoor-navigation-instructions.png
+    alt: Figure for 자율주행 VLA 모델 Alpamayo 1.5의 실내 환경 거동과 네비게이션 지시 응답
+- id: floorplan-point-language-grounded-navigation
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: 평면도 기반 포인트−언어 그라운디드 네비게이션
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>이아윤</strong>*, <strong>김기섭</strong>†
+  actions: []
+  supplementary_media:
+    images:
+    - assets/publications/floorplan-point-language-grounded-navigation-popup.jpg
+    title: 평면도 기반 포인트−언어 그라운디드 네비게이션
+  title_en: Floor Plan-Guided Point-to-Language Grounded Navigation
+  figure:
+    href: assets/publications/floorplan-point-language-grounded-navigation.png
+    src: assets/publications/floorplan-point-language-grounded-navigation.png
+    alt: Figure for 평면도 기반 포인트−언어 그라운디드 네비게이션
+- id: publication-11
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: '랑데부 브리핑: VLM 기반 의미 인식 멀티로봇 협력 탐사 기법'
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>이아윤</strong>*, <strong>윤하경</strong>*, <strong>박상혁</strong>*, <strong>이민규</strong>*, <strong>김기섭</strong>†
+  - label: Note
+    content_html: UGRP
+  actions: []
+  supplementary_media:
+    images:
+    - assets/publications/rendezvous-briefing-vlm-multirobot-exploration-popup.jpg
+    title: '랑데부 브리핑: VLM 기반 의미 인식 멀티로봇 협력 탐사 기법'
+  figure:
+    href: assets/publications/rendezvous-briefing-vlm-multirobot-exploration.png
+    src: assets/publications/rendezvous-briefing-vlm-multirobot-exploration.png
+    alt: 'Figure for 랑데부 브리핑: VLM 기반 의미 인식 멀티로봇 협력 탐사 기법'
+- id: mapless-zero-shot-autonomous-driving
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: 시각-언어 모델을 활용한 미학습 환경에서의 자율주행 방법에 관한 연구
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>김현동</strong>*, <strong>장재원</strong>, <strong>김지후</strong>, <strong>육성훈</strong>, 박준혁, <strong>김기섭</strong>†
+  - label: Note
+    content_html: non-archival; UGRP; <a href="assets/publications/mapless-zero-shot-autonomous-driving-undergraduate-student-paper-award.jpg">Undergraduate Student Paper Award</a>
+  actions: []
+  title_en: Mapless Zero-Shot Autonomous Driving with Vision-Language Models
+  figure:
+    href: assets/publications/vision-language-unseen-autonomous-driving.png
+    src: assets/publications/vision-language-unseen-autonomous-driving.png
+    alt: Figure for 시각-언어 모델을 활용한 미학습 환경에서의 자율주행 방법에 관한 연구
+- id: rubiks-cube-wheel-transformable-mobile-robot
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icros
+  title: 루빅스 큐브 메커니즘 기반 바퀴 전환형 이동 로봇
+  metadata:
+  - label: Venue/Book
+    content_html: Institute of Control, Robotics and Systems (ICROS)
+  - label: Date
+    content_html: Jul 1-4, 2026
+  - label: Authors
+    content_html: <strong>육성훈</strong>*, <strong>김지후</strong>, <strong>장재원</strong>, <strong>김현동</strong>, <strong>김기섭</strong>, 박준혁†
+  - label: Collaboration
+    content_html: <a href="https://sites.google.com/view/joonpark/home" rel="noopener" target="_blank">WEAR lab @ DGIST</a>
+  - label: Note
+    content_html: non-archival; UGRP; Undergraduate Student Paper Award
+  actions: []
+  title_en: A Wheel-Transformable Mobile Robot Based on a Rubik’s Cube Mechanism
+  figure:
+    href: assets/publications/rubiks-cube-wheel-transforming-mobile-robot.png
+    src: assets/publications/rubiks-cube-wheel-transforming-mobile-robot.png
+    alt: Figure for 루빅스 큐브 메커니즘 기반 바퀴 전환형 이동 로봇
+- id: publication-14
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2026
+  venue_key: icra-ws
+  title: 'Simulation for Planetary Robotic Perception: A Concise Survey of Capabilities and Gaps'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://icra2026-planetary-robotics.github.io/">1st Workshop on Perceptual Challenges for Planetary Exploration, ICRA 2026 WS</a>
+  - label: Date
+    content_html: Jun 5, 2026
+  - label: Authors
+    content_html: <strong>Hoyun Kim</strong>*, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: non-archival
+  actions:
+  - label: Paper
+    href: assets/publications/hkim-simulation-planetary-robotic-perception-survey-icra-2026-ws.pdf
+  figure:
+    href: assets/publications/simulation-planetary-robotic-perception-survey.png
+    src: assets/publications/simulation-planetary-robotic-perception-survey.png
+    alt: 'Figure for Simulation for Planetary Robotic Perception: A Concise Survey of Capabilities and Gaps'
+- id: publication-15
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2026
+  venue_key: icra-ws
+  title: 'Towards Lifelong Outdoor Magnetic-Aware SLAM: A Multi-Modal Day-and-Night Geomagnetic Dataset'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://xingxingzuo.github.io/MM-SpatialAI/">MM-SpatialAI Workshop, ICRA 2026 WS</a>
+  - label: Date
+    content_html: Jun 1, 2026
+  - label: Authors
+    content_html: <strong>Bibhutibhusan Nayak</strong>*, <strong>Hyoseok Ju</strong>*, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: non-archival
+  actions: []
+  figure:
+    href: assets/publications/lifelong-outdoor-magnetic-aware-slam.png
+    src: assets/publications/lifelong-outdoor-magnetic-aware-slam.png
+    alt: 'Figure for Towards Lifelong Outdoor Magnetic-Aware SLAM: A Multi-Modal Day-and-Night Geomagnetic Dataset'
+- id: publication-16
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2026
+  venue_key: icra-ws
+  title: Two-Stage Hint–Object Alignment for Text-to-PointCloud Localization
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://xingxingzuo.github.io/MM-SpatialAI/">MM-SpatialAI Workshop, ICRA 2026 WS</a>
+  - label: Date
+    content_html: Jun 1, 2026
+  - label: Authors
+    content_html: <strong>Doyeon Kim</strong>*, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: non-archival
+  actions:
+  - label: Paper
+    href: https://xingxingzuo.github.io/MM-SpatialAI/assets/papers/submission-15-two-stage-hint-object-alignment-for-text-to-pointcloud-localization.pdf
+  figure:
+    href: assets/publications/two-stage-hint-object-alignment-text-pointcloud.png
+    src: assets/publications/two-stage-hint-object-alignment-text-pointcloud.png
+    alt: Figure for Two-Stage Hint–Object Alignment for Text-to-PointCloud Localization
+- id: publication-17
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2026
+  venue_key: icra
+  title: Have We Mastered Scale in Deep Monocular Visual SLAM? The ScaleMaster Dataset and Benchmark
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://2026.ieee-icra.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: Jun 1-5, 2026
+  - label: Authors
+    content_html: <strong>Hyoseok Ju</strong>*, <strong>Bokeon Suh</strong>, <strong>Giseop Kim</strong>†
+  actions:
+  - label: Project
+    href: https://scalemaster-dataset.github.io/
+  - label: Paper
+    href: https://arxiv.org/abs/2602.18174
+  figure:
+    href: assets/publications/have-we-mastered-scale-scalemaster.png
+    src: assets/publications/have-we-mastered-scale-scalemaster.png
+    alt: Figure for Have We Mastered Scale in Deep Monocular Visual SLAM? The ScaleMaster Dataset and Benchmark
+- id: publication-18
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2026
+  venue_key: iclr
+  title: Inlier-Centric Post-Training Quantization for Object Detection Models
+  metadata:
+  - label: Venue/Book
+    content_html: International Conference on Learning Representations (ICLR)
+  - label: Date
+    content_html: Apr 23-25, 2026
+  - label: Authors
+    content_html: <a href="https://minshu-kim.github.io/">Minsu Kim</a>*, Dongyeun Lee, Jaemyung Yu, Jiwan Hur, <strong>Giseop Kim</strong>, Junmo Kim†
+  - label: Collaboration
+    content_html: KAIST
+  actions:
+  - label: Paper
+    href: https://arxiv.org/abs/2602.03472
+  figure:
+    href: assets/publications/inlier-centric-post-training-quantization.png
+    src: assets/publications/inlier-centric-post-training-quantization.png
+    alt: Figure for Inlier-Centric Post-Training Quantization for Object Detection Models
+- id: publication-19
+  region: international
+  type: preprint
+  aprl: aprl
+  year: 2026
+  venue_key: arxiv
+  title: 'MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos'
+  metadata:
+  - label: Venue/Book
+    content_html: arXiv preprint
+  - label: Date
+    content_html: Apr 13, 2026
+  - label: Authors
+    content_html: <strong>Hyoseok Ju</strong>*, <strong>Giseop Kim</strong>†
+  actions:
+  - label: Paper
+    href: https://arxiv.org/pdf/2604.11372
+  figure:
+    href: assets/publications/mr-scalemaster-collaborative-mapping.png
+    src: assets/publications/mr-scalemaster-collaborative-mapping.png
+    alt: 'Figure for MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos'
+- id: publication-20
+  region: domestic
+  type: journal
+  aprl: aprl
+  year: 2026
+  venue_key: domestic-conf
+  title: VLM 시대의 목표 객체 탐색을 위한 지식 융합 전략 서베이
+  metadata:
+  - label: Venue/Book
+    content_html: 한국자동차공학회 논문집
+  - label: Info
+    content_html: Vol. 34, No. 1, pp. 119-131; ISSN 1225-6382; DOI <a href="https://doi.org/10.7467/KSAE.2026.34.1.119">10.7467/KSAE.2026.34.1.119</a>
+  - label: Authors
+    content_html: <strong>서보건</strong>*, <strong>김지선</strong>, 손준우, 박명옥, <strong>김기섭</strong>†
+  - label: Collaboration
+    content_html: <a href="https://sonnet.ai/" rel="noopener" target="_blank">sonnet.ai</a>
+  actions:
+  - label: Paper
+    href: http://journal.ksae.org/_common/do.php?a=current&b=21&bidx=4298&aidx=47641
+  figure:
+    href: assets/publications/vlm-target-object-search-knowledge-fusion-survey.png
+    src: assets/publications/vlm-target-object-search-knowledge-fusion-survey.png
+    alt: Figure for VLM 시대의 목표 객체 탐색을 위한 지식 융합 전략 서베이
+- id: publication-21
+  region: international
+  type: book
+  aprl: aprl
+  year: 2026
+  venue_key: slam-handbook
+  title: 'Chapter 8: LiDAR SLAM'
+  metadata:
+  - label: Venue/Book
+    content_html: SLAM Handbook (From Localization and Mapping to Spatial Intelligence)
+  - label: Authors
+    content_html: Jens Behley, Maurice Fallon, Shibo Zhao, <strong>Giseop Kim</strong>, Ji Zhang, Fu Zhang, Ayoung Kim
+  actions:
+  - label: Book
+    href: https://github.com/SLAM-Handbook-contributors/slam-handbook-public-release
+  figure:
+    href: assets/publications/chapter-8-lidar-slam.png
+    src: assets/publications/chapter-8-lidar-slam.png
+    alt: 'Figure for Chapter 8: LiDAR SLAM'
+- id: publication-22
+  region: international
+  type: journal
+  aprl: non-aprl
+  year: 2025
+  venue_key: ra-l
+  title: 'LAMP: Implicit Language Map for Robot Navigation'
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Robotics and Automation Letters (RA-L)
+  - label: Info
+    content_html: Vol. 10, No. 12, pp. 12365-12372; ISSN 2377-3766; DOI <a href="https://doi.org/10.1109/LRA.2025.3619820">10.1109/LRA.2025.3619820</a>
+  - label: Authors
+    content_html: <a href="https://sibaek-lee.github.io/">Sibaek Lee</a>*, Hyeonwoo Yu, <strong>Giseop Kim</strong>, Sunwook Choi†
+  - label: Collaboration
+    content_html: SKKU, NAVER LABS
+  actions:
+  - label: Project
+    href: https://lab-of-ai-and-robotics.github.io/LAMP/
+  - label: Paper
+    href: https://arxiv.org/abs/2602.11862
+  figure:
+    href: assets/publications/lamp-implicit-language-map.png
+    src: assets/publications/lamp-implicit-language-map.png
+    alt: 'Figure for LAMP: Implicit Language Map for Robot Navigation'
+- id: publication-23
+  region: domestic
+  type: conference
+  aprl: aprl
+  year: 2025
+  venue_key: domestic-conf
+  title: 도심환경에서의 변화에 강인한 LiDAR 위치인식 기법
+  metadata:
+  - label: Venue/Book
+    content_html: 대한전자공학회 학술대회
+  - label: Date
+    content_html: Nov 27-29, 2025
+  - label: Authors
+    content_html: <strong>김기섭</strong>*†, 박명옥, 손준우
+  - label: Collaboration
+    content_html: <a href="https://sonnet.ai/" rel="noopener" target="_blank">sonnet.ai</a>
+  actions:
+  - label: Paper
+    href: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12551179
+  figure:
+    href: assets/publications/robust-lidar-localization-urban-changes.png
+    src: assets/publications/robust-lidar-localization-urban-changes.png
+    alt: Figure for 도심환경에서의 변화에 강인한 LiDAR 위치인식 기법
+- id: publication-24
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2025
+  venue_key: iros-ws
+  title: Towards Human-Like Instruction Navigation in Real-World
+  metadata:
+  - label: Venue/Book
+    content_html: Human-aware Embodied AI (HEAI), <a href="https://iros25.org/">IROS 2025 WS</a>
+  - label: Date
+    content_html: Oct 24, 2025
+  - label: Authors
+    content_html: <strong>Jiseon Kim</strong>*, <a href="https://robotics.ewha.ac.kr/#members">Daeun Song</a>, <strong>Bokeon Suh</strong>, <strong>Hyoseok Ju</strong>, <strong>Yumin Lee</strong>, Xuesu Xiao, and <strong>Giseop Kim</strong>†
+  - label: Collaboration
+    content_html: George Mason University
+  - label: Note
+    content_html: non-archival; <a href="https://www.dropbox.com/scl/fo/dz1m3bmpiiyb2ho8xku8x/ANYZ1dryKAzS2Lg_Z_Q5aQU?rlkey=5wt0uhmzp2s4zia7p1x79ansp&amp;e=2&amp;dl=0">Best Poster Award</a>
+  actions:
+  - label: Project
+    href: https://openreview.net/group?id=IEEE.org/IROS/2025/Workshop/HEAI#tab-accept-oral
+  - label: Paper
+    href: https://openreview.net/attachment?id=24CzNQY4Ms&name=pdf
+  figure:
+    href: assets/publications/human-like-instruction-navigation-real-world.png
+    src: assets/publications/human-like-instruction-navigation-real-world.png
+    alt: Figure for Towards Human-Like Instruction Navigation in Real-World
+- id: publication-25
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2025
+  venue_key: iros-ws
+  title: 'Where to Fuse in the VLM Era: A Survey on Integrating Knowledge into Object Goal Navigation'
+  metadata:
+  - label: Venue/Book
+    content_html: Human-aware Embodied AI (HEAI), <a href="https://iros25.org/">IROS 2025 WS</a>
+  - label: Date
+    content_html: Oct 24, 2025
+  - label: Authors
+    content_html: <strong>Bokeon Suh</strong>*, <strong>Jiseon Kim</strong>, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: non-archival
+  actions:
+  - label: Project
+    href: https://heai-iros25-workshop.github.io/
+  - label: Paper
+    href: https://openreview.net/attachment?id=RVrryGz8uS&name=pdf
+  figure:
+    href: assets/publications/where-to-fuse-vlm-object-goal-navigation.png
+    src: assets/publications/where-to-fuse-vlm-object-goal-navigation.png
+    alt: 'Figure for Where to Fuse in the VLM Era: A Survey on Integrating Knowledge into Object Goal Navigation'
+- id: publication-26
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2025
+  venue_key: iros-ws
+  title: 'Towards Scale-consistent Deep Monocular Visual SLAM in Indoor Environments: A Dataset and Benchmark'
+  metadata:
+  - label: Venue/Book
+    content_html: The 15th Workshop on Planning, Perception and Navigation for Intelligent Vehicles (PPNIV), <a href="https://iros25.org/">IROS 2025 WS</a>
+  - label: Date
+    content_html: Oct 20, 2025
+  - label: Authors
+    content_html: <strong>Hyoseok Ju</strong>*, <strong>Giseop Kim</strong>†
+  - label: Note
+    content_html: non-archival
+  actions:
+  - label: Project
+    href: https://iros25-ppniv.github.io/
+  figure:
+    href: assets/publications/scale-consistent-monocular-visual-slam-indoor.png
+    src: assets/publications/scale-consistent-monocular-visual-slam-indoor.png
+    alt: 'Figure for Towards Scale-consistent Deep Monocular Visual SLAM in Indoor Environments: A Dataset and Benchmark'
+- id: publication-27
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2025
+  venue_key: iccv
+  title: 2D Gaussian Splatting-based Sparse-view Transparent Object Depth Reconstruction via Physics Simulation for Scene Update
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE/CVF International Conference on Computer Vision (ICCV)
+  - label: Date
+    content_html: Oct 19-23, 2025
+  - label: Authors
+    content_html: <a href="https://jeongyun0609.github.io/">Jeongyun Kim</a>*, Seunghoon Jeong*, <strong>Giseop Kim</strong>, Myung-Hwan Jeon, Eunji Jun, Ayoung Kim†
+  - label: Collaboration
+    content_html: SNU
+  actions:
+  - label: Project
+    href: https://jeongyun0609.github.io/TRAN-D/
+  - label: Paper
+    href: https://arxiv.org/abs/2507.11069
+  figure:
+    href: assets/publications/2d-gaussian-splatting-transparent-object-depth.png
+    src: assets/publications/2d-gaussian-splatting-transparent-object-depth.png
+    alt: Figure for 2D Gaussian Splatting-based Sparse-view Transparent Object Depth Reconstruction via Physics Simulation for Scene Update
+- id: publication-28
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2025
+  venue_key: icra
+  title: Ephemerality meets LiDAR-based Lifelong Mapping
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://2025.ieee-icra.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 19-23, 2025
+  - label: Authors
+    content_html: Hyeonjae Gil*, <a href="https://dongjae0107.github.io/">Dongjae Lee</a>*, <strong>Giseop Kim</strong>, Ayoung Kim†
+  - label: Collaboration
+    content_html: SNU
+  actions:
+  - label: Code
+    href: https://github.com/dongjae0107/ELite
+  - label: Paper
+    href: https://arxiv.org/abs/2502.13452
+  figure:
+    href: assets/publications/ephemerality-meets-lidar-lifelong-mapping.png
+    src: assets/publications/ephemerality-meets-lidar-lifelong-mapping.png
+    alt: Figure for Ephemerality meets LiDAR-based Lifelong Mapping
+- id: bevrestore
+  region: international
+  type: journal
+  aprl: non-aprl
+  year: 2024
+  venue_key: ra-l
+  title: Addressing Diverging Training Costs Using BEVRestore for High-Resolution Bird's Eye View Map Construction
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Robotics and Automation Letters (RA-L)
+  - label: Info
+    content_html: Vol. 9, No. 11, pp. 10700-10707; DOI <a href="https://doi.org/10.1109/LRA.2024.3474477">10.1109/LRA.2024.3474477</a>
+  - label: Authors
+    content_html: <a href="https://minshu-kim.github.io/">Minsu Kim</a>*, <strong>Giseop Kim</strong>, Sunwook Choi†
+  - label: Collaboration
+    content_html: NAVER LABS
+  actions:
+  - label: Code
+    href: https://github.com/minshu-kim/BEVRestore
+  - label: Paper
+    href: https://arxiv.org/abs/2405.01016
+  figure:
+    href: assets/publications/bevrestore.png
+    src: assets/publications/bevrestore.png
+    alt: Figure for Addressing Diverging Training Costs Using BEVRestore for High-Resolution Bird's Eye View Map Construction
+- id: solid-lidar-place-recognition
+  region: international
+  type: journal
+  aprl: non-aprl
+  year: 2024
+  venue_key: ra-l
+  title: 'Narrowing Your FOV with SOLiD: Spatially Organized and Lightweight Global Descriptor for FOV-Constrained LiDAR Place Recognition'
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Robotics and Automation Letters (RA-L)
+  - label: Info
+    content_html: Vol. 9, No. 11, pp. 9645-9652; DOI <a href="https://doi.org/10.1109/LRA.2024.3440089">10.1109/LRA.2024.3440089</a>
+  - label: Authors
+    content_html: <a href="https://hogyun2.github.io/">Hogyun Kim</a>*, Jiwon Choi, Taehu Sim, <strong>Giseop Kim</strong>, Younggun Cho†
+  - label: Collaboration
+    content_html: Inha Univ
+  actions:
+  - label: Project
+    href: https://sites.google.com/view/lidar-solid
+  - label: Paper
+    href: https://arxiv.org/abs/2408.07330
+  figure:
+    href: assets/publications/solid-lidar-place-recognition.png
+    src: assets/publications/solid-lidar-place-recognition.png
+    alt: 'Figure for Narrowing Your FOV with SOLiD: Spatially Organized and Lightweight Global Descriptor for FOV-Constrained LiDAR Place Recognition'
+- id: broadbev
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2024
+  venue_key: icra
+  title: 'BroadBEV: Collaborative LiDAR-Camera Fusion for Broad-Sighted Bird''s Eye View Map Construction'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://2024.ieee-icra.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 13-17, 2024
+  - label: Authors
+    content_html: <a href="https://minshu-kim.github.io/">Minsu Kim</a>*, <strong>Giseop Kim</strong>, Kyung-Hun Jin, Sunwook Choi†
+  - label: Collaboration
+    content_html: NAVER LABS
+  actions:
+  - label: Code
+    href: https://github.com/minshu-kim/BroadBEV
+  - label: Paper
+    href: https://arxiv.org/abs/2309.11119
+  figure:
+    href: assets/publications/broadbev.png
+    src: assets/publications/broadbev.png
+    alt: 'Figure for BroadBEV: Collaborative LiDAR-Camera Fusion for Broad-Sighted Bird''s Eye View Map Construction'
+- id: helipr-dataset
+  region: international
+  type: journal
+  aprl: non-aprl
+  year: 2023
+  venue_key: ijrr
+  title: 'HeLiPR: Heterogeneous LiDAR Dataset for Inter-LiDAR Place Recognition under Spatiotemporal Variations'
+  metadata:
+  - label: Venue/Book
+    content_html: The International Journal of Robotics Research (IJRR)
+  - label: Info
+    content_html: Vol. 43, No. 12, pp. 1867-1883; DOI <a href="https://doi.org/10.1177/02783649241242136">10.1177/02783649241242136</a>
+  - label: Authors
+    content_html: <a href="https://minwoo0611.github.io/">Minwoo Jung</a>*, Wooseong Yang, Dongjae Lee, Hyeonjae Gil, <strong>Giseop Kim</strong>, Ayoung Kim†
+  - label: Collaboration
+    content_html: SNU
+  actions:
+  - label: Project
+    href: https://sites.google.com/view/heliprdataset
+  - label: Paper
+    href: https://arxiv.org/abs/2309.14590
+  figure:
+    href: assets/publications/helipr-dataset.png
+    src: assets/publications/helipr-dataset.png
+    alt: 'Figure for HeLiPR: Heterogeneous LiDAR Dataset for Inter-LiDAR Place Recognition under Spatiotemporal Variations'
+- id: orora-radar-odometry
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2023
+  venue_key: icra
+  title: 'ORORA: Outlier-Robust Radar Odometry'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/ICRA%202023/www.icra2023.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 29-Jun 2, 2023
+  - label: Authors
+    content_html: <a href="https://limhyungtae.github.io/">Hyungtae Lim</a>*, Kawon Han, Gunhee Shin, <strong>Giseop Kim</strong>, Songcheol Hong, Hyun Myung†
+  - label: Collaboration
+    content_html: KAIST
+  actions:
+  - label: Code
+    href: https://github.com/url-kaist/outlier-robust-radar-odometry
+  - label: Paper
+    href: https://arxiv.org/abs/2303.01876
+  figure:
+    href: assets/publications/orora-radar-odometry.png
+    src: assets/publications/orora-radar-odometry.png
+    alt: 'Figure for ORORA: Outlier-Robust Radar Odometry'
+- id: sthereo-dataset
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2022
+  venue_key: iros
+  title: 'STheReO: Stereo Thermal Dataset for Research in Odometry and Mapping'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://iros2022.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>
+  - label: Date
+    content_html: Oct 23-27, 2022
+  - label: Authors
+    content_html: Seungsang Yun*, Minwoo Jung, Jeongyun Kim, Sangwoo Jung, Younghun Cho, Myung-Hwan Jeon, <strong>Giseop Kim</strong>, Ayoung Kim†
+  actions:
+  - label: Project
+    href: https://sites.google.com/view/rpmsthereo
+  - label: Paper
+    href: https://rpm.snu.ac.kr/publications/ssyun-2022-iros.pdf
+  figure:
+    href: assets/publications/sthereo-dataset.png
+    src: assets/publications/sthereo-dataset.png
+    alt: 'Figure for STheReO: Stereo Thermal Dataset for Research in Odometry and Mapping'
+- id: lt-mapper-lifelong-mapping
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2022
+  venue_key: icra
+  title: 'LT-mapper: A Modular Framework for LiDAR-based Lifelong Mapping'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/2022/icra2022.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 23-27, 2022
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2021-ltmapper.pdf
+  figure:
+    href: assets/publications/lt-mapper-lifelong-mapping.png
+    src: assets/publications/lt-mapper-lifelong-mapping.png
+    alt: 'Figure for LT-mapper: A Modular Framework for LiDAR-based Lifelong Mapping'
+- id: scan-context-plus-plus
+  region: international
+  type: journal
+  aprl: aprl
+  year: 2022
+  venue_key: t-ro
+  title: 'Scan Context++: Structural Place Recognition Robust to Rotation and Lateral Variations in Urban Environments'
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Transactions on Robotics (T-RO)
+  - label: Info
+    content_html: Vol. 38, No. 3, pp. 1856-1874; DOI <a href="https://doi.org/10.1109/TRO.2021.3116424">10.1109/TRO.2021.3116424</a>
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Sunwook Choi, Ayoung Kim†
+  - label: Collaboration
+    content_html: NAVER LABS
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2021-tro.pdf
+  figure:
+    href: assets/publications/scan-context-plus-plus.png
+    src: assets/publications/scan-context-plus-plus.png
+    alt: 'Figure for Scan Context++: Structural Place Recognition Robust to Rotation and Lateral Variations in Urban Environments'
+- id: openstreetmap-lidar-global-localization
+  region: international
+  type: journal
+  aprl: non-aprl
+  year: 2022
+  venue_key: ra-l
+  title: OpenStreetMap-based LiDAR Global Localization in Urban Environment without a Prior LiDAR Map
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Robotics and Automation Letters (RA-L)
+  - label: Info
+    content_html: Vol. 7, No. 2, pp. 4999-5006; DOI <a href="https://doi.org/10.1109/LRA.2022.3152476">10.1109/LRA.2022.3152476</a>
+  - label: Authors
+    content_html: <a href="https://dudgnsrj.github.io/">Younghun Cho</a>*, <strong>Giseop Kim</strong>, Sangmin Lee, Jee-Hwan Ryu†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/ycho-2022-ral.pdf
+  figure:
+    href: assets/publications/openstreetmap-lidar-global-localization.png
+    src: assets/publications/openstreetmap-lidar-global-localization.png
+    alt: Figure for OpenStreetMap-based LiDAR Global Localization in Urban Environment without a Prior LiDAR Map
+- id: remove-then-revert
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2020
+  venue_key: iros
+  title: 'Remove, then Revert: Static Point Cloud Map Construction using Multiresolution Range Images'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://ewh.ieee.org/soc/ras/conf/financiallycosponsored/IROS/IROS2020/www.iros2020.org/index.html">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>
+  - label: Date
+    content_html: Oct 24, 2020-Jan 24, 2021 (virtual)
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2020-iros.pdf
+  figure:
+    href: assets/publications/remove-then-revert.png
+    src: assets/publications/remove-then-revert.png
+    alt: 'Figure for Remove, then Revert: Static Point Cloud Map Construction using Multiresolution Range Images'
+- id: mulran-dataset
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2020
+  venue_key: icra
+  title: 'MulRan: Multimodal Range Dataset for Urban Place Recognition'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/ICRA2020/www.icra2020.org/index.html">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 31-Aug 31, 2020 (virtual)
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Yeong Sang Park, Younghun Cho, Jinyong Jeong, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2020-icra.pdf
+  figure:
+    href: assets/publications/mulran-dataset.png
+    src: assets/publications/mulran-dataset.png
+    alt: 'Figure for MulRan: Multimodal Range Dataset for Urban Place Recognition'
+- id: unsupervised-geometry-aware-deep-lidar-odometry
+  region: international
+  type: conference
+  aprl: non-aprl
+  year: 2020
+  venue_key: icra
+  title: Unsupervised Geometry-aware Deep LiDAR Odometry
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://ewh.ieee.org/soc/ras/conf/fullysponsored/icra/ICRA2020/www.icra2020.org/index.html">IEEE International Conference on Robotics and Automation (ICRA)</a>
+  - label: Date
+    content_html: May 31-Aug 31, 2020 (virtual)
+  - label: Authors
+    content_html: <a href="https://sparolab.github.io/people/Faculty/Younggun-Cho">Younggun Cho</a>*, <strong>Giseop Kim</strong>, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/ycho-2020-icra.pdf
+  figure:
+    href: assets/publications/unsupervised-geometry-aware-deep-lidar-odometry.png
+    src: assets/publications/unsupervised-geometry-aware-deep-lidar-odometry.png
+    alt: Figure for Unsupervised Geometry-aware Deep LiDAR Odometry
+- id: cnn-opti-acoustic-feature-matching
+  region: international
+  type: workshop
+  aprl: non-aprl
+  year: 2019
+  venue_key: icra-ws
+  title: CNN-based Approach for Opti-Acoustic Reciprocal Feature Matching
+  metadata:
+  - label: Venue/Book
+    content_html: ICRA Workshop
+  - label: Date
+    content_html: May 24, 2019
+  - label: Authors
+    content_html: <a href="https://hyesu-jang.github.io/">Hyesu Jang</a>*, <strong>Giseop Kim</strong>, Yeongjun Lee, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/hsjang-2019-icra-ws.pdf
+- id: one-day-learning-one-year-localization
+  region: international
+  type: journal
+  aprl: aprl
+  year: 2019
+  venue_key: ra-l
+  title: '1-Day Learning, 1-Year Localization: Long-term LiDAR Localization using Scan Context Image'
+  metadata:
+  - label: Venue/Book
+    content_html: IEEE Robotics and Automation Letters (RA-L)
+  - label: Info
+    content_html: Vol. 4, No. 2, pp. 1948-1955; DOI <a href="https://doi.org/10.1109/LRA.2019.2897340">10.1109/LRA.2019.2897340</a>
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Byungjae Park, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2019-ral.pdf
+  figure:
+    href: assets/publications/one-day-learning-one-year-localization.png
+    src: assets/publications/one-day-learning-one-year-localization.png
+    alt: 'Figure for 1-Day Learning, 1-Year Localization: Long-term LiDAR Localization using Scan Context Image'
+- id: scan-context
+  region: international
+  type: conference
+  aprl: aprl
+  year: 2018
+  venue_key: iros
+  title: 'Scan Context: Egocentric Spatial Descriptor for Place Recognition within 3D Point Cloud Map'
+  metadata:
+  - label: Venue/Book
+    content_html: <a href="https://www.iros2018.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</a>
+  - label: Date
+    content_html: Oct 1-5, 2018
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2018-iros.pdf
+  supplementary_media:
+    images:
+    - assets/publications/scan-context-popup-1.jpg
+    - assets/publications/scan-context-popup-2.jpg
+    title: 'Scan Context: Egocentric Spatial Descriptor for Place Recognition within 3D Point Cloud Map'
+  figure:
+    href: assets/publications/scan-context.png
+    src: assets/publications/scan-context.png
+    alt: 'Figure for Scan Context: Egocentric Spatial Descriptor for Place Recognition within 3D Point Cloud Map'
+- id: learning-scan-context
+  region: international
+  type: workshop
+  aprl: aprl
+  year: 2018
+  venue_key: icra-ws
+  title: Learning Scan Context toward Long-term LiDAR Localization
+  metadata:
+  - label: Venue/Book
+    content_html: ICRA Workshop
+  - label: Date
+    content_html: May 25, 2018
+  - label: Authors
+    content_html: <strong>Giseop Kim</strong>*, Byungjae Park, Ayoung Kim†
+  actions:
+  - label: Paper
+    href: https://gisbi-kim.github.io/uploads/gkim-2018-icraws.pdf

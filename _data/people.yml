@@ -1,0 +1,112 @@
+members:
+- id: team-member-bokeon-suh
+  name: Bokeon Suh
+  role: Integrated MS/PhD student (2025F-)
+  photo:
+    src: assets/team/bokeon-suh.jpg?v=20260622
+    alt: Bokeon Suh
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Bokeon%20Suh%7C%EC%84%9C%EB%B3%B4%EA%B1%B4
+  email: bksuh@dgist.ac.kr
+  scholar_url: https://scholar.google.com/citations?user=ZawXymQAAAAJ&hl=en
+  homepage_url: https://bksuh.github.io/
+  kind: member
+- id: team-member-jiseon-kim
+  name: Jiseon Kim
+  role: MS student (2025F-)
+  photo:
+    src: assets/team/jiseon-kim.jpg?v=20260622
+    alt: Jiseon Kim
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Jiseon%20Kim%7C%EA%B9%80%EC%A7%80%EC%84%A0
+  email: jiseon.kim@dgist.ac.kr
+  scholar_url: https://scholar.google.com/citations?user=KK3SC5sAAAAJ&hl=en
+  homepage_url: ''
+  kind: member
+- id: team-member-yumin-lee
+  name: Yumin Lee
+  role: MS student (2025F-)
+  photo:
+    src: assets/team/yumin-lee.jpg?v=20260622
+    alt: Yumin Lee
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Yumin%20Lee
+  email: yumin.lee@dgist.ac.kr
+  scholar_url: ''
+  homepage_url: ''
+  kind: member
+- id: team-member-hyoseok-ju
+  name: Hyoseok Ju
+  role: Integrated MS/PhD student (2025F-)
+  photo:
+    src: assets/team/hyoseok-ju.jpg?v=20260622
+    alt: Hyoseok Ju
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Hyoseok%20Ju
+  email: hyoseokju@dgist.ac.kr
+  scholar_url: https://scholar.google.com/citations?hl=en&user=aYXHS9oAAAAJ&view_op=list_works
+  homepage_url: ''
+  kind: member
+- id: team-member-bibhutibhusan-nayak
+  name: Nayak Bibhutibhusan
+  role: Postdoc (2025F-)
+  photo:
+    src: assets/team/nayak-bibhutibhusan.jpg?v=20260622
+    alt: Nayak Bibhutibhusan
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Bibhutibhusan%20Nayak
+  email: bibhutibhusan_223@dgist.ac.kr
+  scholar_url: https://scholar.google.com/citations?user=8MGOSscAAAAJ&hl=en
+  homepage_url: https://bibhu223.github.io
+  kind: member
+- id: team-member-doyeon-kim
+  name: Doyeon Kim
+  role: PhD student (2026S-)
+  photo:
+    src: assets/team/doyeon-kim.jpg?v=20260622
+    alt: Doyeon Kim
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Doyeon%20Kim
+  email: doyeon.kim@dgist.ac.kr
+  scholar_url: https://scholar.google.com/citations?user=W9zGnr0AAAAJ&hl=en
+  homepage_url: ''
+  kind: member
+- id: team-member-beomsu-kim
+  name: Beomsu Kim
+  role: MS student (2026S-)
+  photo:
+    src: assets/team/beomsu-kim.jpg?v=20260622
+    alt: Beomsu Kim
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Beomsu%20Kim
+  email: beomsu.kim@dgist.ac.kr
+  scholar_url: ''
+  homepage_url: ''
+  kind: member
+- id: team-member-hoyun-kim
+  name: Hoyun Kim
+  role: MS student (2026S-)
+  photo:
+    src: assets/team/hoyun-kim.jpg?v=20260622
+    alt: Hoyun Kim
+  publications_url: /publications.html?region=all&type=all&aprl=all&year=all&venue=all&q=Hoyun%20Kim
+  email: hoyunkim@dgist.ac.kr
+  scholar_url: ''
+  homepage_url: ''
+  kind: member
+- id: member-9
+  name: Incoming Student
+  role: MS student (2027S-)
+  photo:
+    src: assets/team/incoming-student.svg
+    alt: Incoming student
+  publications_url: ''
+  email: ''
+  scholar_url: ''
+  homepage_url: ''
+  kind: incoming
+collaborators_html:
+- Prof. <a href="https://rpm.snu.ac.kr/" rel="noopener noreferrer" target="_blank">Ayoung Kim</a> of SNU, South Korea
+- Prof. <a href="https://robotics.ewha.ac.kr/#members" rel="noopener noreferrer" target="_blank">Daeun Song</a> of Ewha Womans University, South Korea
+- Prof. <a href="https://fair.kaist.ac.kr/people/instructor/" rel="noopener noreferrer" target="_blank">Hyondong Oh</a> of KAIST, South Korea
+- Dr. <a href="https://limhyungtae.github.io/" rel="noopener noreferrer" target="_blank">Hyungtae Lim</a> of Zoox, USA
+- Prof. <a href="https://sites.google.com/view/hyeonwooyu/people/pi" rel="noopener noreferrer" target="_blank">Hyeonwoo Yu</a> of SKKU, South Korea
+- Prof. <a href="https://visionai.korea.ac.kr/team/" rel="noopener noreferrer" target="_blank">Jinkyu Kim</a> of Korea University, South Korea
+- Prof. <a href="https://raivlab.github.io" rel="noopener noreferrer" target="_blank">Myung-Hwan Jeon</a> of KIT, South Korea
+- Dr. <a href="https://scholar.google.com/citations?user=R3W7dTsAAAAJ&amp;hl=ko" rel="noopener noreferrer" target="_blank">Sunwook Choi</a> of NAVER LABS, South Korea
+- Prof. <a href="https://robotixx.cs.gmu.edu/xx-men.html" rel="noopener noreferrer" target="_blank">Xuesu Xiao</a> of George Mason University, USA
+- Prof. <a href="https://sparolab.github.io/people/Faculty/Younggun-Cho" rel="noopener noreferrer" target="_blank">Younggun Cho</a> of Inha University, South Korea
+- Dr. <a href="https://dudgnsrj.github.io/" rel="noopener noreferrer" target="_blank">Younghun Cho</a> of KIMM, South Korea

@@ -1,0 +1,142 @@
+- id: gallery-1
+  date: 2026.08.03-05
+  description: APRL attended KCCV 2026, which was held in Busan, South Korea.
+  images:
+  - href: assets/gallery/gallery-2026-08-03-05-kccv2026.jpg
+    src: assets/gallery/thumbs/gallery-2026-08-03-05-kccv2026.jpg
+    alt: APRL gallery photo from KCCV 2026
+- id: gallery-2
+  date: 2026.07.01-04
+  description: APRL attended ICROS 2026, which was held in Daegu, South Korea.
+  images:
+  - href: assets/gallery/gallery-2026-07-01-icros2026.jpg
+    src: assets/gallery/thumbs/gallery-2026-07-01-icros2026.jpg
+    alt: APRL gallery photo from ICROS 2026
+- id: gallery-3
+  date: 2026.06.01-05
+  description: We attended ICRA 2026, which was held in Vienna, Austria.
+  images:
+  - href: assets/gallery/gallery-2026-06-01-05-full.jpg
+    src: assets/gallery/thumbs/gallery-2026-06-01-05-full.jpg
+    alt: APRL gallery photo from 2026.06.01-05
+- id: gallery-4
+  date: 2026.04.24-26
+  description: APRL was selected as DGIST's representative lab for the 2026 Korea Science Festival and operated a booth introducing our research to the public.
+  images:
+  - href: assets/gallery/gallery-2026-04-24-26-1.jpg
+    src: assets/gallery/thumbs/gallery-2026-04-24-26-1.jpg
+    alt: APRL gallery photo from 2026.04.24-26
+  - href: assets/gallery/gallery-2026-04-24-26-2.jpg
+    src: assets/gallery/thumbs/gallery-2026-04-24-26-2.jpg
+    alt: APRL gallery photo from 2026.04.24-26
+  - href: assets/gallery/gallery-2026-04-24-26-3.jpg
+    src: assets/gallery/thumbs/gallery-2026-04-24-26-3.jpg
+    alt: APRL gallery photo from 2026.04.24-26
+- id: gallery-5
+  date: 2026.03.31
+  description: APRL had a strawberry party. APRL members gathered to enjoy strawberries together, welcoming spring and recharging before the busy season ahead.
+  images:
+  - href: assets/gallery/gallery-2026-03-31.jpg
+    src: assets/gallery/thumbs/gallery-2026-03-31.jpg
+    alt: APRL gallery photo from 2026.03.31
+  - href: assets/gallery/gallery-2026-03-31-2.jpg
+    src: assets/gallery/thumbs/gallery-2026-03-31-2.jpg
+    alt: APRL gallery photo from 2026.03.31
+- id: gallery-6
+  date: 2026.03.06
+  description: APRL's 2nd Research Day was held. Seven graduate students, one postdoctoral researcher, and three undergraduate interns shared their ongoing research.
+  images:
+  - href: assets/gallery/gallery-2026-03-06.jpg
+    src: assets/gallery/thumbs/gallery-2026-03-06.jpg
+    alt: APRL gallery photo from 2026.03.06
+- id: gallery-7
+  date: 2026.02.06
+  description: APRL members attended KRoC 2026. Giseop received the Early-career Researcher Award and presented "Memory-Augmented Spatial Intelligence for Autonomous Robot Navigation."
+  images:
+  - href: assets/gallery/gallery-2026-02-06-1.jpg
+    src: assets/gallery/thumbs/gallery-2026-02-06-1.jpg
+    alt: APRL gallery photo from 2026.02.06
+  - href: assets/gallery/gallery-2026-02-06-2.jpg
+    src: assets/gallery/thumbs/gallery-2026-02-06-2.jpg
+    alt: APRL gallery photo from 2026.02.06
+  - href: assets/gallery/gallery-2026-02-06-3.jpg
+    src: assets/gallery/thumbs/gallery-2026-02-06-3.jpg
+    alt: APRL gallery photo from 2026.02.06
+  - href: assets/gallery/gallery-2026-02-06-4.jpg
+    src: assets/gallery/thumbs/gallery-2026-02-06-4.jpg
+    alt: APRL gallery photo from 2026.02.06
+- id: gallery-8
+  date: 2025.10.31
+  description: Nayak provided the lab members with a tutorial and hands-on experience on magnetic sensors, followed by discussion on mobile robot applications.
+  images:
+  - href: assets/gallery/gallery-2025-10-31.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-31.jpg
+    alt: APRL gallery photo from 2025.10.31
+- id: gallery-9
+  date: 2025.10.24
+  description: Jiseon received the Best Poster Award at the HEAI Workshop of IROS 2025. Congratulations.
+  images:
+  - href: assets/gallery/gallery-2025-10-24-1.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-24-1.jpg
+    alt: APRL gallery photo from 2025.10.24
+  - href: assets/gallery/gallery-2025-10-24-2.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-24-2.jpg
+    alt: APRL gallery photo from 2025.10.24
+- id: gallery-10
+  date: 2025.10.19-25
+  description: We attended IROS 2025, which was held in Hangzhou, China.
+  images:
+  - href: assets/gallery/gallery-2025-10-19-25.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-19-25.jpg
+    alt: APRL gallery photo from 2025.10.19-25
+- id: gallery-11
+  date: 2025.10.02
+  description: We attended CoRL 2025 and Humanoids 2025, which were held at COEX in Seoul, South Korea.
+  images:
+  - href: assets/gallery/gallery-2025-10-02-1.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-02-1.jpg
+    alt: APRL gallery photo from 2025.10.02
+  - href: assets/gallery/gallery-2025-10-02-2.jpg
+    src: assets/gallery/thumbs/gallery-2025-10-02-2.jpg
+    alt: APRL gallery photo from 2025.10.02
+- id: gallery-12
+  date: 2025.09.03
+  description: APRL's summer days.
+  images:
+  - href: assets/gallery/gallery-2025-09-03-1.jpg
+    src: assets/gallery/thumbs/gallery-2025-09-03-1.jpg
+    alt: APRL gallery photo from 2025.09.03
+  - href: assets/gallery/gallery-2025-09-03-2.jpg
+    src: assets/gallery/thumbs/gallery-2025-09-03-2.jpg
+    alt: APRL gallery photo from 2025.09.03
+- id: gallery-13
+  date: 2025.08.14
+  description: APRL's very first Research Day was held. The 2025 fall incoming students introduced their research to one another.
+  images:
+  - href: assets/gallery/gallery-2025-08-14.jpg
+    src: assets/gallery/thumbs/gallery-2025-08-14.jpg
+    alt: APRL gallery photo from 2025.08.14
+- id: gallery-14
+  date: 2025.05.01
+  description: Our lab was featured in the Young Robot Engineer interview series by iRobotNews.
+  images:
+  - href: assets/gallery/gallery-2025-05-01.jpg
+    src: assets/gallery/thumbs/gallery-2025-05-01.jpg
+    alt: APRL gallery photo from 2025.05.01
+- id: gallery-15
+  date: 2025.04.05
+  description: Our lab participated in the DGIST RME OpenLab, introducing our research areas and showcasing a LiDAR SLAM demonstration.
+  images:
+  - href: assets/gallery/gallery-2025-04-05.jpg
+    src: assets/gallery/thumbs/gallery-2025-04-05.jpg
+    alt: APRL gallery photo from 2025.04.05
+- id: gallery-16
+  date: 2025.03.17
+  description: Our lab floor after renovation.
+  images:
+  - href: assets/gallery/gallery-2025-03-17-1.jpg
+    src: assets/gallery/thumbs/gallery-2025-03-17-1.jpg
+    alt: APRL gallery photo from 2025.03.17
+  - href: assets/gallery/gallery-2025-03-17-2.jpg
+    src: assets/gallery/thumbs/gallery-2025-03-17-2.jpg
+    alt: APRL gallery photo from 2025.03.17

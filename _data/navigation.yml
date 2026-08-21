@@ -1,0 +1,30 @@
+primary:
+  - label: Home
+    href: /
+  - label: Team
+    href: /team.html
+  - label: Research
+    href: /research.html
+  - label: Publications
+    href: /publications.html
+  - label: Projects
+    href: /projects.html
+  - label: News
+    href: /news.html
+  - label: Gallery
+    href: /gallery.html
+  - label: Datasets
+    href: /datasets.html
+  - label: Teaching
+    href: /teaching.html
+  - label: Contact
+    href: /contact.html
+  - label: Joining APRL
+    href: /joining-aprl.html
+footer:
+  - label: Research
+    href: /research.html
+  - label: Publications
+    href: /publications.html
+  - label: Contact
+    href: /contact.html

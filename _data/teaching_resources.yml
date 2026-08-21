@@ -1,0 +1,14 @@
+updated: 2026-08-16
+items:
+  - category: Guide
+    title: Robotics Venue Guides
+    description: Guides to major robotics conferences, journals, and magazines, explaining each venue's identity, research culture, and publication fit.
+    website: https://gisbi-kim.github.io/robotics-venue-guides-kr/
+  - category: Explorer
+    title: Conference Explorers
+    description: Interactive conference-paper explorers for browsing robotics and AI research landscapes.
+    website: https://gisbi-kim.github.io/conference-explorers/
+  - category: Atlas
+    title: RoboPaper Atlas
+    description: A robotics-paper atlas for exploring papers, topics, and research connections.
+    website: https://gisbi-kim.github.io/robopaper-atlas/

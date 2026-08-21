@@ -1,0 +1,1 @@
+{% assign item = include.item %}<li data-news-category="{{ item.category }}"{% if item.home_reveal %} data-home-reveal="true"{% endif %}><time datetime="{{ item.date }}">{{ item.date_label }}</time><p><span class="news-tag tag-{{ item.category }}">{{ item.category | capitalize }}</span>{{ item.body_html }}</p></li>

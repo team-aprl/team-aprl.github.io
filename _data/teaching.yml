@@ -1,0 +1,107 @@
+- id: course-1
+  code: RT616
+  main: true
+  title: Vision/Image Processing
+  subtitle: (비전/영상처리)
+  year: '2026'
+  semester: Fall
+  metadata:
+  - label: Year
+    content_html: '2026'
+  - label: Semester
+    content_html: Fall
+  actions:
+  - label: Material
+    href: https://github.com/team-aprl/lecture-RT616-public
+- id: course-2
+  code: TM563(2)
+  main: false
+  title: AI-based Autonomous Robot Systems
+  subtitle: (인공지능 기반 자율로봇 시스템)
+  year: '2026'
+  semester: Fall
+  metadata:
+  - label: Year
+    content_html: '2026'
+  - label: Semester
+    content_html: Fall
+  - label: Class
+    content_html: (A), (M)
+  actions: []
+- id: course-3
+  code: RT604
+  main: true
+  title: Advancded mobile system
+  subtitle: (고등 모빌리티공학)
+  year: '2026'
+  semester: Spring
+  metadata:
+  - label: Year
+    content_html: '2026'
+  - label: Semester
+    content_html: Spring
+  - label: TA
+    content_html: Abdalla Hisham
+  actions:
+  - label: Material
+    href: https://github.com/team-aprl/lecture-RT604-public
+- id: course-4
+  code: MECH301
+  main: false
+  title: Robots for Human
+  subtitle: (인간과 공학(공))
+  year: '2026'
+  semester: Spring
+  metadata:
+  - label: Year
+    content_html: '2026'
+  - label: Semester
+    content_html: Spring
+  actions: []
+- id: course-5
+  code: MECH307
+  main: true
+  title: Introduction to Artificial Intelligence
+  subtitle: (인공지능개론)
+  year: '2025'
+  semester: Fall
+  metadata:
+  - label: Year
+    content_html: '2025'
+  - label: Semester
+    content_html: Fall
+  - label: TA
+    content_html: <a href="https://bksuh.github.io/">Bokeon Suh</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=KK3SC5sAAAAJ">Jiseon Kim</a>
+  actions:
+  - label: Material
+    href: https://github.com/team-aprl/mech307-introduction-to-ai/tree/main
+- id: course-6
+  code: AT603
+  main: false
+  title: Introduction to Mobility Engineering
+  subtitle: (모빌리티공학)
+  year: '2025'
+  semester: Fall
+  metadata:
+  - label: Year
+    content_html: '2025'
+  - label: Semester
+    content_html: Fall
+  actions: []
+- id: course-7
+  code: BE203
+  main: false
+  title: Creative mechanical design
+  subtitle: (창의기계설계)
+  year: '2025'
+  semester: Spring
+  metadata:
+  - label: Year
+    content_html: '2025'
+  - label: Semester
+    content_html: Spring
+  - label: TA
+    content_html: Choongil Ahn, Jiwung Kwon
+  actions:
+  - label: Material
+    href: https://www.dropbox.com/scl/fo/bk4o548e54624uxr2zdpb/ADoHQr3MP1EkBJ49cWd7pbI?rlkey=w4l9zrw0pzbrz953d483hvd8b&dl=0

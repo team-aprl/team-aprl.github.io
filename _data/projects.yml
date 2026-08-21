@@ -1,0 +1,203 @@
+- id: project-1
+  status: Current
+  roles:
+  - co
+  title: Basic Research Laboratory (Exploratory Type)
+  metadata:
+  - label: Role
+    content_html: Co-PI (1공)
+    content_ko: 참여 (1공)
+  - label: Period
+    content_html: 2026.07 - 2029.06
+  - label: Funding Source
+    content_html: Ministry of Science and ICT
+    content_ko: 과학기술정보통신부
+  - label: Program
+    content_html: Basic Research Program, Basic Research Laboratory (Exploratory Type) 2026
+    content_ko: 기초연구사업, 기초연구실(개척형) 2026
+  - label: Title
+    content_html: Fundamental Study on Morphogenetic Cooperative Mobility Intelligence based on Physical Agentic AI
+    content_ko: 물리 에이전트 AI 기반 형태발생적 모빌리티 협력 지능 기초연구
+  figure:
+    href: assets/funded-projects/basic-research-laboratory-exploratory.png
+    src: assets/funded-projects/basic-research-laboratory-exploratory.png
+    alt: Figure for Basic Research Laboratory (Exploratory Type)
+  title_ko: 기초연구실(개척형)
+- id: project-2
+  status: Current
+  roles: []
+  title: Industry Project 2026-1 (Confidential)
+  metadata:
+  - label: Role
+    content_html: PI (0책)
+    content_ko: 연구책임자 (0책)
+  - label: Period
+    content_html: 2026.04 - 2027.03
+  - label: Funding Source
+    content_html: Industry-funded
+    content_ko: 산업체
+  - label: Title
+    content_html: Mapping and Localization in Factory Environments
+    content_ko: 공장 환경에서의 맵핑 및 위치인식
+  figure:
+    href: assets/funded-projects/industry-project-2026-1-confidential.png
+    src: assets/funded-projects/industry-project-2026-1-confidential.png
+    alt: Figure for Industry Project 2026-1 (Confidential)
+  title_ko: 산업 과제 2026-1 (비공개)
+- id: aims-project
+  status: Current
+  roles:
+  - pi
+  - co
+  title: NRF Early-career Research Program (Type B)
+  metadata:
+  - label: Role
+    content_html: PI (1책)
+    content_ko: 연구책임자 (1책)
+  - label: Period
+    content_html: 2026.03 - 2030.02
+  - label: Funding Source
+    content_html: Ministry of Science and ICT
+    content_ko: 과학기술정보통신부
+  - label: Program
+    content_html: NRF Early-career Research Program (Type B), Basic Research Program 2026
+    content_ko: 기초연구사업, 우수신진연구 유형 B 2026
+  - label: Title
+    content_html: 'AIMS: Memory-Augmented Spatial Intelligence for Heterogeneous Autonomous Mobility Systems Understanding and Interacting with Implicit Human Instructions'
+    content_ko: 암묵적 인간 지시를 이해하고 상호작용하는 다중 자율 모빌리티를 위한 메모리 증강 공간지능 개발
+  figure:
+    href: assets/funded-projects/aims.png
+    src: assets/funded-projects/aims.png
+    alt: Figure for NRF Early-career Research Program (Type B)
+  title_ko: 신진연구(유형B)
+- id: project-4
+  status: Current
+  roles:
+  - co
+  title: Glocal Lab
+  metadata:
+  - label: Role
+    content_html: Participant (1공)
+    content_ko: 참여 (1공)
+  - label: Period
+    content_html: 2025.09 - 2028.08 (+6y)
+  - label: Funding Source
+    content_html: Ministry of Education
+    content_ko: 교육부
+  - label: Program
+    content_html: Glocal Lab Program, Academic Research Support Program for Science and Engineering 2025
+    content_ko: 이공분야 학술연구지원사업, 글로컬랩 2025
+  - label: Title
+    content_html: TransHuman Robotics Research Center, Robotics and Mechatronics Research Institute of DGIST
+    content_ko: DGIST 로봇및기계전자공학연구소 트랜스휴먼 로보틱스 연구센터
+  figure:
+    href: assets/funded-projects/glocal-lab.png
+    src: assets/funded-projects/glocal-lab.png
+    alt: Figure for Glocal Lab
+  title_ko: 글로컬랩
+- id: innocore
+  status: Current
+  roles: []
+  title: InnoCORE
+  metadata:
+  - label: Role
+    content_html: Participant (0공)
+    content_ko: 참여 (0공)
+  - label: Period
+    content_html: 2025.07 - 2027.12 (+3y)
+  - label: Funding Source
+    content_html: Ministry of Science and ICT
+    content_ko: 과학기술정보통신부
+  - label: Title
+    content_html: DGIST team on Bio-Embodied Physical AI
+    content_ko: 바이오-임바디드 피지컬 AI DGIST 팀
+  figure:
+    href: assets/funded-projects/innocore.png
+    src: assets/funded-projects/innocore.png
+    alt: Figure for InnoCORE
+  title_ko: 이노코어
+- id: project-6
+  status: Current
+  roles: []
+  title: AI Star Fellowship
+  metadata:
+  - label: Role
+    content_html: Participant (0공)
+    content_ko: 참여 (0공)
+  - label: Period
+    content_html: 2025 - 2030
+  - label: Funding Source
+    content_html: Ministry of Science and ICT
+    content_ko: 과학기술정보통신부
+  - label: Title
+    content_html: Human-centered Symbiotic Embodied AI Systems
+    content_ko: 인간 중심 공생형 임바디드 AI 시스템
+  figure:
+    href: assets/funded-projects/ai-star-fellowship.png
+    src: assets/funded-projects/ai-star-fellowship.png
+    alt: Figure for AI Star Fellowship
+  title_ko: AI스타펠로우십
+- id: project-7
+  status: Current
+  roles: []
+  title: Start-up
+  metadata:
+  - label: Role
+    content_html: PI (0책)
+    content_ko: 연구책임자 (0책)
+  - label: Period
+    content_html: 2025.01 - 2028.12
+  - label: Funding Source
+    content_html: DGIST
+  - label: Title
+    content_html: Self-evolving Robot-Web Navigation Intelligence
+    content_ko: 자가진화형 로봇-웹 내비게이션 지능
+  figure:
+    href: assets/funded-projects/start-up.png
+    src: assets/funded-projects/start-up.png
+    alt: Figure for Start-up
+  title_ko: 정착연구
+- id: project-8
+  status: Completed
+  roles: []
+  title: P2P
+  metadata:
+  - label: Role
+    content_html: Participant (1공)
+    content_ko: 참여 (1공)
+  - label: Period
+    content_html: 2025.09 - 2026.03
+  - label: Funding Source
+    content_html: Ministry of Trade, Industry and Energy
+    content_ko: 산업통상자원부
+  - label: Program
+    content_html: Autonomous Driving Technology Development Innovation Program, Korea Evaluation Institute of Industrial Technology
+    content_ko: 자율주행기술개발혁신사업, 한국산업기술기획평가원
+  - label: Title
+    content_html: Development of a Lv.4 passenger-van autonomous driving vehicle platform for point-to-point mobility in designated areas
+    content_ko: 지정구역 기반 Point-to-Point 이동을 위한 Lv.4 승합차급 자율주행 차량 플랫폼 기술 개발
+  figure:
+    href: assets/funded-projects/p2p.png
+    src: assets/funded-projects/p2p.png
+    alt: Figure for P2P
+  title_ko: P2P
+- id: project-9
+  status: Completed
+  roles: []
+  title: N-HRHR
+  metadata:
+  - label: Role
+    content_html: Participant (0공)
+    content_ko: 참여 (0공)
+  - label: Period
+    content_html: 2025.07 - 2025.12
+  - label: Funding Source
+    content_html: DGIST
+  - label: Title
+    content_html: Exploring human-robot collaborative coexistence in the era of large-scale robots
+    content_ko: 대형 로봇 시대의 인간-로봇 협업 공존 탐색
+  figure:
+    href: assets/funded-projects/n-hrhr.png
+    src: assets/funded-projects/n-hrhr.png
+    alt: Figure for N-HRHR
+  title_ko: N-HRHR
