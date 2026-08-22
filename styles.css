@@ -1139,7 +1139,20 @@ h1 {
 }
 
 .home-research-videos {
+  container-type: inline-size;
   padding: 16px;
+}
+
+.home-video-scroll {
+  max-height: calc(56.25cqw - 7.25px);
+  padding-right: 8px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.home-video-scroll:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
 }
 
 .home-video-grid {
@@ -3196,9 +3209,20 @@ h1 {
   align-items: center;
   min-height: 34px;
   padding: 5px 12px;
-  border: 1px solid var(--light-line);
+  color: var(--link-dark);
+  background: color-mix(in srgb, var(--link) 13%, var(--panel));
+  border: 1px solid color-mix(in srgb, var(--link) 38%, var(--line));
   border-radius: 999px;
   font-weight: 800;
+  text-decoration: none;
+}
+
+.dataset-card-header > a:hover,
+.dataset-card-header > a:focus-visible {
+  color: var(--link-dark);
+  background: color-mix(in srgb, var(--link) 22%, var(--panel));
+  border-color: color-mix(in srgb, var(--link) 62%, var(--line));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--link) 14%, transparent);
   text-decoration: none;
 }
 
@@ -5004,12 +5028,6 @@ body.theme-dark .research-recent-visual {
 
   .profile-avatar {
     margin-left: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .header-dalgu-track {
-    display: none;
   }
 }
 
