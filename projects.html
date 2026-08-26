@@ -7,7 +7,7 @@ lang: "en"
 
 <main class="page">
       <section id="funded-projects" class="publications-section projects-section">
-        <div class="publications-heading"><div><h1>Funded Projects</h1><p>9 entries &middot; updated Jun 19, 2026</p></div></div>
+        <div class="publications-heading"><div><h1>Funded Projects</h1><p>10 entries &middot; updated Aug 25, 2026</p></div></div>
         <div class="project-controls">
           <div class="project-language-toggle" aria-label="Funded project language">
             <span>Language</span>
@@ -19,10 +19,21 @@ lang: "en"
           <div class="project-status-row" aria-label="Project summary">
             <button class="project-summary-label" type="button" data-project-role-filter="all" aria-pressed="true"><span>Current</span></button>
             <button type="button" data-project-role-filter="pi" aria-pressed="false">1&#52293;</button>
-            <button type="button" data-project-role-filter="co" aria-pressed="false">3&#44277;</button>
+            <button type="button" data-project-role-filter="co" aria-pressed="false">4&#44277;</button>
           </div>
         </div>
         <div class="publication-year">Current</div><div class="publication-list project-current-list">
+          <article id="spatial-rfm" class="publication-card project-card" data-project-roles="co">
+            <div class="publication-body"><div class="publication-title-row"><span class="pub-badge project-current">Current</span><h3>Robot Industry Technology Development Program</h3></div><div class="publication-meta">
+                <span><b>Role</b>Co-PI (1공)</span>
+                <span><b>Period</b>2026.07 - 2029.12</span>
+                <span><b>Funding Source</b>Ministry of Trade, Industry and Energy</span>
+                <span><b>Program</b>2026 Robot Industry Technology Development Program (Core Robot Industry Technology Development)</span>
+                <span><b>Title</b>Spatial-RFM: Development of a VLM-based Spatial Intelligence Robot Foundation Model for Humanoid and Quadruped Robot Navigation in Unstructured Environments</span>
+            </div></div>
+            <a class="publication-figure" href="assets/funded-projects/spatial-rfm.png?v=20260826-page4"><img src="assets/funded-projects/spatial-rfm.png?v=20260826-page4" alt="Figure for the Spatial-RFM project" loading="lazy" /></a>
+          </article>
+
           <article class="publication-card project-card" data-project-roles="co">
             <div class="publication-body"><div class="publication-title-row"><span class="pub-badge project-current">Current</span><h3>Basic Research Laboratory (Exploratory Type)</h3></div><div class="publication-meta">
                 <span><b>Role</b>Co-PI (1공)</span>
@@ -149,6 +160,15 @@ lang: "en"
           };
 
           const projects = {
+            "Robot Industry Technology Development Program": {
+              title: "로봇산업기술개발사업",
+              meta: {
+                Role: "공동연구책임자 (1공)",
+                "Funding Source": "산업통상자원부",
+                Program: "2026년도 로봇산업기술개발사업(로봇산업핵심기술개발)",
+                Title: "휴머노이드 및 사족보행 로봇의 비정형 공간주행을 위한 VLM 기반 공간지능 Robot Foundation Model(RFM) 개발",
+              },
+            },
             "Basic Research Laboratory (Exploratory Type)": {
               title: "기초연구실(개척형)",
               meta: {
