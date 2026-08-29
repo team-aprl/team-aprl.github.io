@@ -3,6 +3,8 @@
   var source = document.querySelector(".header-dalgu-source");
   var image = document.querySelector(".header-dalgu-image");
   var modeToggle = document.querySelector(".dalgu-mode-toggle");
+  var scenery = document.querySelector(".header-dalgu-scenery");
+  var skinToggle = document.querySelector(".dalgu-skin-toggle");
 
   if (!dalgu || !source || !image) {
     return;
@@ -10,7 +12,13 @@
 
   var patrolStorageKey = "aprl-dalgu-patrol-origin-v1";
   var modeStorageKey = "aprl-dalgu-mode-v1";
+  var skinStorageKey = "aprl-dalgu-skin-v1";
   var patrolDuration = 17000;
+  var skins = [
+    { key: "garden", label: "Sprout garden" },
+    { key: "mars", label: "Subtle Mars terrain" },
+    { key: "city", label: "Minimal urban environment" }
+  ];
   var modes = [
     {
       key: "walk",
@@ -44,6 +52,7 @@
     }
   ];
   var modeIndex = Math.floor(Math.random() * modes.length);
+  var skinIndex = 0;
   var now = Date.now();
   var origin = now;
 
@@ -62,6 +71,19 @@
     }
 
     window.sessionStorage.setItem(modeStorageKey, modes[modeIndex].key);
+
+    var storedSkin = window.sessionStorage.getItem(skinStorageKey);
+    var storedSkinIndex = skins.findIndex(function (skin) {
+      return skin.key === storedSkin;
+    });
+
+    if (storedSkinIndex >= 0) {
+      skinIndex = isReload
+        ? (storedSkinIndex + 1) % skins.length
+        : storedSkinIndex;
+    }
+
+    window.sessionStorage.setItem(skinStorageKey, skins[skinIndex].key);
   } catch (error) {
     // A random mode is still used when browser storage is unavailable.
   }
@@ -84,6 +106,23 @@
     }
   }
 
+  function applySkin() {
+    var skin = skins[skinIndex];
+
+    if (scenery) {
+      scenery.dataset.dalguSkin = skin.key;
+    }
+
+    if (skinToggle) {
+      skinToggle.dataset.dalguSkin = skin.key;
+      skinToggle.setAttribute(
+        "aria-label",
+        "Dalgu scenery: " + skin.label + ". Show the next scenery"
+      );
+      skinToggle.title = "Scenery: " + skin.label + " (next)";
+    }
+  }
+
   if (modeToggle) {
     modeToggle.addEventListener("click", function () {
       modeIndex = (modeIndex + 1) % modes.length;
@@ -98,12 +137,28 @@
     });
   }
 
+
+  if (skinToggle) {
+    skinToggle.addEventListener("click", function () {
+      skinIndex = (skinIndex + 1) % skins.length;
+
+      try {
+        window.sessionStorage.setItem(skinStorageKey, skins[skinIndex].key);
+      } catch (error) {
+        // The scenery still changes for this page when storage is unavailable.
+      }
+
+      applySkin();
+    });
+  }
+
   modes.slice(1).forEach(function (mode) {
     var preload = new Image();
     preload.src = mode.animated;
   });
 
   applyMode();
+  applySkin();
 
   try {
     var storedOrigin = Number(window.sessionStorage.getItem(patrolStorageKey));

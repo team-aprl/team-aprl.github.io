@@ -18,10 +18,31 @@
             <img src="{{ '/assets/site/dalgu-front.png' | relative_url }}" alt="" />
           </span>
         </button>
+        <button class="dalgu-skin-toggle" type="button" aria-label="Show the next Dalgu scenery" title="Next Dalgu scenery">
+          <span class="dalgu-skin-toggle-orb" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </div>
   <div class="header-inner lab-header">
+    <div class="header-dalgu-scenery-track" aria-hidden="true">
+      <div class="header-dalgu-scenery">
+        <span class="header-dalgu-sprout header-dalgu-sprout-1"></span>
+        <span class="header-dalgu-sprout header-dalgu-sprout-2"></span>
+        <span class="header-dalgu-sprout header-dalgu-sprout-3"></span>
+        <span class="header-dalgu-sprout header-dalgu-sprout-4"></span>
+        <span class="header-dalgu-tree header-dalgu-tree-1"></span>
+        <span class="header-dalgu-tree header-dalgu-tree-2"></span>
+        <span class="header-dalgu-mars-ridge header-dalgu-mars-ridge-1"></span>
+        <span class="header-dalgu-mars-ridge header-dalgu-mars-ridge-2"></span>
+        <span class="header-dalgu-mars-rock header-dalgu-mars-rock-1"></span>
+        <span class="header-dalgu-mars-rock header-dalgu-mars-rock-2"></span>
+        <span class="header-dalgu-city-blocks header-dalgu-city-blocks-1"></span>
+        <span class="header-dalgu-city-blocks header-dalgu-city-blocks-2"></span>
+        <span class="header-dalgu-city-lamp header-dalgu-city-lamp-1"></span>
+        <span class="header-dalgu-city-lamp header-dalgu-city-lamp-2"></span>
+      </div>
+    </div>
     <div class="header-dalgu-track" aria-hidden="true">
       <div class="header-dalgu">
         <picture>
@@ -43,16 +64,16 @@
     <span>Menu</span>
   </button>
   <nav class="header-inner primary-nav" id="primary-navigation" aria-label="Primary navigation">
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/team.html' | relative_url }}">Team</a>
-    <a href="{{ '/news.html' | relative_url }}">News</a>
-    <a href="{{ '/research.html' | relative_url }}">Research</a>
-    <a href="{{ '/publications.html' | relative_url }}">Publications</a>
-    <a href="{{ '/projects.html' | relative_url }}">Projects</a>
-    <a href="{{ '/teaching.html' | relative_url }}">Teaching</a>
-    <a href="{{ '/datasets.html' | relative_url }}">Datasets</a>
-    <a href="{{ '/gallery.html' | relative_url }}">Gallery</a>
-    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-    <a class="primary-nav-join" href="{{ '/joining-aprl.html' | relative_url }}">Joining APRL</a>
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/team.html' | relative_url }}"{% if page.url == '/team.html' %} aria-current="page"{% endif %}>Team</a>
+    <a href="{{ '/news.html' | relative_url }}"{% if page.url == '/news.html' %} aria-current="page"{% endif %}>News</a>
+    <a href="{{ '/research.html' | relative_url }}"{% if page.url == '/research.html' %} aria-current="page"{% endif %}>Research</a>
+    <a href="{{ '/publications.html' | relative_url }}"{% if page.url == '/publications.html' %} aria-current="page"{% endif %}>Publications</a>
+    <a href="{{ '/projects.html' | relative_url }}"{% if page.url == '/projects.html' %} aria-current="page"{% endif %}>Projects</a>
+    <a href="{{ '/teaching.html' | relative_url }}"{% if page.url == '/teaching.html' %} aria-current="page"{% endif %}>Teaching</a>
+    <a href="{{ '/datasets.html' | relative_url }}"{% if page.url == '/datasets.html' %} aria-current="page"{% endif %}>Datasets</a>
+    <a href="{{ '/gallery.html' | relative_url }}"{% if page.url == '/gallery.html' %} aria-current="page"{% endif %}>Gallery</a>
+    <a href="{{ '/contact.html' | relative_url }}"{% if page.url == '/contact.html' %} aria-current="page"{% endif %}>Contact</a>
+    <a class="primary-nav-join" href="{{ '/joining-aprl.html' | relative_url }}"{% if page.url == '/joining-aprl.html' %} aria-current="page"{% endif %}>Joining APRL</a>
   </nav>
 </header>

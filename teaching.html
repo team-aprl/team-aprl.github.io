@@ -3,11 +3,29 @@ layout: default
 title: "Teaching | APRL"
 description: "Teaching activities and course material links from APRL, DGIST."
 lang: "en"
+extra_scripts:
+  - teaching.js?v=20260829-teaching-toc
 ---
 
 <main class="page">
-      <section id="teaching" class="publications-section teaching-section"><div class="publications-heading"><div><h1>Teaching</h1><p>7 entries &middot; updated Aug 29, 2026</p></div><a class="teaching-course-search" href="https://welcome.dgist.ac.kr/ucs/ucsqProfRespSbjtInq/index.do" target="_blank" rel="noopener noreferrer">DGIST Course Search</a></div>
-        <div class="publication-year">2026</div><div class="teaching-semester">Fall</div><div class="teaching-list">
+      <section id="teaching" class="publications-section teaching-section"><div class="publications-heading"><div><h1>Teaching</h1><p>7 entries &middot; updated Aug 29, 2026</p></div><div class="teaching-heading-actions"><a class="teaching-course-search" href="https://welcome.dgist.ac.kr/ucs/ucsqProfRespSbjtInq/index.do" target="_blank" rel="noopener noreferrer">DGIST Course Search</a><button class="teaching-toggle-all" type="button" aria-expanded="false">Expand all years</button></div></div>
+        <div class="teaching-layout">
+          <aside class="teaching-toc">
+            <nav aria-label="Teaching contents">
+              <p>Contents</p>
+              <ol>
+                <li><a href="#teaching-2026" data-index="2026" data-teaching-target-year="2026">Courses</a></li>
+                <li><a href="#teaching-2025" data-index="2025" data-teaching-target-year="2025">Courses</a></li>
+                <li><a href="#academic-materials" data-index="APRL">Academic Materials</a></li>
+                <li><a href="#selected-talks" data-index="Talks">Selected Talks</a></li>
+              </ol>
+            </nav>
+          </aside>
+
+          <div class="teaching-content-stack">
+        <details id="teaching-2026" class="teaching-year-group" data-teaching-year="2026" open>
+          <summary class="publication-year">2026</summary>
+          <div class="teaching-semester">Fall</div><div class="teaching-list">
           <article class="teaching-card teaching-main"><div class="teaching-title-row"><span class="pub-badge pub-year">RT616</span><span class="pub-badge aprl">Main</span><h3>Vision/Image Processing<span>(비전/영상처리)</span></h3></div><div class="publication-meta"><span><b>Year</b>2026</span><span><b>Semester</b>Fall</span>
               <span><b>TA</b>Taeeun Ma</span>
             </div><div class="publication-actions"><a href="https://github.com/team-aprl/lecture-RT616-public">Material</a></div></article>
@@ -23,8 +41,11 @@ lang: "en"
 
           <article class="teaching-card"><div class="teaching-title-row"><span class="pub-badge pub-year">MECH301</span><h3>Robots for Human<span>(인간과 공학(공))</span></h3></div><div class="publication-meta"><span><b>Year</b>2026</span><span><b>Semester</b>Spring</span>
             </div></article>
-        </div>
-        <div class="publication-year">2025</div><div class="teaching-semester">Fall</div><div class="teaching-list">
+          </div>
+        </details>
+        <details id="teaching-2025" class="teaching-year-group" data-teaching-year="2025">
+          <summary class="publication-year">2025</summary>
+          <div class="teaching-semester">Fall</div><div class="teaching-list">
           <article class="teaching-card teaching-main"><div class="teaching-title-row"><span class="pub-badge pub-year">MECH307</span><span class="pub-badge aprl">Main</span><h3>Introduction to Artificial Intelligence<span>(인공지능개론)</span></h3></div><div class="publication-meta"><span><b>Year</b>2025</span><span><b>Semester</b>Fall</span>
               <span><b>TA</b><a href="https://bksuh.github.io/">Bokeon Suh</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=KK3SC5sAAAAJ">Jiseon Kim</a></span>
             </div><div class="publication-actions"><a href="https://github.com/team-aprl/mech307-introduction-to-ai/tree/main">Material</a></div></article>
@@ -37,38 +58,41 @@ lang: "en"
           <article class="teaching-card"><div class="teaching-title-row"><span class="pub-badge pub-year">BE203</span><h3>Creative mechanical design<span>(창의기계설계)</span></h3></div><div class="publication-meta"><span><b>Year</b>2025</span><span><b>Semester</b>Spring</span>
               <span><b>TA</b>Choongil Ahn, Jiwung Kwon</span>
             </div><div class="publication-actions"><a href="https://www.dropbox.com/scl/fo/bk4o548e54624uxr2zdpb/ADoHQr3MP1EkBJ49cWd7pbI?rlkey=w4l9zrw0pzbrz953d483hvd8b&amp;dl=0">Material</a></div></article>
-        </div>
-        <div class="teaching-projects">
-          <div class="publication-year">Useful Academic Materials provided by APRL</div>
+          </div>
+        </details>
+        <div id="academic-materials" class="teaching-projects">
+          <div class="publication-year teaching-section-heading">Useful Academic Materials provided by APRL</div>
           <p class="teaching-projects-meta">3 entries &middot; updated Aug 16, 2026</p>
           <div class="teaching-list">
             <article class="teaching-card">
               <div class="teaching-title-row"><span class="pub-badge aprl">Guide</span><h3>Robotics Venue Guides</h3></div>
               <div class="publication-meta"><span>Guides to major robotics conferences, journals, and magazines, explaining each venue's identity, research culture, and publication fit.</span></div>
-              <div class="publication-actions"><a href="https://gisbi-kim.github.io/robotics-venue-guides/">Website</a></div>
+              <div class="publication-actions"><a href="https://gisbi-kim.github.io/robotics-venue-guides/" target="_blank" rel="noopener noreferrer">Website</a></div>
             </article>
 
             <article class="teaching-card">
               <div class="teaching-title-row"><span class="pub-badge aprl">Explorer</span><h3>Conference Explorers</h3></div>
               <div class="publication-meta"><span>Interactive conference-paper explorers for browsing robotics and AI research landscapes.</span></div>
-              <div class="publication-actions"><a href="https://gisbi-kim.github.io/conference-explorers/">Website</a></div>
+              <div class="publication-actions"><a href="https://gisbi-kim.github.io/conference-explorers/" target="_blank" rel="noopener noreferrer">Website</a></div>
             </article>
 
             <article class="teaching-card">
               <div class="teaching-title-row"><span class="pub-badge aprl">Atlas</span><h3>RoboPaper Atlas</h3></div>
               <div class="publication-meta"><span>A robotics-paper atlas for exploring papers, topics, and research connections.</span></div>
-              <div class="publication-actions"><a href="https://gisbi-kim.github.io/robopaper-atlas/">Website</a></div>
+              <div class="publication-actions"><a href="https://gisbi-kim.github.io/robopaper-atlas/" target="_blank" rel="noopener noreferrer">Website</a></div>
             </article>
           </div>
         </div>
-        <div class="teaching-projects">
-          <div class="publication-year">Selected Talks</div>
+        <div id="selected-talks" class="teaching-projects">
+          <div class="publication-year teaching-section-heading">Selected Talks</div>
           <p class="teaching-projects-meta">0 entries &middot; updated Aug 29, 2026</p>
           <div class="teaching-list">
             <article class="teaching-card">
               <div class="teaching-title-row"><span class="pub-badge">TBA</span><h3>Selected talks will be announced soon.</h3></div>
               <div class="publication-meta"><span>Invited talks, seminars, and selected presentations by APRL members will be listed here.</span></div>
             </article>
+          </div>
+        </div>
           </div>
         </div>
       </section>
