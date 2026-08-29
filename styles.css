@@ -3272,6 +3272,11 @@ h1 {
   object-fit: cover;
 }
 
+.dataset-image-grid--contain img {
+  background: #fff;
+  object-fit: contain;
+}
+
 .research-section h2 {
   margin: 0;
   color: var(--ink);
@@ -4081,6 +4086,10 @@ h1 {
   margin-right: 5px;
   color: #313131;
   font-weight: 800;
+}
+
+#publications .publication-meta b::after {
+  content: ":";
 }
 
 .publication-actions {
