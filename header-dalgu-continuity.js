@@ -17,7 +17,8 @@
   var skins = [
     { key: "garden", label: "Sprout garden" },
     { key: "mars", label: "Subtle Mars terrain" },
-    { key: "city", label: "Minimal urban environment" }
+    { key: "city", label: "Minimal urban environment" },
+    { key: "none", label: "No scenery" }
   ];
   var modes = [
     {

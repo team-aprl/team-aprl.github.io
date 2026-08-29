@@ -628,9 +628,9 @@ body.header-compact-sticky .dgist-wordmark::before {
 .header-dalgu-tree {
   position: absolute;
   bottom: 8px;
-  width: 2px;
-  height: 22px;
-  opacity: 0.36;
+  width: 3px;
+  height: 25px;
+  opacity: 0.4;
   background: color-mix(in srgb, var(--dalgu-trunk) 62%, transparent);
   border-radius: 999px;
   transform-origin: bottom center;
@@ -645,35 +645,138 @@ body.header-compact-sticky .dgist-wordmark::before {
 }
 
 .header-dalgu-tree::before {
-  top: -8px;
+  top: -12px;
   left: 50%;
-  width: 20px;
-  height: 17px;
-  border-radius: 48% 58% 51% 56%;
+  width: 27px;
+  height: 20px;
+  border-radius: 58% 42% 54% 46% / 52% 60% 40% 48%;
+  box-shadow: -7px 5px 0 color-mix(in srgb, var(--dalgu-tree) 48%, transparent), 7px 4px 0 color-mix(in srgb, var(--dalgu-tree) 44%, transparent);
   transform: translateX(-50%) rotate(-4deg);
 }
 
 .header-dalgu-tree::after {
-  top: -4px;
-  left: -10px;
-  width: 13px;
-  height: 13px;
-  border-radius: 58% 46% 55% 49%;
+  top: -8px;
+  left: -12px;
+  width: 17px;
+  height: 15px;
+  border-radius: 62% 38% 58% 42%;
 }
 
 .header-dalgu-tree-1 {
   left: 17%;
-  transform: rotate(-1deg) scale(1);
+  transform: rotate(-2deg) scale(1.04);
 }
 
 .header-dalgu-tree-2 {
   right: 16%;
-  transform: rotate(2deg) scale(0.88);
+  transform: rotate(2deg) scale(0.94);
 }
+
+.header-dalgu-tree-3 {
+  left: 29%;
+  height: 21px;
+  opacity: 0.34;
+  transform: rotate(1deg) scale(0.74);
+}
+
+.header-dalgu-tree-4 {
+  right: 28%;
+  height: 22px;
+  opacity: 0.36;
+  transform: rotate(-1deg) scale(0.78);
+}
+
+.header-dalgu-tree-3::before,
+.header-dalgu-tree-4::before {
+  top: -14px;
+  width: 27px;
+  height: 28px;
+  border-radius: 0;
+  box-shadow: none;
+  clip-path: polygon(50% 0, 72% 34%, 63% 34%, 86% 66%, 74% 66%, 100% 100%, 0 100%, 26% 66%, 14% 66%, 37% 34%, 28% 34%);
+  transform: translateX(-50%);
+}
+
+.header-dalgu-tree-3::after,
+.header-dalgu-tree-4::after {
+  display: none;
+}
+
+.header-dalgu-shrub,
+.header-dalgu-flower,
+.header-dalgu-garden-rock {
+  position: absolute;
+  bottom: 7px;
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+
+.header-dalgu-shrub {
+  width: 20px;
+  height: 8px;
+  opacity: 0.35;
+  background: color-mix(in srgb, var(--dalgu-sprout) 46%, transparent);
+  border-radius: 55% 58% 18% 20%;
+  transform-origin: bottom center;
+}
+
+.header-dalgu-shrub::before,
+.header-dalgu-shrub::after {
+  position: absolute;
+  bottom: 0;
+  width: 11px;
+  height: 10px;
+  background: inherit;
+  border-radius: 60% 52% 24% 20%;
+  content: "";
+}
+
+.header-dalgu-shrub::before { left: 2px; }
+.header-dalgu-shrub::after { right: 1px; height: 7px; }
+.header-dalgu-shrub-1 { left: 4%; transform: scale(0.8); }
+.header-dalgu-shrub-2 { left: 21%; transform: scale(0.62); }
+.header-dalgu-shrub-3 { right: 22%; transform: scale(0.72); }
+.header-dalgu-shrub-4 { right: 4%; transform: scale(0.9); }
+
+.header-dalgu-flower {
+  width: 1px;
+  height: 7px;
+  opacity: 0.48;
+  background: color-mix(in srgb, var(--dalgu-sprout) 55%, transparent);
+}
+
+.header-dalgu-flower::before {
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  width: 5px;
+  height: 5px;
+  background: color-mix(in srgb, var(--header-accent) 55%, transparent);
+  border-radius: 50%;
+  box-shadow: 2px 1px 0 color-mix(in srgb, #d98b9a 38%, transparent), -1px 2px 0 color-mix(in srgb, #d98b9a 34%, transparent);
+  content: "";
+}
+
+.header-dalgu-flower-1 { left: 12%; transform: scale(0.8); }
+.header-dalgu-flower-2 { left: 26%; transform: scale(0.65); }
+.header-dalgu-flower-3 { right: 25%; transform: scale(0.72); }
+.header-dalgu-flower-4 { right: 11%; transform: scale(0.9); }
+
+.header-dalgu-garden-rock {
+  width: 10px;
+  height: 5px;
+  opacity: 0.24;
+  background: color-mix(in srgb, var(--dalgu-trunk) 52%, transparent);
+  border-radius: 68% 42% 24% 34%;
+}
+
+.header-dalgu-garden-rock-1 { left: 14%; transform: rotate(-4deg) scale(0.8); }
+.header-dalgu-garden-rock-2 { right: 31%; transform: rotate(5deg) scale(0.65); }
 
 .header-dalgu-mars-ridge,
 .header-dalgu-mars-rock,
-.header-dalgu-city-blocks,
+.header-dalgu-city-building,
+.header-dalgu-city-shop,
+.header-dalgu-city-tree,
 .header-dalgu-city-lamp {
   position: absolute;
   bottom: 7px;
@@ -743,6 +846,13 @@ body.header-compact-sticky .dgist-wordmark::before {
   transform: translateY(5px) scale(0.25);
 }
 
+.header-dalgu-scenery[data-dalgu-skin="mars"] .header-dalgu-shrub,
+.header-dalgu-scenery[data-dalgu-skin="mars"] .header-dalgu-flower,
+.header-dalgu-scenery[data-dalgu-skin="mars"] .header-dalgu-garden-rock {
+  opacity: 0;
+  transform: translateY(5px) scale(0.25);
+}
+
 .header-dalgu-scenery[data-dalgu-skin="mars"] .header-dalgu-mars-ridge {
   opacity: 1;
   transform: translateY(0) scaleY(1);
@@ -753,24 +863,113 @@ body.header-compact-sticky .dgist-wordmark::before {
   transform: translateY(0) scale(1);
 }
 
-.header-dalgu-city-blocks {
-  height: 31px;
-  background: linear-gradient(180deg, color-mix(in srgb, var(--dalgu-city) 16%, transparent), color-mix(in srgb, var(--dalgu-city) 8%, transparent));
-  clip-path: polygon(0 100%, 0 68%, 8% 68%, 8% 32%, 20% 32%, 20% 57%, 31% 57%, 31% 14%, 46% 14%, 46% 47%, 58% 47%, 58% 27%, 69% 27%, 69% 63%, 81% 63%, 81% 40%, 92% 40%, 92% 72%, 100% 72%, 100% 100%);
-  filter: blur(0.15px);
-  transform: translateY(5px) scaleY(0.72);
+.header-dalgu-city-building {
+  --dalgu-city-building: color-mix(in srgb, var(--dalgu-city) 19%, transparent);
+  --dalgu-city-window: color-mix(in srgb, var(--header-surface) 72%, transparent);
+  transform: translateY(5px) scale(0.72);
+  transform-origin: bottom center;
 }
 
-.header-dalgu-city-blocks-1 {
-  left: 3%;
-  width: 24%;
+.header-dalgu-city-house {
+  width: 34px;
+  height: 27px;
+  background:
+    linear-gradient(var(--dalgu-city-window) 0 0) 8px 14px / 6px 6px no-repeat,
+    linear-gradient(var(--dalgu-city-window) 0 0) 20px 14px / 6px 6px no-repeat,
+    linear-gradient(var(--dalgu-city-window) 0 0) 14px 20px / 6px 7px no-repeat,
+    linear-gradient(var(--dalgu-city-building) 0 0);
+  clip-path: polygon(0 38%, 50% 0, 100% 38%, 88% 38%, 88% 100%, 12% 100%, 12% 38%);
 }
 
-.header-dalgu-city-blocks-2 {
-  right: 3%;
-  width: 25%;
-  transform: translateY(5px) scaleX(-1) scaleY(0.68);
+.header-dalgu-city-midrise {
+  width: 26px;
+  height: 40px;
+  background:
+    repeating-linear-gradient(to bottom, var(--dalgu-city-window) 0 3px, transparent 3px 7px) center 8px / 13px 26px no-repeat,
+    linear-gradient(var(--dalgu-city-building) 0 0);
+  clip-path: polygon(0 100%, 0 12%, 18% 12%, 18% 0, 100% 0, 100% 100%);
 }
+
+.header-dalgu-city-office {
+  width: 38px;
+  height: 34px;
+  background:
+    repeating-linear-gradient(to right, var(--dalgu-city-window) 0 3px, transparent 3px 7px) center 9px / 25px 19px no-repeat,
+    repeating-linear-gradient(to bottom, transparent 0 4px, color-mix(in srgb, var(--header-surface) 32%, transparent) 4px 6px) center 9px / 25px 19px no-repeat,
+    linear-gradient(var(--dalgu-city-building) 0 0);
+  clip-path: polygon(0 100%, 0 26%, 18% 26%, 18% 11%, 48% 11%, 48% 0, 65% 0, 65% 19%, 100% 19%, 100% 100%);
+}
+
+.header-dalgu-city-building-1 { left: 5%; }
+.header-dalgu-city-building-2 { left: 17%; }
+.header-dalgu-city-building-3 { left: 29%; }
+.header-dalgu-city-building-4 { right: 29%; transform: translateY(5px) scaleX(-1) scale(0.72); }
+.header-dalgu-city-building-5 { right: 17%; }
+.header-dalgu-city-building-6 { right: 5%; transform: translateY(5px) scaleX(-1) scale(0.72); }
+
+.header-dalgu-city-shop {
+  --dalgu-city-shop: color-mix(in srgb, var(--dalgu-city) 16%, transparent);
+  --dalgu-city-window: color-mix(in srgb, var(--header-surface) 72%, transparent);
+  width: 28px;
+  height: 20px;
+  background:
+    linear-gradient(var(--dalgu-city-window) 0 0) 5px 10px / 7px 6px no-repeat,
+    linear-gradient(var(--dalgu-city-window) 0 0) 17px 10px / 6px 10px no-repeat,
+    linear-gradient(var(--dalgu-city-shop) 0 0);
+  border-top: 2px solid color-mix(in srgb, var(--dalgu-city) 23%, transparent);
+  transform: translateY(5px) scale(0.72);
+  transform-origin: bottom center;
+}
+
+.header-dalgu-city-shop::before {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  left: 2px;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--dalgu-city) 22%, transparent) 0 4px, color-mix(in srgb, var(--header-surface) 52%, transparent) 4px 7px);
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+  content: "";
+}
+
+.header-dalgu-city-shop-1 { left: 11%; }
+.header-dalgu-city-shop-2 { right: 11%; transform: translateY(5px) scaleX(-1) scale(0.72); }
+
+.header-dalgu-city-tree {
+  width: 2px;
+  height: 13px;
+  background: color-mix(in srgb, var(--dalgu-trunk) 34%, transparent);
+  border-radius: 999px;
+  transform: translateY(4px) scale(0.72);
+  transform-origin: bottom center;
+}
+
+.header-dalgu-city-tree::before,
+.header-dalgu-city-tree::after {
+  position: absolute;
+  left: 50%;
+  background: color-mix(in srgb, var(--dalgu-city) 24%, transparent);
+  border-radius: 50%;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.header-dalgu-city-tree::before {
+  top: -7px;
+  width: 13px;
+  height: 13px;
+}
+
+.header-dalgu-city-tree::after {
+  top: -3px;
+  width: 17px;
+  height: 9px;
+}
+
+.header-dalgu-city-tree-1 { left: 9%; transform: translateY(4px) scale(0.62); }
+.header-dalgu-city-tree-2 { left: 24%; }
+.header-dalgu-city-tree-3 { right: 24%; }
+.header-dalgu-city-tree-4 { right: 9%; transform: translateY(4px) scale(0.62); }
 
 .header-dalgu-city-lamp {
   width: 1px;
@@ -832,18 +1031,47 @@ body.header-compact-sticky .dgist-wordmark::before {
   transform: translateY(5px) scale(0.25);
 }
 
-.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-blocks {
-  opacity: 1;
-  transform: translateY(0) scaleY(1);
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-shrub,
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-flower,
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-garden-rock {
+  opacity: 0;
+  transform: translateY(5px) scale(0.25);
 }
 
-.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-blocks-2 {
-  transform: translateY(0) scaleX(-1) scaleY(1);
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-building {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-building-4,
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-building-6 {
+  transform: translateY(0) scaleX(-1) scale(1);
+}
+
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-shop,
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-tree {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-shop-2 {
+  transform: translateY(0) scaleX(-1) scale(1);
+}
+
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-tree-1,
+.header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-tree-4 {
+  transform: translateY(0) scale(0.86);
 }
 
 .header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-lamp {
   opacity: 0.72;
   transform: translateY(0) scaleY(1);
+}
+
+.header-dalgu-scenery[data-dalgu-skin="none"]::before,
+.header-dalgu-scenery[data-dalgu-skin="none"]::after,
+.header-dalgu-scenery[data-dalgu-skin="none"] > span {
+  opacity: 0;
 }
 
 .header-dalgu {
@@ -1242,9 +1470,7 @@ body.header-compact-sticky .primary-nav {
 }
 
 .dalgu-skin-toggle[data-dalgu-skin="city"] .dalgu-skin-toggle-orb {
-  background:
-    linear-gradient(90deg, transparent 0 12%, #8799a7 13% 31%, transparent 32% 39%, #667c8d 40% 64%, transparent 65% 72%, #9aabb7 73% 88%, transparent 89%),
-    linear-gradient(180deg, #e6eff4 0 58%, #aebdc6 59% 66%, #d6e0e5 67%);
+  background: linear-gradient(180deg, #e9f1f5 0 62%, #d3dee4 63%);
   border-color: color-mix(in srgb, #718494 42%, var(--line));
   box-shadow: inset -3px -3px 6px rgba(57, 78, 92, 0.16);
 }
@@ -1253,10 +1479,28 @@ body.header-compact-sticky .primary-nav {
   right: 2px;
   bottom: 3px;
   width: 18px;
-  height: 2px;
-  background: rgba(69, 88, 101, 0.25);
-  border-radius: 50%;
+  height: 10px;
+  background: rgba(69, 88, 101, 0.38);
+  border-radius: 0;
+  clip-path: polygon(0 100%, 0 46%, 14% 46%, 14% 22%, 31% 22%, 31% 62%, 45% 62%, 45% 34%, 66% 34%, 66% 0, 84% 31%, 100% 31%, 100% 100%);
   transform: none;
+}
+
+.dalgu-skin-toggle[data-dalgu-skin="none"] .dalgu-skin-toggle-orb {
+  background: color-mix(in srgb, var(--panel) 84%, var(--line));
+  border-color: color-mix(in srgb, var(--muted) 45%, var(--line));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--panel) 65%, transparent);
+}
+
+.dalgu-skin-toggle[data-dalgu-skin="none"] .dalgu-skin-toggle-orb::after {
+  top: 10px;
+  right: 2px;
+  bottom: auto;
+  width: 18px;
+  height: 2px;
+  background: var(--muted);
+  border-radius: 999px;
+  transform: rotate(-45deg);
 }
 
 .dalgu-skin-toggle:active .dalgu-skin-toggle-orb {
