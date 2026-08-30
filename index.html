@@ -5,6 +5,8 @@ description: "Autonomy and Perceptual Robotics Lab (APRL), DGIST."
 lang: "en"
 extra_scripts:
   - /home-video-scroll.js?v=20260822-boundary-handoff
+  - /news-language.js?v=20260830-bilingual
+  - /news-award-carousel.js?v=20260830-icros
 ---
 
 <main class="page home-page">
@@ -34,7 +36,16 @@ extra_scripts:
       </section>
 
       <section class="home-news">
-        <div class="home-section-heading"><h2>Selected Latest News</h2><a href="news.html">All news</a></div>
+        <div class="home-section-heading">
+          <h2 data-news-text-en="Selected Latest News" data-news-text-ko="주요 최신 소식">Selected Latest News</h2>
+          <div class="home-news-heading-actions">
+            <div class="news-language-toggle" role="group" aria-label="News language">
+              <button class="is-active" type="button" data-news-language="en" aria-pressed="true">EN</button>
+              <button type="button" data-news-language="ko" aria-pressed="false">한국어</button>
+            </div>
+            <a href="news.html" data-news-text-en="All news" data-news-text-ko="전체 소식">All news</a>
+          </div>
+        </div>
         <ol id="home-news-list" aria-live="polite"></ol>
       </section>
 
@@ -52,6 +63,7 @@ extra_scripts:
               const doc = new DOMParser().parseFromString(html, "text/html");
               const items = Array.from(doc.querySelectorAll("[data-home-reveal='true']")).slice(0, 10);
               list.replaceChildren(...items.map((item) => item.cloneNode(true)));
+              window.aprlNewsLanguage?.applyCurrent();
             })
             .catch(() => {
               list.innerHTML = '<li><p><a href="news.html">View all news</a></p></li>';

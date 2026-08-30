@@ -3,99 +3,106 @@ layout: default
 title: "News | APRL"
 description: "News from the Autonomy and Perceptual Robotics Lab (APRL), DGIST."
 lang: "en"
+extra_scripts:
+  - /news-language.js?v=20260830-bilingual
+  - /news-award-carousel.js?v=20260830-icros
 ---
 
 <main class="page">
       <section class="news-page">
         <div class="publications-heading">
           <div>
-            <h1>News</h1>
+            <h1 data-news-text-en="News" data-news-text-ko="소식">News</h1>
             <p><span id="news-filter-count">APRL announcements and updates.</span></p>
+          </div>
+          <div class="news-language-toggle" role="group" aria-label="News language">
+            <button class="is-active" type="button" data-news-language="en" aria-pressed="true">EN</button>
+            <button type="button" data-news-language="ko" aria-pressed="false">한국어</button>
           </div>
         </div>
 
-        <div class="news-filter-panel" aria-label="News category filters">
-          <span>Category</span>
+        <div class="news-filter-panel" aria-label="News category filters" data-news-aria-en="News category filters" data-news-aria-ko="소식 분류 필터">
+          <span data-news-text-en="Category" data-news-text-ko="분류">Category</span>
           <div class="news-filter-buttons">
-            <button class="is-active" type="button" data-news-filter="all" aria-pressed="true">All</button>
-            <button type="button" data-news-filter="funding" aria-pressed="false">Funding</button>
-            <button type="button" data-news-filter="award" aria-pressed="false">Award</button>
-            <button type="button" data-news-filter="publication" aria-pressed="false">Publication</button>
-            <button type="button" data-news-filter="people" aria-pressed="false">People</button>
+            <button class="is-active" type="button" data-news-filter="all" data-news-text-en="All" data-news-text-ko="전체" aria-pressed="true">All</button>
+            <button type="button" data-news-filter="funding" data-news-text-en="Funding" data-news-text-ko="연구비" aria-pressed="false">Funding</button>
+            <button type="button" data-news-filter="award" data-news-text-en="Award" data-news-text-ko="수상" aria-pressed="false">Award</button>
+            <button type="button" data-news-filter="publication" data-news-text-en="Publication" data-news-text-ko="논문" aria-pressed="false">Publication</button>
+            <button type="button" data-news-filter="people" data-news-text-en="People" data-news-text-ko="구성원" aria-pressed="false">People</button>
           </div>
         </div>
-        <div class="news-collapse-actions" aria-label="News year visibility controls">
-          <button type="button" data-news-collapse-all>Collapse all</button>
-          <button type="button" data-news-expand-all>Expand all</button>
+        <div class="news-collapse-actions" aria-label="News year visibility controls" data-news-aria-en="News year visibility controls" data-news-aria-ko="연도별 소식 펼침 제어">
+          <button type="button" data-news-collapse-all data-news-text-en="Collapse all" data-news-text-ko="모두 접기">Collapse all</button>
+          <button type="button" data-news-expand-all data-news-text-en="Expand all" data-news-text-ko="모두 펼치기">Expand all</button>
         </div>
 
         <div class="publication-year" data-news-year>2026</div>
         <ol class="news-list">
-          <li data-news-category="award" data-home-reveal="true">
+          <li data-news-category="award" data-news-id="lt-mem-finalist" data-home-reveal="true">
             <time datetime="2026-09">Sep 2026</time>
             <p><span class="news-tag tag-award">Award</span><a href="publications.html?year=2026&amp;venue=iros&amp;q=LT-Mem#lt-mem">LT-Mem</a> has been selected as a <a href="assets/news/lt-mem-iros2026-best-paper-finalist.png">Best Paper Finalist</a> (10 out of 1,933 papers) at <a href="https://2026.ieee-iros.org/">IROS 2026</a>. Congratulations, <a href="{{ '/team.html' | relative_url }}#team-member-yumin-lee">Yumin</a>!</p>
           </li>
-          <li data-news-category="publication" data-home-reveal="true">
+          <li data-news-category="publication" data-news-id="isparo-2026" data-home-reveal="true">
             <time datetime="2026-08">Aug 2026</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="publications.html?year=2026&amp;venue=isparo#publications">Two APRL papers</a> have been accepted to <a href="http://isparo.space">iSpaRo 2026</a>. Congratulations to <a href="{{ '/team.html' | relative_url }}#team-member-hoyun-kim">Hoyun</a> for <a href="publications.html?year=2026&amp;venue=isparo#marslab-isparo-2026">MarsLab</a> and the <a href="publications.html?year=2026&amp;venue=isparo#planetary-robotics-simulation-survey-isparo-2026">planetary robotics simulation survey</a>.</p>
           </li>
-          <li data-news-category="funding" data-home-reveal="true">
+          <li data-news-category="funding" data-news-id="spatial-rfm" data-home-reveal="true">
             <time datetime="2026-08">Aug 2026</time>
             <p><span class="news-tag tag-funding">Funding</span>APRL has been selected for the <a href="projects.html#spatial-rfm">2026 Robot Industry Technology Development Program</a> funded by the Ministry of Trade, Industry and Energy. Through the Spatial-RFM project, we will develop a VLM-based spatial intelligence robot foundation model for humanoid and quadruped robot navigation in unstructured environments.</p>
           </li>
-          <li data-news-category="award">
+          <li data-news-category="award" data-news-id="icros-student-awards">
             <time datetime="2026-07">Jul 2026</time>
             <p><span class="news-tag tag-award">Award</span>Three APRL papers received the Undergraduate Student Paper Award at <a href="https://2026.icros.org/">ICROS 2026</a>: “<a href="publications.html?region=domestic&amp;type=conference&amp;venue=icros#floorplan-point-language-grounded-navigation">Floor Plan-Guided Point-to-Language Grounded Navigation</a>,” “<a href="publications.html?region=domestic&amp;type=conference&amp;venue=icros#rubiks-cube-wheel-transformable-mobile-robot">A Wheel-Transformable Mobile Robot Based on a Rubik’s Cube Mechanism</a>,” and “<a href="publications.html?region=domestic&amp;type=conference&amp;venue=icros#mapless-zero-shot-autonomous-driving">Mapless Zero-Shot Autonomous Driving with Vision-Language Models</a>.” Congratulations to all authors.</p>
           </li>
-          <li data-news-category="award" data-home-reveal="true">
+          <li data-news-category="award" data-news-id="icros-young-researcher" data-home-reveal="true">
             <time datetime="2026-07">Jul 2026</time>
             <p><span class="news-tag tag-award">Award</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> has been selected for the <a href="assets/news/icros2026-outstanding-young-researcher-award.jpg">Outstanding Young Researcher Award</a> at <a href="assets/news/icros-2026.png">ICROS 2026</a>.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="summer-interns-2026">
             <time datetime="2026-07">Jul 2026</time>
             <p><span class="news-tag tag-people">People</span>Welcome 2026-summer interns: <a href="{{ '/team.html' | relative_url }}#team-member-mingyu-lee">Mingyu Lee</a>, <a href="{{ '/team.html' | relative_url }}#team-member-hyunwoo-kim">Hyunwoo Kim</a>, <a href="{{ '/team.html' | relative_url }}#team-member-minseok-oh">Minseok Oh</a>, and <a href="{{ '/team.html' | relative_url }}#team-member-ayun-lee">Ayun Lee</a>, who have joined APRL to work on several exciting topics in human and multi-robot interactive navigation.</p>
           </li>
-          <li data-news-category="publication" data-home-reveal="true">
+          <li data-news-category="publication" data-news-id="iros-2026-papers" data-home-reveal="true">
             <time datetime="2026-06">Jun 2026</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="publications.html?year=2026&amp;venue=iros#publications">Two APRL papers</a> have been accepted to <a href="https://2026.ieee-iros.org/">IROS 2026</a>. Congratulations to <a href="{{ '/team.html' | relative_url }}#team-member-yumin-lee">Yumin</a> for <a href="publications.html?year=2026&amp;venue=iros&amp;q=LT-Mem#lt-mem">LT-Mem</a>, and to <a href="{{ '/team.html' | relative_url }}#team-member-bibhutibhusan-nayak">Nayak</a> and <a href="{{ '/team.html' | relative_url }}#team-member-hyoseok-ju">Hyoseok</a> for the <a href="publications.html?year=2026&amp;venue=iros&amp;q=Mag4D#mag4d-slam-dataset">Mag4D-SLAM Dataset</a>.</p>
           </li>
-          <li data-news-category="funding" data-home-reveal="true">
+          <li data-news-category="funding" data-news-id="brl-2026" data-home-reveal="true">
             <time datetime="2026-06">Jun 2026</time>
             <p><span class="news-tag tag-funding">Funding</span>APRL has been selected for the <a href="projects.html#funded-projects:~:text=Basic%20Research%20Laboratory%20%28Exploratory%20Type%29">Basic Research Laboratory (Exploratory Type)</a> program funded by the Ministry of Science and ICT, securing support for research on morphogenetic cooperative mobility intelligence based on Physical Agentic AI.</p>
           </li>
-          <li data-news-category="funding">
+          <li data-news-category="funding" data-news-id="google-cloud-credits">
             <time datetime="2026-05">May 2026</time>
             <p><span class="news-tag tag-funding">Funding</span>APRL has been awarded $5,000 through the Google Cloud Research Credits Program. The credits will support our project on Social Compliant Vision-Language Navigation (SC-VLN), enabling large-scale multimodal inference and benchmark evaluation for socially aware robot navigation.</p>
           </li>
-          <li data-news-category="publication">
+          <li data-news-category="publication" data-news-id="icra-workshop-papers">
             <time datetime="2026-05">May 2026</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="publications.html?year=2026&amp;type=workshop#publications">Three workshop papers</a> from our lab have been accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>. Congrats to <a href="{{ '/team.html' | relative_url }}#team-member-doyeon-kim">Doyeon</a> and <a href="{{ '/team.html' | relative_url }}#team-member-bibhutibhusan-nayak">Nayak</a>+<a href="{{ '/team.html' | relative_url }}#team-member-hyoseok-ju">Hyoseok</a> for their papers accepted to the <a href="https://xingxingzuo.github.io/MM-SpatialAI/">MM-SpatialAI Workshop</a>, and to <a href="{{ '/team.html' | relative_url }}#team-member-hoyun-kim">Hoyun</a> for his paper accepted to the <a href="https://icra2026-planetary-robotics.github.io/">Workshop on Perceptual Challenges for Planetary Exploration</a>.</p>
           </li>
-          <li data-news-category="publication">
+          <li data-news-category="publication" data-news-id="ifac-2026-paper">
             <time datetime="2026-04">Apr 2026</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="publications.html?q=What%20Matters%20for%20Real-World%20Long-Horizon%20Robot%20Navigation%3F%3A%20An%20Experimental%20Study%20of%20Implicit%20Goals%20and%20Sparse%20Memory">1 paper</a> accepted to <a href="https://www.ifac2026.org/">IFAC 2026</a>. Congratulations to <a href="{{ '/team.html' | relative_url }}#team-member-bokeon-suh">Bokeon</a>.</p>
           </li>
-          <li data-news-category="funding" data-home-reveal="true">
+          <li data-news-category="funding" data-news-id="aims-grant" data-home-reveal="true">
             <time datetime="2026-03">Mar 2026</time>
             <p><span class="news-tag tag-funding">Funding</span>Our lab has been awarded the NRF Early-career Research Program (Type B) grant from the Ministry of Science and ICT, supporting research on <a href="https://drive.google.com/file/d/1riZrdBLxpxrBbzPsRFEjUunkNA1d4nul/view?usp=sharing">multi-robot autonomy with implicit human-robot interaction (Project title: AIMS) for four years (2026-2029)</a>.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="new-members-mar-2026">
             <time datetime="2026-03">Mar 2026</time>
             <p><span class="news-tag tag-people">People</span>Welcome new members joining APRL: <a href="{{ '/team.html' | relative_url }}#team-member-doyeon-kim">Doyeon Kim</a> (PhD student), <a href="{{ '/team.html' | relative_url }}#team-member-beomsu-kim">Beomsu Kim</a> (MS student), and <a href="{{ '/team.html' | relative_url }}#team-member-hoyun-kim">Hoyun Kim</a> (MS student).</p>
           </li>
-          <li data-news-category="publication" data-home-reveal="true">
+          <li data-news-category="publication" data-news-id="icra-scalemaster" data-home-reveal="true">
             <time datetime="2026-02">Feb 2026</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="https://scalemaster-dataset.github.io/">1 paper</a> accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>. Congratulations to <a href="{{ '/team.html' | relative_url }}#team-member-hyoseok-ju">Hyoseok</a>.</p>
           </li>
-          <li data-news-category="award" data-home-reveal="true">
+          <li data-news-category="award" data-news-id="kroc-young-researcher" data-home-reveal="true">
             <time datetime="2026-02">Feb 2026</time>
             <p><span class="news-tag tag-award">Award</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> has been selected as an <a href="https://kros.org/Conference/ConferenceView.asp?AC=0&amp;CODE=CC20250902&amp;CpPage=299#CONF">early-career researcher for KRoC 2026</a>. He will present his recent work on memory-augmented spatial intelligence for long-term autonomous robot navigation.</p>
           </li>
-          <li data-news-category="event">
+          <li data-news-category="event" data-news-id="kroc-spatial-ai-tutorial">
             <time datetime="2026-02">Feb 2026</time>
             <p><span class="news-tag tag-event">Event</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> <a href="https://www.linkedin.com/posts/giseop-kim-71683088_%EB%AC%B4%EC%97%87%EC%9D%B4-slam%EC%9D%98-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%9D%B4%EB%81%8C%EC%96%B4%EC%99%94%EC%9D%84%EA%B9%8C%EC%9A%94-%EC%A0%9C21%ED%9A%8C-%ED%95%9C%EA%B5%AD%EB%A1%9C%EB%B4%87%EC%A2%85%ED%95%A9%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EC%97%90%EC%84%9C-activity-7425895620810362880-LRP9?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAABKh1wIBJKgL9GfIG2eO2heHh1Je-GtQu34">organizes and leads</a> the <a href="https://sites.google.com/view/kroc26-spatial-ai-tutorial/home">Spatial AI Tutorial at KRoC 2026</a>.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="winter-interns-2026">
             <time datetime="2026-01">Jan 2026</time>
             <p><span class="news-tag tag-people">People</span>Welcome 2026-winter undergraduate interns: <a href="{{ '/team.html' | relative_url }}#team-member-hyeonwoo-jeong">Hyeonwoo Jeong</a>, <a href="{{ '/team.html' | relative_url }}#team-member-yewon-kim">Yewon Kim</a>, and <a href="{{ '/team.html' | relative_url }}#team-member-ayun-lee">Ayun Lee</a>, who have joined APRL for the 2026 Winter+Spring internship on DGIST 4D Mapping and Intelligent Robot Exploration.</p>
           </li>
@@ -103,47 +110,47 @@ lang: "en"
 
         <div class="publication-year" data-news-year>2025</div>
         <ol class="news-list">
-          <li data-news-category="award" data-home-reveal="true">
+          <li data-news-category="award" data-news-id="heai-poster-award" data-home-reveal="true">
             <time datetime="2025-10">Oct 2025</time>
             <p><span class="news-tag tag-award">Award</span><a href="{{ '/team.html' | relative_url }}#team-member-jiseon-kim">Jiseon</a> received the <a href="https://www.dropbox.com/scl/fo/dz1m3bmpiiyb2ho8xku8x/ANYZ1dryKAzS2Lg_Z_Q5aQU?rlkey=5wt0uhmzp2s4zia7p1x79ansp&amp;dl=0">Best Poster Award</a> at the <a href="https://heai-iros25-workshop.github.io/">HEAI Workshop</a> of IROS 2025. Congratulations.</p>
           </li>
-          <li data-news-category="publication">
+          <li data-news-category="publication" data-news-id="iros-workshops-2025">
             <time datetime="2025-10">Oct 2025</time>
             <p><span class="news-tag tag-publication">Publication</span><a href="publications.html?year=2025&amp;type=workshop#publications">Three workshop papers</a> from our lab have been accepted to IROS 2025. Congrats to <a href="{{ '/team.html' | relative_url }}#team-member-hyoseok-ju">Hyoseok</a> for his paper accepted to the <a href="https://iros25-ppniv.github.io/">15th Workshop on Planning, Perception and Navigation for Intelligent Vehicles (PPNIV)</a>, and to <a href="{{ '/team.html' | relative_url }}#team-member-jiseon-kim">Jiseon</a> and <a href="{{ '/team.html' | relative_url }}#team-member-bokeon-suh">Bokeon</a> for their papers accepted to the <a href="https://heai-iros25-workshop.github.io/">Human-Aware Embodied AI (HEAI)</a> workshop.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="nayak-joins">
             <time datetime="2025-10">Oct 2025</time>
             <p><span class="news-tag tag-people">People</span>Excited to welcome <a href="{{ '/team.html' | relative_url }}#team-member-bibhutibhusan-nayak">Dr. Nayak</a>, formerly a postdoctoral researcher in <a href="https://nbest.dgist.ac.kr/PROFESSOR.html">Prof. CheolGi Kim's lab at DGIST</a>, who joins our lab through <a href="https://www.hellodd.com/news/articleView.html?idxno=109383">the InnoCORE project</a> to pioneer Magnetic SLAM research.</p>
           </li>
-          <li data-news-category="release">
+          <li data-news-category="release" data-news-id="slam-handbook">
             <time datetime="2025-09">Sep 2025</time>
             <p><span class="news-tag tag-release">Release</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> contributed to <a href="publications.html?year=2026&amp;type=book&amp;venue=slam-handbook#publications">Chapter 8: LiDAR SLAM of the SLAM Handbook</a>, which has now been released online.</p>
           </li>
-          <li data-news-category="funding" data-home-reveal="true">
+          <li data-news-category="funding" data-news-id="glocal-lab" data-home-reveal="true">
             <time datetime="2025-09">Sep 2025</time>
             <p><span class="news-tag tag-funding">Funding</span>The <a href="https://www.etnews.com/20250911000013">Robotics and Mechatronics Research Institute of DGIST has been selected for the Ministry of Education's Glocal Lab program</a>. Our lab will conduct research on sensor fusion, robot perception, and cognitive AI for augmented human robots.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="grad-members-2025">
             <time datetime="2025-08">Aug 2025</time>
             <p><span class="news-tag tag-people">People</span><a href="{{ '/team.html' | relative_url }}#team-member-bokeon-suh">Bokeon Suh</a>, <a href="{{ '/team.html' | relative_url }}#team-member-jiseon-kim">Jiseon Kim</a>, <a href="{{ '/team.html' | relative_url }}#team-member-yumin-lee">Yumin Lee</a>, and <a href="{{ '/team.html' | relative_url }}#team-member-hyoseok-ju">Hyoseok Ju</a> have joined our lab to begin their graduate research journey.</p>
           </li>
-          <li data-news-category="funding">
+          <li data-news-category="funding" data-news-id="n-hrhr">
             <time datetime="2025-07">Jul 2025</time>
-            <p><span class="news-tag tag-funding">Funding</span>APRL has been selected for the DGIST Creative Challenging Research (N-HRHR) Program, supporting high-risk, high-return research in Physical AI and robotics for 6 months with 100M KRW.</p>
+            <p><span class="news-tag tag-funding">Funding</span>APRL has been selected for the DGIST Creative Challenging Research (N-HRHR) Program, supporting high-risk, high-return research in Physical AI and robotics for 6 months.</p>
           </li>
-          <li data-news-category="funding">
+          <li data-news-category="funding" data-news-id="innocore">
             <time datetime="2025-06">Jun 2025</time>
             <p><span class="news-tag tag-funding">Funding</span><a href="https://www.hellodd.com/news/articleView.html?idxno=108224">DGIST has been selected for Korea's InnoCORE initiative</a> on <a href="/projects.html#innocore">Bio-Embodied Physical AI</a>. Our lab, as part of the DGIST team, is recruiting talented postdocs in SLAM, 3D vision, and vision-language navigation.</p>
           </li>
-          <li data-news-category="funding">
+          <li data-news-category="funding" data-news-id="ai-star">
             <time datetime="2025-05">May 2025</time>
             <p><span class="news-tag tag-funding">Funding</span>Our lab is supported by <a href="https://www.irobotnews.com/news/articleView.html?idxno=40067">the fund, AI Star Fellowship, from Ministry of Science and ICT</a> for the <a href="https://www.irobotnews.com/news/articleView.html?idxno=38442">next six years (2025-2030)</a>.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="jiseon-joins">
             <time datetime="2025-04">Apr 2025</time>
             <p><span class="news-tag tag-people">People</span><a href="{{ '/team.html' | relative_url }}#team-member-jiseon-kim">Jiseon Kim</a> has joined APRL as an undergraduate researcher.</p>
           </li>
-          <li data-news-category="people">
+          <li data-news-category="people" data-news-id="bokeon-joins">
             <time datetime="2025-03">Mar 2025</time>
             <p><span class="news-tag tag-people">People</span><a href="{{ '/team.html' | relative_url }}#team-member-bokeon-suh">Bokeon Suh</a> has joined APRL as an undergraduate researcher.</p>
           </li>
@@ -151,7 +158,7 @@ lang: "en"
 
         <div class="publication-year" data-news-year>2024</div>
         <ol class="news-list">
-          <li data-news-category="lab">
+          <li data-news-category="lab" data-news-id="lab-founded">
             <time datetime="2024-12">Dec 2024</time>
             <p><span class="news-tag tag-lab">Lab</span>Autonomy and Perceptual Robotics Lab (APRL) at DGIST was started in Dec 2024 by <a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop Kim</a>.</p>
           </li>
@@ -166,6 +173,18 @@ lang: "en"
     const count = document.querySelector("#news-filter-count");
     const validFilters = new Set(filters.map((button) => button.dataset.newsFilter));
     const yearHeadings = Array.from(document.querySelectorAll("[data-news-year]"));
+    const categoryLabelsKo = {
+      funding: "연구비",
+      award: "수상",
+      publication: "논문",
+      people: "구성원",
+      lab: "연구실"
+    };
+    let activeCategory = "all";
+
+    function newsLanguage() {
+      return window.aprlNewsLanguage?.current === "ko" ? "ko" : "en";
+    }
 
     function syncNewsYearCollapse(yearHeading) {
       const list = yearHeading.nextElementSibling;
@@ -174,7 +193,11 @@ lang: "en"
       if (list) list.classList.toggle("is-collapsed", collapsed);
       if (toggle) {
         toggle.textContent = collapsed ? "▸" : "▾";
-        toggle.setAttribute("aria-label", collapsed ? `Expand ${yearHeading.dataset.yearLabel}` : `Collapse ${yearHeading.dataset.yearLabel}`);
+        const year = yearHeading.dataset.yearLabel;
+        const label = newsLanguage() === "ko"
+          ? `${year}년 ${collapsed ? "펼치기" : "접기"}`
+          : `${collapsed ? "Expand" : "Collapse"} ${year}`;
+        toggle.setAttribute("aria-label", label);
         toggle.setAttribute("aria-expanded", collapsed ? "false" : "true");
       }
     }
@@ -207,6 +230,7 @@ lang: "en"
     }
 
     function applyNewsFilter(category) {
+      activeCategory = category;
       let visible = 0;
       items.forEach((item) => {
         const matches = category === "all" || item.dataset.newsCategory === category;
@@ -229,9 +253,15 @@ lang: "en"
       });
 
       if (count) {
-        count.textContent = category === "all"
-          ? "APRL announcements and updates."
-          : `${visible} ${category} update${visible === 1 ? "" : "s"}.`;
+        if (newsLanguage() === "ko") {
+          count.textContent = category === "all"
+            ? "APRL의 공지와 새로운 소식입니다."
+            : `${categoryLabelsKo[category] || category} 소식 ${visible}건`;
+        } else {
+          count.textContent = category === "all"
+            ? "APRL announcements and updates."
+            : `${visible} ${category} update${visible === 1 ? "" : "s"}.`;
+        }
       }
     }
 
@@ -253,6 +283,8 @@ lang: "en"
 
     document.querySelector("[data-news-collapse-all]")?.addEventListener("click", () => setAllNewsYearsCollapsed(true));
     document.querySelector("[data-news-expand-all]")?.addEventListener("click", () => setAllNewsYearsCollapsed(false));
+
+    window.addEventListener("aprl:news-language", () => applyNewsFilter(activeCategory));
 
     const initialCategory = new URLSearchParams(window.location.search).get("category");
     applyNewsFilter(validFilters.has(initialCategory) ? initialCategory : "all");
