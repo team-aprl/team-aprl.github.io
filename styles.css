@@ -2766,8 +2766,8 @@ h1 {
 
 .publication-filter-panel button[data-filter-group="type"][data-filter-value="workshop"].is-active {
   color: #fff;
-  background: #c2410c;
-  border-color: #c2410c;
+  background: #a16207;
+  border-color: #a16207;
 }
 
 .publication-filter-panel button[data-filter-group="aprl"][data-filter-value="aprl"].is-active {
@@ -5009,12 +5009,17 @@ h1 {
 
 .pub-badge.badge-type-workshop {
   color: #fff;
-  background: #c2410c;
+  background: #a16207;
 }
 
 .pub-badge.aprl {
   color: #78350f;
   background: #fde68a;
+}
+
+.pub-badge.publication-award-badge {
+  color: #fff;
+  background: #dc2626;
 }
 
 .publication-card h3 {
