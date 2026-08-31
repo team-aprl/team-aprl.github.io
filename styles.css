@@ -2930,6 +2930,105 @@ h1 {
   font-weight: 650;
 }
 
+.year-range-combobox {
+  position: relative;
+  display: inline-flex;
+  min-width: 74px;
+  vertical-align: middle;
+}
+
+.facet-year-range .year-range-native-select {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.publication-filter-panel .year-range-trigger {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 74px;
+  min-height: 28px;
+  padding: 3px 9px 3px 10px;
+  color: #2f3a44;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.publication-filter-panel .year-range-trigger::after {
+  content: "▾";
+  color: #52677a;
+  font-size: 0.72rem;
+}
+
+.publication-filter-panel .year-range-trigger:focus-visible {
+  outline: 2px solid #1689c9;
+  outline-offset: 2px;
+}
+
+.year-range-options {
+  --year-range-option-height: 32px;
+  position: absolute;
+  z-index: 80;
+  top: calc(100% + 5px);
+  left: 0;
+  display: none;
+  width: max-content;
+  min-width: 100%;
+  max-height: calc(var(--year-range-option-height) * 5 + 8px);
+  padding: 4px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  color: #273849;
+  background: #fff;
+  border: 1px solid rgba(15, 57, 87, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(15, 43, 64, 0.2);
+  scrollbar-gutter: stable;
+}
+
+.year-range-combobox.is-open .year-range-options {
+  display: block;
+}
+
+.publication-filter-panel .year-range-option {
+  display: block;
+  width: 100%;
+  height: var(--year-range-option-height);
+  padding: 5px 12px;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.publication-filter-panel .year-range-option:hover,
+.publication-filter-panel .year-range-option:focus-visible {
+  color: #0b5e8e;
+  background: #e7f5fc;
+  outline: none;
+}
+
+.publication-filter-panel .year-range-option[aria-selected="true"] {
+  color: #fff;
+  background: #147fba;
+}
+
 .facet-venue-groups {
   display: grid;
   gap: 8px;
@@ -5836,6 +5935,30 @@ body.theme-dark .facet-year-range select {
   background: var(--panel);
   border-color: var(--line);
   box-shadow: none;
+}
+
+body.theme-dark .publication-filter-panel .year-range-trigger {
+  color: #edf5fc;
+  background: var(--panel);
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+body.theme-dark .publication-filter-panel .year-range-trigger::after {
+  color: #b7cadd;
+}
+
+body.theme-dark .year-range-options {
+  color: #e3edf7;
+  background: #172331;
+  border-color: var(--line);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.42);
+}
+
+body.theme-dark .publication-filter-panel .year-range-option:hover,
+body.theme-dark .publication-filter-panel .year-range-option:focus-visible {
+  color: #d8f1ff;
+  background: #24384b;
 }
 
 body.theme-dark .publication-author-note em b,
