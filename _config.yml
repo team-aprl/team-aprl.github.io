@@ -1,2 +1,6 @@
 title: APRL
 description: Autonomy and Perceptual Robotics Lab, DGIST
+exclude:
+  - AGENTS.md
+  - skills
+  - vendor

@@ -1,0 +1,4 @@
+interface:
+  display_name: "APRL Site Images"
+  short_description: "Keep APRL images fast and consistent"
+  default_prompt: "Apply the APRL site image policy to optimize thumbnails, loading behavior, and click-through originals."

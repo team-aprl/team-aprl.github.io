@@ -1814,6 +1814,7 @@ h1 {
 .home-hero-media img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -1851,6 +1852,7 @@ h1 {
 .home-image-pair img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
@@ -2356,6 +2358,7 @@ h1 {
 .team-member-photo {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   margin-bottom: 12px;
   background: #fff;
@@ -4451,6 +4454,7 @@ h1 {
 .gallery-grid img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   background: #f7f8fa;
   object-fit: contain;
@@ -4732,6 +4736,7 @@ h1 {
 .dataset-image-grid img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
@@ -5330,6 +5335,7 @@ h1 {
 .research-method-image img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -5647,6 +5653,7 @@ h1 {
 .publication-figure img {
   display: block;
   width: 100%;
+  height: auto;
   max-height: 140px;
   object-fit: contain;
 }
