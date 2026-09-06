@@ -646,6 +646,29 @@ body.header-compact-sticky .dgist-wordmark::before {
   content: "";
 }
 
+.header-dalgu-garden-stars {
+  position: absolute;
+  inset: 0 0 30px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 4% 28%, #e2edda 0 1px, transparent 1.8px),
+    radial-gradient(circle at 8% 62%, #b7cfca 0 0.7px, transparent 1.4px),
+    radial-gradient(circle at 12% 17%, #e2edda 0 1.2px, transparent 2px),
+    radial-gradient(circle at 16% 45%, #b7cfca 0 0.7px, transparent 1.5px),
+    radial-gradient(circle at 21% 23%, #e2edda 0 0.8px, transparent 1.5px),
+    radial-gradient(circle at 79% 37%, #b7cfca 0 0.8px, transparent 1.5px),
+    radial-gradient(circle at 84% 18%, #e2edda 0 1px, transparent 1.8px),
+    radial-gradient(circle at 88% 59%, #b7cfca 0 0.7px, transparent 1.4px),
+    radial-gradient(circle at 93% 31%, #e2edda 0 1.2px, transparent 2px),
+    radial-gradient(circle at 97% 67%, #b7cfca 0 0.8px, transparent 1.5px);
+  transition: opacity 300ms ease;
+}
+
+body.theme-dark .header-dalgu-scenery[data-dalgu-skin="garden"] .header-dalgu-garden-stars {
+  opacity: 0.7;
+}
+
 .header-dalgu-sprout {
   position: absolute;
   bottom: 8px;
