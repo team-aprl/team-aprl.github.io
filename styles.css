@@ -1063,10 +1063,36 @@ body.header-compact-sticky .dgist-wordmark::before {
   left: -2px;
   width: 5px;
   height: 3px;
-  background: color-mix(in srgb, var(--dalgu-city-light) 48%, transparent);
+  background: color-mix(in srgb, var(--dalgu-city) 48%, transparent);
   border-radius: 50% 50% 65% 65%;
-  box-shadow: 0 0 5px color-mix(in srgb, var(--dalgu-city-light) 22%, transparent);
+  transition: background 300ms ease, box-shadow 300ms ease;
   content: "";
+}
+
+.header-dalgu-city-lamp::after {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 25px;
+  height: 22px;
+  background: radial-gradient(ellipse at 50% 0, color-mix(in srgb, var(--dalgu-city-light) 32%, transparent), transparent 72%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+  content: "";
+}
+
+body.theme-dark .header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-lamp {
+  opacity: 1;
+}
+
+body.theme-dark .header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-lamp::before {
+  background: #fff1b8;
+  box-shadow: 0 0 4px 1px var(--dalgu-city-light), 0 0 12px 4px color-mix(in srgb, var(--dalgu-city-light) 48%, transparent);
+}
+
+body.theme-dark .header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city-lamp::after {
+  opacity: 1;
 }
 
 .header-dalgu-city-lamp-1 {
