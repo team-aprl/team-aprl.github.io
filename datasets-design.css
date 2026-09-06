@@ -5,15 +5,15 @@ body.theme-dark .datasets-section { --link: #a3c6e6; --link-dark: #d4e5f5; }
 .datasets-section .publications-heading h1 { letter-spacing: -.025em; }
 .datasets-section .datasets-toc p { font-size: .7rem; font-weight: 600; letter-spacing: .1em; }
 .datasets-section .datasets-toc a { color: var(--link); font-weight: 600; }
-body .datasets-section .dataset-card { background: var(--paper); border: 1px solid var(--line); border-radius: 4px; box-shadow: none; }
+body .datasets-section .dataset-card { background: var(--paper); border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 8px; box-shadow: none; }
 .datasets-section .dataset-card-header { padding-bottom: 14px; border-bottom: 1px solid var(--light-line); }
 .datasets-section .dataset-card-header h2 { color: var(--ink); font-size: 1.25rem; font-weight: 600; letter-spacing: -.015em; }
 body .datasets-section .dataset-card-header p { color: var(--muted); font-weight: 400; font-size: .86rem; line-height: 1.5; }
-.datasets-section .dataset-venue-label { background: var(--tag-publication-bg); color: var(--tag-publication-text); border: 1px solid var(--tag-publication-border); border-radius: 2px; font-size: .68rem; font-weight: 600; }
-.datasets-section .dataset-card-header > a { background: transparent; color: var(--link); border: 1px solid var(--line); border-radius: 2px; font-size: .8rem; font-weight: 600; box-shadow: none; }
+.datasets-section .dataset-venue-label { background: var(--tag-publication-bg); color: var(--tag-publication-text); border: 1px solid var(--tag-publication-border); border-radius: 5px; font-size: .68rem; font-weight: 600; }
+.datasets-section .dataset-card-header > a { background: transparent; color: var(--link); border: 1px solid color-mix(in srgb, var(--line) 72%, transparent); border-radius: 6px; font-size: .8rem; font-weight: 600; box-shadow: none; }
 .datasets-section .dataset-card-header > a:hover,
 .datasets-section .dataset-card-header > a:focus-visible { background: var(--panel); border-color: var(--link); box-shadow: none; }
-.datasets-section .dataset-image-grid a { border-radius: 2px; }
+.datasets-section .dataset-image-grid a { border-radius: 6px; }
 @media (max-width: 650px) {
   .datasets-section .dataset-card { padding: 14px; }
   .datasets-section .dataset-card-header { flex-wrap: wrap; gap: 12px; }
