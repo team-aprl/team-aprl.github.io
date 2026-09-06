@@ -1,0 +1,33 @@
+/* Projects: white cards, restrained accents, unchanged content and controls. */
+#funded-projects { --link: #193d62; --link-dark: #102b47; --project-border: #d7dde3; }
+body.theme-dark #funded-projects { --link: #a3c6e6; --link-dark: #d4e5f5; --project-border: #354452; }
+#funded-projects .publications-heading { padding-bottom: 18px; border-bottom: 2px solid var(--text); }
+#funded-projects .publications-heading h1 { letter-spacing: -.025em; }
+#funded-projects .project-controls { padding: 0; }
+#funded-projects .project-language-buttons { background: transparent; border-radius: 2px; border-color: var(--line); }
+#funded-projects .project-language-buttons button { color: var(--muted); border-radius: 1px; font-size: .82rem; font-weight: 600; }
+#funded-projects .project-language-buttons button.is-active { background: #193d62; color: #fff; }
+#funded-projects .project-language-toggle > span { font-weight: 600; font-size: .75rem; }
+#funded-projects .project-status-row { padding: 0; background: transparent; border: 0; border-radius: 0; }
+#funded-projects .project-status-row span { color: var(--text); font-weight: 600; }
+#funded-projects .project-status-row button:not(.project-summary-label) { border-radius: 2px; padding: 4px 10px; color: var(--link); background: transparent; border-color: var(--line); font-weight: 600; }
+#funded-projects .project-status-row button.is-active:not(.project-summary-label) { color: #fff; background: #193d62; border-color: #193d62; }
+#funded-projects .project-status-row .project-summary-label.is-active span { color: var(--link); }
+#funded-projects .publication-year { color: var(--text); font-size: 1.35rem; letter-spacing: -.025em; font-weight: 650; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+#funded-projects .project-controls + .publication-year,
+#funded-projects .project-current-list + .publication-year { padding-top: 0; border-top: 0; }
+#funded-projects .project-card { background: var(--paper); border: 1px solid var(--project-border); border-radius: 4px; box-shadow: none; color: var(--text); padding: 16px 18px; }
+#funded-projects .project-card .publication-title-row h3 { background: none; border: 0; border-radius: 0; padding: 0; color: var(--ink); font-weight: 600; line-height: 1.35; }
+#funded-projects .project-card .pub-badge { border-radius: 2px; font-size: .68rem; min-height: 20px; font-weight: 600; padding: 3px 6px; }
+#funded-projects .project-card .project-current { background: #edf4f1; color: #2d6656; }
+#funded-projects .project-card .project-completed { background: #f0f1f3; color: #5c6670; }
+#funded-projects .publication-meta { color: var(--muted); line-height: 1.5; gap: 5px; }
+#funded-projects .publication-meta b { color: var(--text); font-weight: 600; }
+#funded-projects .publication-figure { border-radius: 2px; }
+#funded-projects .project-card:target { outline: 2px solid var(--link); outline-offset: 3px; background: var(--paper); border-color: var(--link); box-shadow: none; }
+body.theme-dark #funded-projects .project-card .project-current { background: #20372f; color: #b7d7c9; }
+body.theme-dark #funded-projects .project-card .project-completed { background: #283039; color: #c0c9d2; }
+@media (max-width: 650px) {
+  #funded-projects .project-controls { flex-wrap: wrap; gap: 14px; }
+  #funded-projects .project-card { padding: 14px; }
+}

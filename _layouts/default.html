@@ -8,6 +8,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/site/icons/aprl-avatar-32.png' | relative_url }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/site/icons/aprl-avatar-180.png' | relative_url }}" />
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+    <link rel="stylesheet" href="{{ '/header-design.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+    {% for stylesheet in page.extra_styles %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}?v={{ site.time | date: '%s' }}" />
+    {% endfor %}
   </head>
   <body>
     {% include header.html %}

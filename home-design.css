@@ -1,0 +1,160 @@
+/* Home recruiting and news only; retain the original content and layout. */
+.home-page .home-recruiting,
+.home-page .home-news {
+  --link: #193d62;
+  --link-dark: #102b47;
+}
+.home-page .home-recruiting {
+  padding: 22px 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  gap: 36px;
+}
+.home-page .home-recruiting .news-tag {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  font-size: .62rem;
+}
+.home-page .home-recruiting h2 { margin: 8px 0; font-size: 1.1rem; }
+.home-page .home-recruiting p { font-size: .84rem; color: var(--muted); }
+.home-page .home-recruiting > a {
+  background: #10283f;
+  border-radius: 2px;
+  padding: 10px 18px;
+  font-size: .8rem;
+}
+.home-page .home-recruiting > a:hover,
+.home-page .home-recruiting > a:focus-visible { background: #193d62; }
+.home-page .home-news { border: 0; border-radius: 0; background: transparent; padding: 0; }
+.home-page .home-news .home-section-heading {
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 0;
+}
+.home-page .home-news .home-section-heading h2 {
+  font-size: 1.45rem;
+  letter-spacing: -.025em;
+  margin: 0;
+}
+.home-page .home-news a { font-weight: 600; }
+.home-page .home-news li { padding-top: 9px; padding-bottom: 9px; }
+.home-page .home-news .news-tag { border-radius: 2px; }
+.home-page .home-news .news-language-toggle { border-radius: 2px; background: transparent; }
+.home-page .home-news .news-language-toggle button { border-radius: 1px; }
+body.theme-dark .home-page .home-recruiting,
+body.theme-dark .home-page .home-news { --link: #a3c6e6; --link-dark: #d4e5f5; }
+@media (max-width: 650px) {
+  .home-page .home-recruiting { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .home-page .home-news .home-section-heading { flex-wrap: wrap; gap: 14px; }
+  .home-page .home-news .home-section-heading h2 { font-size: 1.25rem; }
+  .home-page .home-news li { font-size: .88rem; }
+}
+
+/* Match the restrained news section without changing the video grid. */
+.home-page .home-research-videos {
+  --link: #193d62;
+  --link-dark: #102b47;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.home-page .home-research-videos .home-section-heading {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--text);
+}
+.home-page .home-research-videos .home-section-heading h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: -.025em;
+}
+.home-page .home-video-grid iframe { border-radius: 2px; }
+.home-page .home-video-actions { margin-top: 18px; }
+.home-page .home-video-actions a {
+  padding: 9px 18px;
+  border-radius: 2px;
+  background: #10283f;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.home-page .home-video-actions a:hover,
+.home-page .home-video-actions a:focus-visible { background: #193d62; }
+body.theme-dark .home-page .home-research-videos {
+  --link: #a3c6e6;
+  --link-dark: #d4e5f5;
+}
+@media (max-width: 650px) {
+  .home-page .home-research-videos .home-section-heading h2 { font-size: 1.25rem; }
+}
+
+/* Keep the introduction in place, with quieter emphasis and plain links. */
+.home-page .home-hero { --link: #193d62; --link-dark: #102b47; }
+.home-page .home-kicker {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 1.65rem;
+  font-weight: 650;
+  letter-spacing: -.025em;
+}
+.home-page .home-hero-points {
+  gap: 9px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.home-page .home-hero-points li::marker { color: var(--muted); }
+.home-page .home-vision-summary { line-height: 1.65; }
+.home-page .home-hero-points strong { font-weight: 600; }
+.home-page .home-hero-points a {
+  color: var(--link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #b4c1cc;
+  text-underline-offset: 3px;
+}
+body .home-page .home-vision-label {
+  display: inline;
+  min-height: 0;
+  margin-right: 10px;
+  padding: 0;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  vertical-align: .08em;
+}
+body .home-page .home-framework-link,
+body .home-page .home-framework-overview-link {
+  padding: 0;
+  color: var(--link);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  font-weight: 600;
+  white-space: normal;
+}
+body .home-page .home-hero-points a:hover,
+body .home-page .home-hero-points a:focus-visible {
+  color: var(--link-dark);
+  background: none;
+  text-decoration-color: currentColor;
+}
+body.theme-dark .home-page .home-hero { --link: #a3c6e6; --link-dark: #d4e5f5; }
+@media (max-width: 650px) {
+  .home-page .home-kicker { font-size: 1.45rem; }
+  .home-page .home-hero-points { font-size: .94rem; }
+}
