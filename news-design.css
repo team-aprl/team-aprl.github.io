@@ -52,6 +52,7 @@ body .news-page > .publication-year[data-news-year] {
 body .news-page .news-language-toggle { border-radius: 6px; background: transparent; }
 .news-page .news-language-toggle button { border-radius: 5px; }
 body.theme-dark .news-page { --link: #a3c6e6; --link-dark: #d4e5f5; }
+body.theme-dark .news-page .news-list li { background: transparent; }
 @media (max-width: 650px) {
   .news-page .publications-heading { flex-wrap: wrap; gap: 14px; }
   .news-page .news-filter-panel { grid-template-columns: 1fr; }
