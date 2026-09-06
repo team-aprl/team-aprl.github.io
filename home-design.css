@@ -51,6 +51,15 @@
 .home-page .home-news .news-language-toggle button { border-radius: 1px; }
 body.theme-dark .home-page .home-recruiting,
 body.theme-dark .home-page .home-news { --link: #a3c6e6; --link-dark: #d4e5f5; }
+body.theme-dark .home-page .home-recruiting {
+  background: transparent;
+  border-color: var(--line);
+}
+body.theme-dark .home-page .home-news,
+body.theme-dark .home-page .home-news li {
+  background: transparent;
+  border-color: var(--line);
+}
 @media (max-width: 650px) {
   .home-page .home-recruiting { flex-direction: column; align-items: flex-start; gap: 18px; }
   .home-page .home-news .home-section-heading { flex-wrap: wrap; gap: 14px; }
