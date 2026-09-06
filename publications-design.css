@@ -10,6 +10,9 @@ body.theme-dark #publications { --link: #a3c6e6; --link-dark: #d4e5f5; }
 #publications .publication-filter-panel button,
 #publications .publication-filter-panel select { border-radius: 6px; box-shadow: none; font-size: .8rem; font-weight: 600; }
 #publications .publication-filter-panel button { color: var(--link); background: var(--paper); border-color: color-mix(in srgb, var(--line) 72%, transparent); }
+#publications .publication-filter-panel > div:first-child { gap: 6px; }
+#publications .publication-filter-panel > div:first-child > span { margin-right: 2px; }
+#publications .publication-filter-panel button[data-filter-group="region"] { margin-left: 0; border-radius: 6px; }
 #publications .publication-filter-panel button.is-active { color: #fff; background: #193d62; border-color: #193d62; }
 #publications .publication-filter-panel button:hover { border-color: var(--link); transform: none; box-shadow: none; }
 #publications .publication-filter-panel button:focus-visible,
