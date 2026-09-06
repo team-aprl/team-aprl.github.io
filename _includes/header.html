@@ -18,7 +18,7 @@
             <img src="{{ '/assets/site/thumbs/dalgu-front-thumb.webp' | relative_url }}" alt="" width="128" height="120" loading="eager" decoding="async" />
           </span>
         </button>
-        <button class="dalgu-skin-toggle" type="button" aria-label="Show the next Dalgu scenery" title="Next Dalgu scenery">
+        <button class="dalgu-skin-toggle" data-dalgu-skin="none" type="button" aria-label="Show the next Dalgu scenery" title="Next Dalgu scenery">
           <span class="dalgu-skin-toggle-orb" aria-hidden="true"></span>
         </button>
       </div>
@@ -26,7 +26,7 @@
   </div>
   <div class="header-inner lab-header">
     <div class="header-dalgu-scenery-track" aria-hidden="true">
-      <div class="header-dalgu-scenery">
+      <div class="header-dalgu-scenery" data-dalgu-skin="none">
         <span class="header-dalgu-garden-stars"></span>
         <span class="header-dalgu-sprout header-dalgu-sprout-1"></span>
         <span class="header-dalgu-sprout header-dalgu-sprout-2"></span>
@@ -67,7 +67,7 @@
       </div>
     </div>
     <div class="header-dalgu-track" aria-hidden="true">
-      <div class="header-dalgu">
+      <div class="header-dalgu" data-dalgu-mode="none">
         <picture>
           <source class="header-dalgu-source" srcset="{{ '/assets/site/dalgu-walk.webp' | relative_url }}" type="image/webp" />
           <img class="header-dalgu-image" src="{{ '/assets/site/thumbs/dalgu-walk-fallback-thumb.webp' | relative_url }}" alt="" width="128" height="128" loading="eager" decoding="async" />

@@ -1201,6 +1201,10 @@ body.theme-dark .header-dalgu-scenery[data-dalgu-skin="city"] .header-dalgu-city
   opacity: 0;
 }
 
+.header-dalgu[data-dalgu-mode="none"] {
+  display: none;
+}
+
 .header-dalgu {
   --dalgu-size: 108px;
   position: absolute;

@@ -11,16 +11,15 @@
   }
 
   var patrolStorageKey = "aprl-dalgu-patrol-origin-v1";
-  var modeStorageKey = "aprl-dalgu-mode-v1";
-  var skinStorageKey = "aprl-dalgu-skin-v1";
   var patrolDuration = 17000;
   var skins = [
+    { key: "none", label: "No scenery" },
     { key: "garden", label: "Sprout garden" },
     { key: "mars", label: "Subtle Mars terrain" },
-    { key: "city", label: "Minimal urban environment" },
-    { key: "none", label: "No scenery" }
+    { key: "city", label: "Minimal urban environment" }
   ];
   var modes = [
+    { key: "none", label: "No Dalgu" },
     {
       key: "walk",
       label: "Walk",
@@ -52,50 +51,21 @@
       fallback: "/assets/site/dalgu-car-platform-fallback.png"
     }
   ];
-  var modeIndex = Math.floor(Math.random() * modes.length);
+  // Decorations are opt-in on every page load, including reloads.
+  var modeIndex = 0;
   var skinIndex = 0;
   var now = Date.now();
   var origin = now;
 
-  try {
-    var storedMode = window.sessionStorage.getItem(modeStorageKey);
-    var storedModeIndex = modes.findIndex(function (mode) {
-      return mode.key === storedMode;
-    });
-    var navigationEntry = window.performance &&
-      window.performance.getEntriesByType &&
-      window.performance.getEntriesByType("navigation")[0];
-    var isReload = navigationEntry && navigationEntry.type === "reload";
-
-    if (!isReload && storedModeIndex >= 0) {
-      modeIndex = storedModeIndex;
-    }
-
-    window.sessionStorage.setItem(modeStorageKey, modes[modeIndex].key);
-
-    var storedSkin = window.sessionStorage.getItem(skinStorageKey);
-    var storedSkinIndex = skins.findIndex(function (skin) {
-      return skin.key === storedSkin;
-    });
-
-    if (storedSkinIndex >= 0) {
-      skinIndex = isReload
-        ? (storedSkinIndex + 1) % skins.length
-        : storedSkinIndex;
-    }
-
-    window.sessionStorage.setItem(skinStorageKey, skins[skinIndex].key);
-  } catch (error) {
-    // A random mode is still used when browser storage is unavailable.
-  }
-
   function applyMode() {
     var mode = modes[modeIndex];
 
-    source.srcset = mode.animated;
-    image.src = mode.fallback;
+    if (mode.key !== "none") {
+      source.srcset = mode.animated;
+      image.src = mode.fallback;
+    }
     dalgu.dataset.dalguMode = mode.key;
-    dalgu.classList.toggle("is-vehicle-mode", mode.key !== "walk");
+    dalgu.classList.toggle("is-vehicle-mode", mode.key !== "none" && mode.key !== "walk");
 
     if (modeToggle) {
       modeToggle.setAttribute(
@@ -128,12 +98,6 @@
     modeToggle.addEventListener("click", function () {
       modeIndex = (modeIndex + 1) % modes.length;
 
-      try {
-        window.sessionStorage.setItem(modeStorageKey, modes[modeIndex].key);
-      } catch (error) {
-        // The mode still changes for this page when storage is unavailable.
-      }
-
       applyMode();
     });
   }
@@ -143,20 +107,9 @@
     skinToggle.addEventListener("click", function () {
       skinIndex = (skinIndex + 1) % skins.length;
 
-      try {
-        window.sessionStorage.setItem(skinStorageKey, skins[skinIndex].key);
-      } catch (error) {
-        // The scenery still changes for this page when storage is unavailable.
-      }
-
       applySkin();
     });
   }
-
-  modes.slice(1).forEach(function (mode) {
-    var preload = new Image();
-    preload.src = mode.animated;
-  });
 
   applyMode();
   applySkin();
