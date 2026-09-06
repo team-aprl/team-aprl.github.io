@@ -45,8 +45,9 @@
   margin: 0;
 }
 .home-page .home-news a { font-weight: 600; }
-.home-page .home-news li { padding-top: 9px; padding-bottom: 9px; }
-.home-page .home-news .news-tag { border-radius: 2px; }
+.home-page .home-news li { align-items: start; padding-block: 10px; }
+.home-page .home-news time { line-height: 1.5; }
+.home-page .home-news .news-tag { border-radius: 2px; vertical-align: baseline; }
 .home-page .home-news .news-language-toggle { border-radius: 2px; background: transparent; }
 .home-page .home-news .news-language-toggle button { border-radius: 1px; }
 body.theme-dark .home-page .home-recruiting,
