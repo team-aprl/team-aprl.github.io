@@ -92,4 +92,6 @@ body .team-page .profile-biography p { line-height: 1.45; margin-bottom: 12px; }
 
 /* Tighten the transition from the leader profile to current members. */
 .team-page .team-profile { padding-bottom: 18px; }
+body.theme-dark .team-page .team-profile,
+body.theme-dark .team-page .profile-card { background: transparent; }
 .team-page #current-lab-members { margin-top: 12px; padding-top: 18px; }
