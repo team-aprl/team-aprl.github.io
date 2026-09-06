@@ -17,7 +17,7 @@ body .news-page > .publication-year[data-news-year] button {
   color: var(--link);
   background: transparent;
   border: 1px solid var(--line);
-  border-radius: 2px;
+  border-radius: 6px;
   font-weight: 600;
   box-shadow: none;
 }
@@ -48,9 +48,9 @@ body .news-page > .publication-year[data-news-year] {
 .news-page .news-list a { color: var(--link); font-weight: 600; }
 .news-page .news-list a:hover { color: var(--link-dark); }
 .news-page .news-list time { color: var(--text); font-weight: 700; }
-.news-page .news-tag { border-radius: 2px; }
-body .news-page .news-language-toggle { border-radius: 2px; background: transparent; }
-.news-page .news-language-toggle button { border-radius: 1px; }
+.news-page .news-tag { border-radius: 5px; }
+body .news-page .news-language-toggle { border-radius: 6px; background: transparent; }
+.news-page .news-language-toggle button { border-radius: 5px; }
 body.theme-dark .news-page { --link: #a3c6e6; --link-dark: #d4e5f5; }
 @media (max-width: 650px) {
   .news-page .publications-heading { flex-wrap: wrap; gap: 14px; }
