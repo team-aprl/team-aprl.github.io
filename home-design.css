@@ -45,6 +45,7 @@
   margin: 0;
 }
 .home-page .home-news a { font-weight: 600; }
+.home-page .home-news ol { gap: 0; }
 .home-page .home-news li { align-items: start; padding-block: 10px; }
 .home-page .home-news time { line-height: 1.5; }
 .home-page .home-news .news-tag { border-radius: 2px; vertical-align: baseline; }
