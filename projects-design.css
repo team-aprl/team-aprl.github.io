@@ -17,7 +17,17 @@ body.theme-dark #funded-projects { --link: #81d2fa; --link-dark: #b9e9ff; --proj
 #funded-projects .project-controls + .publication-year,
 #funded-projects .project-current-list + .publication-year { padding-top: 0; border-top: 0; }
 #funded-projects .project-card { background: var(--paper); border: 1px solid color-mix(in srgb, var(--project-border) 82%, transparent); border-radius: 8px; box-shadow: none; color: var(--text); padding: 16px 18px; }
-#funded-projects .project-card .publication-title-row h3 { background: none; border: 0; border-radius: 0; padding: 0; color: var(--ink); font-weight: 600; line-height: 1.35; }
+#funded-projects .project-card .publication-title-row h3 { background: none; border: 0; border-radius: 0; padding: 0 0 0 12px; position: relative; color: var(--ink); font-weight: 600; line-height: 1.35; }
+#funded-projects .project-card .publication-title-row h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .175em;
+  width: 4px;
+  height: 1em;
+  border-radius: 4px;
+  background: #009fe8;
+}
 #funded-projects .project-card .pub-badge { border-radius: 5px; font-size: .68rem; min-height: 20px; font-weight: 600; padding: 3px 6px; }
 #funded-projects .project-card .project-current { background: #b8eacc; border: 1px solid #62c58d; color: #075d35; }
 #funded-projects .project-card .project-completed { background: #f0f1f3; color: #5c6670; }
