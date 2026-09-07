@@ -35,6 +35,28 @@ body.theme-dark #publications { --link: #81d2fa; --link-dark: #b9e9ff; }
 #publications .publication-actions a:hover,
 #publications .publication-actions button:hover { border-color: var(--link); background: var(--panel); }
 #publications .publication-figure { border-radius: 6px; }
+/* Let titles span the card, with figures beside the details below. */
+#publications .publication-card {
+  grid-template-areas: "title title" "subtitle subtitle" "meta figure" "actions figure";
+  grid-template-rows: auto auto auto 1fr;
+  row-gap: 0;
+}
+#publications .publication-body { display: contents; }
+#publications .publication-title-row { grid-area: title; min-width: 0; }
+#publications .publication-title-en { grid-area: subtitle; min-width: 0; }
+#publications .publication-meta { grid-area: meta; min-width: 0; }
+#publications .publication-actions { grid-area: actions; align-self: start; }
+#publications .publication-figure { grid-area: figure; }
+#publications .publication-card-text-only {
+  grid-template-areas: "title" "subtitle" "meta" "actions";
+}
+@media (max-width: 640px) {
+  #publications .publication-card {
+    grid-template-areas: "title" "subtitle" "meta" "actions" "figure";
+    grid-template-rows: auto;
+  }
+  #publications .publication-figure { margin-top: 12px; }
+}
 #publications .publication-card:target { background: var(--paper); border-color: var(--link); outline: 2px solid var(--link); outline-offset: 3px; box-shadow: none; }
 
 /* Preserve publication-type colors in the filter controls. */
