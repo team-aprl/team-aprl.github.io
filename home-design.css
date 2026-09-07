@@ -113,3 +113,35 @@ body.theme-dark .home-page .home-recruiting { border-color: var(--line); }
 .home-page .home-news time { line-height: 1.5; }
 .home-page .home-news .news-tag { vertical-align: baseline; }
 body.theme-dark .home-page .home-news li { background: transparent; }
+
+/* Small brand accents keep the introduction open and the action clear. */
+.home-page h1.home-kicker::after {
+  content: '';
+  display: block;
+  width: 96px;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #009fe8 0 54%, transparent 54% 59%, #ffd21c 59% 79%, transparent 79% 84%, #f53670 84% 100%);
+}
+.home-page .home-recruiting .news-tag::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #ffd21c;
+  vertical-align: 1px;
+}
+body .home-page .home-recruiting > a {
+  background: #0076b3;
+  border-color: #0076b3;
+  color: #fff;
+}
+body .home-page .home-recruiting > a:hover,
+body .home-page .home-recruiting > a:focus-visible {
+  background: #005c8c;
+  border-color: #005c8c;
+  color: #fff;
+}
