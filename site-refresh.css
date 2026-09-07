@@ -14,3 +14,23 @@ body .page .publications-heading { border-bottom: 0; }
   .page .publications-heading h1 { gap: 10px; }
   .page .publications-heading h1::before { height: 24px; }
 }
+
+/* One shared language selector across home, news, projects and joining. */
+body :is(.page, #funded-projects) .language-control.language-control {
+  display: inline-flex; align-items: center; gap: 2px; padding: 3px;
+  background: #fff; border: 1px solid #d3e0e7; border-radius: 8px;
+  box-shadow: none;
+}
+body :is(.page, #funded-projects) .language-control.language-control button {
+  min-width: 48px; min-height: 28px; padding: 5px 10px;
+  border: 0; border-radius: 5px; background: transparent; color: #536475;
+  font: inherit; font-size: .78rem; font-weight: 600; line-height: 1;
+  box-shadow: none; cursor: pointer;
+}
+body :is(.page, #funded-projects) .language-control.language-control button:hover { color: #005c8c; background: #edf8fe; }
+body :is(.page, #funded-projects) .language-control.language-control button.is-active { color: #fff; background: #0076b3; box-shadow: none; }
+body :is(.page, #funded-projects) .language-control.language-control button:focus-visible { outline: 2px solid #0076b3; outline-offset: 2px; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control { background: #14252f; border-color: #355364; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button { color: #d0dde5; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button:hover { color: #b9e9ff; background: #203c4b; }
+body.theme-dark :is(.page, #funded-projects) .language-control.language-control button.is-active { background: #0076b3; color: #fff; }
