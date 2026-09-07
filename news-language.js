@@ -30,7 +30,6 @@
     "jiseon-joins": `<span class="news-tag tag-people">구성원</span><a href="team.html#team-member-jiseon-kim">김지선</a> 님이 APRL에 합류했습니다.`,
     "bokeon-joins": `<span class="news-tag tag-people">구성원</span><a href="team.html#team-member-bokeon-suh">서보건</a> 님이 APRL에 합류했습니다.`,
     "giseop-joins": `<span class="news-tag tag-people">구성원</span><a href="team.html#team-member-giseop-kim">김기섭</a> 교수님이 DGIST 로봇및기계전자공학과 조교수로 부임하고 로봇인식 및 자율화 연구실(APRL)을 설립했습니다.`,
-    "lab-founded": `<span class="news-tag tag-lab">연구실</span>DGIST 로봇인식 및 자율화 연구실(APRL)은 <a href="team.html#team-member-giseop-kim">김기섭</a> 교수님이 2024년 12월 설립했습니다.`,
   };
 
   let currentLanguage = "en";
