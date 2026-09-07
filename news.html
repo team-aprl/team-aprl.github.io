@@ -32,7 +32,6 @@ extra_scripts:
             <button type="button" data-news-filter="publication" data-news-text-en="Publication" data-news-text-ko="논문" aria-pressed="false">Publication</button>
             <button type="button" data-news-filter="people" data-news-text-en="People" data-news-text-ko="구성원" aria-pressed="false">People</button>
             <button type="button" data-news-filter="event" data-news-text-en="Event" data-news-text-ko="행사" aria-pressed="false">Event</button>
-            <button type="button" data-news-filter="release" data-news-text-en="Release" data-news-text-ko="출간" aria-pressed="false">Release</button>
           </div>
         </div>
         <div class="news-collapse-actions" aria-label="News year visibility controls" data-news-aria-en="News year visibility controls" data-news-aria-ko="연도별 소식 펼침 제어">
@@ -130,9 +129,9 @@ extra_scripts:
             <time datetime="2025-10">Oct 2025</time>
             <p><span class="news-tag tag-people">People</span>Excited to welcome <a href="{{ '/team.html' | relative_url }}#team-member-bibhutibhusan-nayak">Bibhutibhusan Nayak</a>, formerly a postdoctoral researcher in <a href="https://nbest.dgist.ac.kr/PROFESSOR.html">Prof. CheolGi Kim's lab at DGIST</a>, who joins our lab through <a href="https://www.hellodd.com/news/articleView.html?idxno=109383">the InnoCORE project</a> to pioneer Magnetic SLAM research.</p>
           </li>
-          <li data-news-category="release" data-news-id="slam-handbook">
+          <li data-news-category="publication" data-news-id="slam-handbook">
             <time datetime="2025-09">Sep 2025</time>
-            <p><span class="news-tag tag-release">Release</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> contributed to <a href="publications.html?year=2026&amp;type=book&amp;venue=slam-handbook#publications">Chapter 8: LiDAR SLAM of the SLAM Handbook</a>, which has now been released online.</p>
+            <p><span class="news-tag tag-publication">Publication</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> contributed to <a href="publications.html?year=2026&amp;type=book&amp;venue=slam-handbook#publications">Chapter 8: LiDAR SLAM of the SLAM Handbook</a>, which has now been released online.</p>
           </li>
           <li data-news-category="funding" data-news-id="glocal-lab" data-home-reveal="true">
             <time datetime="2025-09">Sep 2025</time>
@@ -186,8 +185,7 @@ extra_scripts:
       award: "수상",
       publication: "논문",
       people: "구성원",
-      event: "행사",
-      release: "출간"
+      event: "행사"
     };
     let activeCategory = "all";
 
