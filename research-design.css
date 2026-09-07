@@ -123,12 +123,12 @@ body.theme-dark #research .research-reading-step-final { --step-surface: #151c22
 #research .research-guiding-question {
   padding: 22px;
   background: transparent;
-  border: 1px solid var(--research-border);
-  border-left: 3px solid #9a7b47;
+  border: 1px solid var(--line);
+  border-left: 3px solid #009fe8;
   border-radius: 10px;
 }
-#research .research-question-label { color: #755b32; }
-body.theme-dark #research .research-question-label { color: #d3ba94; }
+#research .research-question-label { color: var(--link); }
+body.theme-dark #research .research-question-label { color: var(--link); }
 #research .research-question-mark { background: var(--research-card); border-color: var(--research-border); }
 #research .research-target-link { background: var(--research-card); border-color: var(--research-border); border-radius: 10px; }
 #research .research-recent-list article {
@@ -150,4 +150,16 @@ body.theme-dark #research .research-question-label { color: #d3ba94; }
   #research .research-guiding-question,
   #research .research-method-card { padding: 16px; }
   #research .research-recent-copy { padding-left: 16px; padding-right: 16px; }
+}
+
+/* Give research thumbnails breathing room inside their cards. */
+#research .research-recent-visual {
+  margin: 16px;
+  height: calc(100% - 32px);
+  background: transparent;
+}
+#research .research-recent-visual img { object-fit: contain; }
+@media (max-width: 640px) {
+  #research .research-recent-visual { height: 210px; min-height: 0; margin: 16px 16px 0; }
+  #research .research-recent-visual img { min-height: 0; }
 }
