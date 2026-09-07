@@ -2824,13 +2824,15 @@ h1 {
 .publication-author-note em {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  min-height: 26px;
-  padding: 3px 8px;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 10px 0 0;
+  overflow: hidden;
   color: var(--muted);
-  background: #f7f8fa;
-  border: 1px solid rgba(0, 0, 0, 0.09);
-  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #9eabb8;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(18, 32, 47, 0.08);
   font-size: 0.82rem;
   font-style: normal;
   line-height: 1.2;
@@ -2838,7 +2840,15 @@ h1 {
 
 .publication-author-note em b,
 .publication-author-note em strong {
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  padding: 5px 8px;
   color: #222;
+  background: #e7edf3;
+  border-right: 1px solid #b8c3cf;
   font-weight: 850;
 }
 
@@ -6140,6 +6150,8 @@ body.theme-dark .publication-filter-panel .year-range-option:focus-visible {
 body.theme-dark .publication-author-note em b,
 body.theme-dark .publication-author-note em strong {
   color: #f3f7fb;
+  background: #263646;
+  border-right-color: var(--line);
 }
 
 body.theme-dark .publication-actions a,

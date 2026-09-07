@@ -107,3 +107,9 @@ body.theme-dark .home-page .home-hero,
 body.theme-dark .home-page .home-recruiting { background: transparent; }
 body.theme-dark .home-page .home-hero { border: 0; }
 body.theme-dark .home-page .home-recruiting { border-color: var(--line); }
+
+/* Preserve balanced news baselines and flat dark rows. */
+.home-page .home-news li { align-items: start; }
+.home-page .home-news time { line-height: 1.5; }
+.home-page .home-news .news-tag { vertical-align: baseline; }
+body.theme-dark .home-page .home-news li { background: transparent; }
