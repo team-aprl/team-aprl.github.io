@@ -28,6 +28,12 @@ body.theme-dark #funded-projects { --link: #81d2fa; --link-dark: #b9e9ff; --proj
   border-radius: 4px;
   background: #009fe8;
 }
+#funded-projects .project-current-list .project-card:is([data-project-roles~="pi"], [data-project-roles~="co"]) .publication-title-row h3::before {
+  background: #22a06b;
+}
+#funded-projects .project-completed-list .project-card .publication-title-row h3::before {
+  background: #929ba5;
+}
 #funded-projects .project-card .pub-badge { border-radius: 5px; font-size: .68rem; min-height: 20px; font-weight: 600; padding: 3px 6px; }
 #funded-projects .project-card .project-current { background: #b8eacc; border: 1px solid #62c58d; color: #075d35; }
 #funded-projects .project-card .project-completed { background: #f0f1f3; color: #5c6670; }
