@@ -34,3 +34,15 @@ body.theme-dark :is(.page, #funded-projects) .language-control.language-control 
 body.theme-dark :is(.page, #funded-projects) .language-control.language-control button { color: #d0dde5; }
 body.theme-dark :is(.page, #funded-projects) .language-control.language-control button:hover { color: #b9e9ff; background: #203c4b; }
 body.theme-dark :is(.page, #funded-projects) .language-control.language-control button.is-active { background: #0076b3; color: #fff; }
+
+/* Yellow identifies recruitment; blue remains the shared control color. */
+body .joining-page .publications-heading h1::before { background: #ffd21c; }
+body .joining-page .joining-language-panel > .joining-card:first-child { border-top: 3px solid #ffd21c; }
+body .team-page .team-open-position-grid .team-open-position-mark {
+  background: #fff8da;
+  border-color: #eedb8a;
+  color: #655000;
+}
+body .team-page .team-open-position-role { background: #fff; border-color: #eedb8a; color: #655000; }
+body.theme-dark .team-page .team-open-position-grid .team-open-position-mark { background: #302b18; border-color: #756226; color: #ffdf70; }
+body.theme-dark .team-page .team-open-position-role { background: #221f15; border-color: #756226; color: #ffdf70; }
