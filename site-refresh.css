@@ -1,0 +1,16 @@
+/* Shared APRL accents: white surfaces, blue markers, and lighter rules. */
+:root { --link: #0076b3; --link-dark: #005c8c; }
+body.theme-dark { --link: #81d2fa; --link-dark: #b9e9ff; }
+.page .publications-heading h1 { display: flex; align-items: center; gap: 12px; }
+.page .publications-heading h1::before { content: ''; flex: 0 0 7px; width: 7px; height: 28px; border-radius: 6px; background: #009fe8; }
+body .page .publications-heading { border-bottom: 0; }
+.page .publication-year,
+.page .gallery-year-heading { border-color: var(--line); }
+.page .teaching-section-heading,
+.page .research-reading-pathway-heading h2 { display: flex; align-items: center; gap: 10px; }
+.page .teaching-section-heading::before,
+.page .research-reading-pathway-heading h2::before { content: ''; width: 6px; flex: 0 0 6px; height: 22px; border-radius: 5px; background: #009fe8; }
+@media (max-width: 650px) {
+  .page .publications-heading h1 { gap: 10px; }
+  .page .publications-heading h1::before { height: 24px; }
+}

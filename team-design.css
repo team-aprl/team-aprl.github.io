@@ -1,19 +1,19 @@
 /* Team: retain portraits, member order and groups; clarify their visual hierarchy. */
 .team-page {
-  --link: #193d62;
-  --link-dark: #102b47;
+  --link: #0076b3;
+  --link-dark: #005c8c;
   --team-surface: transparent;
   --team-border: #d5dfe8;
 }
 body.theme-dark .team-page {
-  --link: #a3c6e6;
-  --link-dark: #d4e5f5;
+  --link: #81d2fa;
+  --link-dark: #b9e9ff;
   --team-surface: transparent;
   --team-border: #35495b;
 }
 .team-page .publications-heading {
   padding-bottom: 14px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 1px solid var(--line);
 }
 .team-page .publications-heading h1 { font-size: 1.9rem; letter-spacing: -.025em; }
 body .team-page .profile-card {
@@ -35,7 +35,7 @@ body .team-page .profile-detail-grid ul { color: var(--text); font-size: .92rem;
 body .team-page .team-member-card {
   background: var(--team-surface);
   border: 1px solid var(--team-border);
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: none;
 }
 .team-page .team-member-card h3 a { color: var(--link); font-weight: 600; }
@@ -47,18 +47,18 @@ body .team-page .member-contact-links :is(.member-email-link, .member-scholar-li
   color: var(--link);
   background: transparent;
   border: 1px solid var(--team-border);
-  border-radius: 3px;
+  border-radius: 7px;
   box-shadow: none;
 }
 body .team-page .member-contact-links :is(a, button):hover,
 body .team-page .member-contact-links :is(a, button):focus-visible { border-color: var(--link); background: var(--panel); }
-body .team-page .team-simple-list { background: var(--team-surface); border-color: var(--team-border); border-radius: 4px; }
+body .team-page .team-simple-list { background: var(--team-surface); border-color: var(--team-border); border-radius: 10px; }
 body .team-page .team-simple-list b { color: var(--text); font-weight: 600; }
 .team-page .team-simple-list a,
 .team-page .team-collaborator-list a { color: var(--link); font-weight: 600; }
 .team-page .team-intern-cohort + .team-intern-cohort { padding-top: 12px; border-top: 1px solid var(--team-border); }
-.team-page .team-ugrp-project-label { border-radius: 2px; }
-.team-page .team-open-position-mark { color: var(--link); background: var(--panel); border: 1px solid var(--team-border); border-radius: 3px; }
+.team-page .team-ugrp-project-label { border-radius: 5px; }
+.team-page .team-open-position-mark { color: var(--link); background: var(--panel); border: 1px solid var(--team-border); border-radius: 7px; }
 body .team-page :is(.profile-card, .team-member-card):target {
   background: var(--team-surface);
   border-color: var(--link);

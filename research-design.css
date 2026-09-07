@@ -1,7 +1,7 @@
 /* Research: restrained surfaces, original content and section order. */
-#research { --link: #193d62; --link-dark: #102b47; }
-body.theme-dark #research { --link: #a3c6e6; --link-dark: #d4e5f5; }
-#research .publications-heading { padding-bottom: 18px; border-bottom: 2px solid var(--text); }
+#research { --link: #0076b3; --link-dark: #005c8c; }
+body.theme-dark #research { --link: #81d2fa; --link-dark: #b9e9ff; }
+#research .publications-heading { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
 #research .publications-heading h1 { font-size: 1.9rem; letter-spacing: -.025em; }
 #research .publications-heading p { color: var(--muted); }
 #research .publication-year { padding-bottom: 12px; border-bottom: 1px solid var(--line); color: var(--text); font-size: 1.4rem; font-weight: 650; letter-spacing: -.025em; }
@@ -11,7 +11,7 @@ body.theme-dark #research { --link: #a3c6e6; --link-dark: #d4e5f5; }
   padding: 18px 0 0;
   background: transparent;
   border: 0;
-  border-top: 2px solid var(--text);
+  border-top: 1px solid var(--line);
   border-radius: 0;
   box-shadow: none;
 }
@@ -52,13 +52,13 @@ body.theme-dark #research { --link: #a3c6e6; --link-dark: #d4e5f5; }
   box-shadow: none;
   color: var(--text);
 }
-#research .research-question-mark { color: var(--link); background: transparent; border: 1px solid var(--line); border-radius: 2px; font-weight: 600; }
+#research .research-question-mark { color: var(--link); background: transparent; border: 1px solid var(--line); border-radius: 5px; font-weight: 600; }
 #research .research-question-label { color: var(--muted); font-size: .73rem; font-weight: 600; letter-spacing: .08em; }
 #research .research-guiding-question:target .research-question-label { padding: 0; background: transparent; color: var(--link); text-decoration: underline; text-underline-offset: 4px; }
 #research .research-question-intro { color: var(--muted); font-weight: 400; }
 #research .research-question-list { color: var(--text); font-size: 1rem; font-weight: 600; }
 #research .research-target-links { padding: 0; background: transparent; border: 0; border-radius: 0; gap: 18px; }
-#research .research-target-link { background: transparent; border: 1px solid var(--line); border-radius: 2px; box-shadow: none; color: var(--link); font-weight: 600; min-height: 64px; padding: 14px 16px; }
+#research .research-target-link { background: transparent; border: 1px solid var(--line); border-radius: 5px; box-shadow: none; color: var(--link); font-weight: 600; min-height: 64px; padding: 14px 16px; }
 #research .research-target-link:hover, #research .research-target-link:focus-visible { border-color: var(--link); box-shadow: none; }
 #research .research-target-link-icon { background: transparent; border-radius: 0; transform: none; }
 #research .research-recent-list article { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; }
@@ -66,10 +66,10 @@ body.theme-dark #research { --link: #a3c6e6; --link-dark: #d4e5f5; }
 #research .research-recent-list h3 { font-weight: 600; }
 #research .research-recent-list span { font-size: .7rem; font-weight: 600; letter-spacing: .08em; }
 #research .research-recent-list p { color: var(--muted); }
-#research .research-recent-visual { border: 0; border-radius: 2px; }
+#research .research-recent-visual { border: 0; border-radius: 5px; }
 #research .research-recent-visual img { transform: none; }
 #research .research-method-card { padding: 18px 0; background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; }
-#research .research-method-image { border: 0; border-radius: 2px; }
+#research .research-method-image { border: 0; border-radius: 5px; }
 #research .research-method-card h2 { font-weight: 600; }
 #research .research-method-card p, #research .research-method-card ul, #research .research-interest-grid ul { color: var(--text); }
 @media (max-width: 650px) {
@@ -96,7 +96,7 @@ body.theme-dark #research {
   background: var(--step-surface);
   border: 1px solid var(--research-border);
   border-top: 3px solid var(--step-accent);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #research .research-reading-step { --step-surface: #ffffff; --step-accent: #213e59; }
 #research .research-reading-step:nth-of-type(2) { --step-surface: #ffffff; --step-accent: #28675f; }
@@ -109,7 +109,7 @@ body.theme-dark #research .research-reading-step-final { --step-surface: #151c22
   padding: 20px;
   background: transparent;
   border: 1px solid var(--research-border);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #research .research-interest-grid article > span {
   display: inline-grid;
@@ -118,30 +118,30 @@ body.theme-dark #research .research-reading-step-final { --step-surface: #151c22
   height: 26px;
   color: #fff;
   background: #46515b;
-  border-radius: 3px;
+  border-radius: 7px;
 }
 #research .research-guiding-question {
   padding: 22px;
   background: transparent;
   border: 1px solid var(--research-border);
   border-left: 3px solid #9a7b47;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #research .research-question-label { color: #755b32; }
 body.theme-dark #research .research-question-label { color: #d3ba94; }
 #research .research-question-mark { background: var(--research-card); border-color: var(--research-border); }
-#research .research-target-link { background: var(--research-card); border-color: var(--research-border); border-radius: 4px; }
+#research .research-target-link { background: var(--research-card); border-color: var(--research-border); border-radius: 10px; }
 #research .research-recent-list article {
   background: var(--research-card);
   border: 1px solid var(--research-border);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #research .research-recent-copy { padding-left: 22px; }
 #research .research-method-card {
   padding: 18px;
   background: transparent;
   border: 1px solid var(--research-border);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 #research .research-method-image { background: var(--research-card); border: 1px solid var(--research-border); }
 @media (max-width: 650px) {
