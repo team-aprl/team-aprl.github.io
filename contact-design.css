@@ -17,3 +17,9 @@ body .contact-page .contact-card { padding: 18px 20px; background: var(--paper);
 @media (max-width: 650px) {
   body .contact-page .contact-card { padding: 16px; }
 }
+
+/* Give the full tour enough room for its scene and controls. */
+.contact-page .contact-room-scan iframe { height: 760px; min-height: 620px; }
+@media (max-width: 720px) {
+  .contact-page .contact-room-scan iframe { height: 780px; }
+}
