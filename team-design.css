@@ -95,3 +95,15 @@ body .team-page .profile-biography p { line-height: 1.45; margin-bottom: 12px; }
 body.theme-dark .team-page .team-profile,
 body.theme-dark .team-page .profile-card { background: transparent; }
 .team-page #current-lab-members { margin-top: 12px; padding-top: 18px; }
+
+
+/* Highlight the DORI team when arriving from its award news. */
+.team-page #ugrp-2026-dori {
+  scroll-margin-top: calc(var(--sticky-utility-height, 48px) + var(--sticky-nav-height, 56px) + 24px);
+}
+.team-page #ugrp-2026-dori:target {
+  background: var(--panel);
+  outline: 2px solid var(--link);
+  outline-offset: 6px;
+  border-radius: 5px;
+}
