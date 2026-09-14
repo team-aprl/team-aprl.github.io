@@ -4147,6 +4147,7 @@ h1 {
   border-color: var(--tag-award-border);
 }
 
+.tag-service,
 .tag-event {
   color: var(--tag-event-text);
   background: var(--tag-event-bg);

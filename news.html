@@ -6,7 +6,7 @@ lang: "en"
 extra_styles:
   - /news-design.css
 extra_scripts:
-  - /news-language.js?v=20260912-award-photo-link
+  - /news-language.js?v=20260914-service
   - /news-award-carousel.js?v=20260830-icros
 ---
 
@@ -31,6 +31,7 @@ extra_scripts:
             <button type="button" data-news-filter="award" data-news-text-en="Award" data-news-text-ko="수상" aria-pressed="false">Award</button>
             <button type="button" data-news-filter="publication" data-news-text-en="Publication" data-news-text-ko="논문" aria-pressed="false">Publication</button>
             <button type="button" data-news-filter="people" data-news-text-en="People" data-news-text-ko="구성원" aria-pressed="false">People</button>
+            <button type="button" data-news-filter="service" data-news-text-en="Service" data-news-text-ko="학술봉사" aria-pressed="false">Service</button>
             <button type="button" data-news-filter="event" data-news-text-en="Event" data-news-text-ko="행사" aria-pressed="false">Event</button>
           </div>
         </div>
@@ -109,9 +110,9 @@ extra_scripts:
             <time datetime="2026-02">Feb 2026</time>
             <p><span class="news-tag tag-award">Award</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> has been selected as an <a href="https://kros.org/Conference/ConferenceView.asp?AC=0&amp;CODE=CC20250902&amp;CpPage=299#CONF">early-career researcher for KRoC 2026</a>. He will present his recent work on memory-augmented spatial intelligence for long-term autonomous robot navigation.</p>
           </li>
-          <li data-news-category="event" data-news-id="kroc-spatial-ai-tutorial">
+          <li data-news-category="service" data-news-id="kroc-spatial-ai-tutorial">
             <time datetime="2026-02">Feb 2026</time>
-            <p><span class="news-tag tag-event">Event</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> <a href="https://www.linkedin.com/posts/giseop-kim-71683088_%EB%AC%B4%EC%97%87%EC%9D%B4-slam%EC%9D%98-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%9D%B4%EB%81%8C%EC%96%B4%EC%99%94%EC%9D%84%EA%B9%8C%EC%9A%94-%EC%A0%9C21%ED%9A%8C-%ED%95%9C%EA%B5%AD%EB%A1%9C%EB%B4%87%EC%A2%85%ED%95%A9%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EC%97%90%EC%84%9C-activity-7425895620810362880-LRP9?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAABKh1wIBJKgL9GfIG2eO2heHh1Je-GtQu34">organizes and leads</a> the <a href="https://sites.google.com/view/kroc26-spatial-ai-tutorial/home">Spatial AI Tutorial at KRoC 2026</a>.</p>
+            <p><span class="news-tag tag-service">Service</span><a href="{{ '/team.html' | relative_url }}#team-member-giseop-kim">Giseop</a> <a href="https://www.linkedin.com/posts/giseop-kim-71683088_%EB%AC%B4%EC%97%87%EC%9D%B4-slam%EC%9D%98-%EB%B3%80%ED%99%94%EB%A5%BC-%EC%9D%B4%EB%81%8C%EC%96%B4%EC%99%94%EC%9D%84%EA%B9%8C%EC%9A%94-%EC%A0%9C21%ED%9A%8C-%ED%95%9C%EA%B5%AD%EB%A1%9C%EB%B4%87%EC%A2%85%ED%95%A9%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EC%97%90%EC%84%9C-activity-7425895620810362880-LRP9?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAABKh1wIBJKgL9GfIG2eO2heHh1Je-GtQu34">organizes and leads</a> the <a href="https://sites.google.com/view/kroc26-spatial-ai-tutorial/home">Spatial AI Tutorial at KRoC 2026</a>.</p>
           </li>
           <li data-news-category="people" data-news-id="winter-interns-2026">
             <time datetime="2026-01">Jan 2026</time>
@@ -189,6 +190,7 @@ extra_scripts:
       award: "수상",
       publication: "논문",
       people: "구성원",
+      service: "학술봉사",
       event: "행사"
     };
     let activeCategory = "all";
@@ -230,6 +232,21 @@ extra_scripts:
         syncNewsYearCollapse(yearHeading);
       });
       yearHeading.append(yearText, toggle);
+      const summary = document.createElement("span");
+      summary.className = "news-year-summary";
+      filters.forEach((filter) => {
+        const category = filter.dataset.newsFilter;
+        if (category === "all") return;
+        const total = yearHeading.nextElementSibling.querySelectorAll(`[data-news-category="${category}"]`).length;
+        if (!total) return;
+        const badge = document.createElement("span");
+        badge.className = `news-tag tag-${category}`;
+        badge.dataset.newsTextEn = `${filter.dataset.newsTextEn} ${total}`;
+        badge.dataset.newsTextKo = `${filter.dataset.newsTextKo} ${total}`;
+        badge.textContent = badge.dataset.newsTextEn;
+        summary.append(badge);
+      });
+      yearHeading.append(summary);
       yearHeading.dataset.collapsed = "false";
     });
 
