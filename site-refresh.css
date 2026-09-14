@@ -46,3 +46,11 @@ body .team-page .team-open-position-grid .team-open-position-mark {
 body .team-page .team-open-position-role { background: #fff; border-color: #eedb8a; color: #655000; }
 body.theme-dark .team-page .team-open-position-grid .team-open-position-mark { background: #302b18; border-color: #756226; color: #ffdf70; }
 body.theme-dark .team-page .team-open-position-role { background: #221f15; border-color: #756226; color: #ffdf70; }
+
+
+/* Keep the DORI award announcement in regular text on home and news pages. */
+body [data-news-id="ugrp-2026-dori-excellence"] p,
+body [data-news-id="ugrp-2026-dori-excellence"] p a {
+  font-weight: 400;
+  font-style: normal;
+}
