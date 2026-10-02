@@ -29,7 +29,7 @@
   // A shared timer keeps every carousel on the same three-second cadence.
   if (advanceCarousels.length > 0) {
     window.setInterval(() => {
-      if (document.hidden) return;
+      if (document.hidden || document.body.classList.contains("lightbox-open")) return;
       advanceCarousels.forEach((advance) => advance());
     }, 3000);
   }

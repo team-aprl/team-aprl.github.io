@@ -17,3 +17,43 @@ body .gallery-section .gallery-caption-text { color: var(--text); font-size: .88
 .gallery-section .gallery-carousel-button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 
 .gallery-section .gallery-caption-text strong { font-weight: 650; }
+
+/* Let gallery photos use the viewport instead of the publication carousel width. */
+.gallery-image-lightbox { padding: 16px; }
+.gallery-image-lightbox .image-carousel-panel {
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+.gallery-image-lightbox .image-carousel-stage { order: 0; min-width: 0; }
+.gallery-image-lightbox .image-carousel-stage img {
+  max-width: min(1800px, calc(100vw - 32px));
+  max-height: min(1200px, calc(100vh - 96px));
+  max-height: min(1200px, calc(100dvh - 96px));
+}
+.gallery-image-lightbox .image-carousel-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  z-index: 1;
+}
+.gallery-image-lightbox .image-carousel-button:first-child { left: 16px; }
+.gallery-image-lightbox .image-carousel-button:nth-child(3) { right: 16px; }
+.gallery-image-lightbox .image-carousel-close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+}
+@media (max-width: 600px) {
+  .gallery-image-lightbox .image-carousel-stage img {
+    max-height: calc(100vh - 160px);
+    max-height: calc(100dvh - 160px);
+  }
+  .gallery-image-lightbox .image-carousel-button {
+    top: auto;
+    bottom: 16px;
+    transform: none;
+  }
+}

@@ -115,20 +115,26 @@
     document.body.append(carouselOverlay);
   };
 
-  const openCarouselLightbox = (button) => {
+  const openCarouselLightbox = (button, gallerySlides = null) => {
     ensureCarouselLightbox();
     if (!carouselOverlay.hidden && carouselTrigger === button) {
       closeCarouselLightbox();
       return;
     }
 
-    carouselImages = (button.dataset.carouselImages || "").split("|").filter(Boolean);
+    carouselImages = gallerySlides
+      ? gallerySlides.map((slide) => slide.href)
+      : (button.dataset.carouselImages || "").split("|").filter(Boolean);
     if (!carouselImages.length) return;
 
+    carouselOverlay.classList.toggle("gallery-image-lightbox", Boolean(gallerySlides));
     carouselTrigger = button;
-    carouselTitle = button.dataset.carouselTitle || button.textContent.trim() || "Publication";
-    carouselIndex = 0;
-    previousFocus = document.activeElement;
+    carouselTitle = gallerySlides
+      ? button.closest("figure").querySelector(".gallery-caption-text")?.textContent.trim() || "Gallery"
+      : button.dataset.carouselTitle || button.textContent.trim() || "Publication";
+    carouselIndex = gallerySlides ? Math.max(0, gallerySlides.indexOf(button)) : 0;
+    previousFocus = gallerySlides ? button : document.activeElement;
+    carouselOverlay.setAttribute("aria-label", carouselTitle);
     updateCarouselLightbox();
     carouselOverlay.hidden = false;
     document.body.classList.add("lightbox-open");
@@ -254,6 +260,14 @@
       return;
     }
 
+    const gallerySlide = event.target.closest(".gallery-carousel-slide");
+    if (gallerySlide) {
+      event.preventDefault();
+      const slides = Array.from(gallerySlide.closest(".gallery-carousel").querySelectorAll(".gallery-carousel-slide"));
+      openCarouselLightbox(gallerySlide, slides);
+      return;
+    }
+
     const imageLink = event.target.closest("a[href]");
     if (imageLink && isImageHref(imageLink.href)) {
       event.preventDefault();
@@ -282,8 +296,10 @@
       closeDocumentLightbox();
       closeCarouselLightbox();
     } else if (carouselOverlay && !carouselOverlay.hidden && event.key === "ArrowLeft") {
+      event.preventDefault();
       shiftCarouselLightbox(-1);
     } else if (carouselOverlay && !carouselOverlay.hidden && event.key === "ArrowRight") {
+      event.preventDefault();
       shiftCarouselLightbox(1);
     }
   });
