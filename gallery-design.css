@@ -7,6 +7,13 @@ body.theme-dark .gallery-section { --link: #81d2fa; }
 .gallery-section .gallery-year-group + .gallery-year-group { margin-top: 30px; }
 .gallery-section .gallery-year-heading { color: var(--text); font-size: 1.35rem; font-weight: 650; letter-spacing: -.025em; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 body .gallery-section .gallery-grid figure { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: none; }
+.gallery-section .gallery-grid figure[id] { scroll-margin-top: calc(var(--sticky-utility-height, 38px) + var(--sticky-nav-height, 44px) + 24px); }
+body .gallery-section .gallery-grid figure:target {
+  border-color: #e4b323;
+  box-shadow: 0 0 0 3px #f5cc47, 0 0 0 7px #f5cc4726;
+}
+.gallery-section .gallery-grid figure:target figcaption { background: #fff8db; }
+body.theme-dark .gallery-section .gallery-grid figure:target figcaption { background: #3b3219; }
 .gallery-section .gallery-grid figcaption { gap: 6px; padding: 12px 14px 14px; border-top: 1px solid var(--light-line); font-weight: 600; }
 body .gallery-section .gallery-caption-head { color: var(--link); font-size: .8rem; font-weight: 600; font-variant-numeric: tabular-nums; }
 body .gallery-section .gallery-caption-text { color: var(--text); font-size: .88rem; font-weight: 400; line-height: 1.5; }
