@@ -15,3 +15,12 @@ Tutorial and workshop organization belongs to Service (학술봉사); general ev
 remain under Event. Keep the English entries in `news.html` and their Korean
 translations in `news-language.js` aligned by `data-news-id`.
 
+
+The gallery keeps the IROS 2026 Best Paper Award (September 30) separate from
+the conference attendance photos. The March 17, 2025 lab renovation and
+August 14, 2025 first Research Day galleries include all five and four photos,
+respectively, from the original Google Sites gallery:
+https://sites.google.com/view/aprl-dgist/gallery . Source photos are kept in
+assets/gallery; WebP thumbnails and bounded lightbox previews are stored in
+assets/gallery/thumbs and assets/gallery/previews. Image generation and
+validation guidance is in skills/aprl-site-images/SKILL.md.
