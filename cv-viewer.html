@@ -22,6 +22,7 @@
     .count { min-width: 28px; }
     #zoom-value { min-width: 42px; text-align: center; font-variant-numeric: tabular-nums; }
     .pdf-link { text-decoration: none; white-space: nowrap; }
+    body.embedded #download { margin-right: 44px; }
     #viewerContainer { position: absolute; inset: 64px 0 0; overflow: auto; }
     .pdfViewer .page { margin: 12px auto; box-shadow: 0 2px 12px #20334820; }
     #status { position: absolute; inset: 90px 16px auto; z-index: 11; text-align: center; padding: 18px; background: #fff; border-radius: 8px; }
@@ -57,6 +58,7 @@
   </div>
   <noscript><p>Please enable JavaScript or use the Download PDF link to read the CV.</p></noscript>
   <script type="module">
+    if (window.parent !== window) document.body.classList.add("embedded");
     const source = "https://raw.githubusercontent.com/gisbi-kim/cv-giseopkim/main/main.pdf";
     const packageBase = "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/";
     const status = document.getElementById("status");
