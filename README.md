@@ -28,3 +28,10 @@ validation guidance is in skills/aprl-site-images/SKILL.md.
 Conference attendance galleries also include member-provided photos: ICRA 2026
 (four photos), IFAC 2026 (two), ICROS 2026 (two), and IROS 2025 (four). Each
 carousel retains its existing first photo, date, and caption.
+
+The LT-Mem IROS 2026 news links explicitly label the award certificate and
+finalist certificates. The original Best Paper Award and Best Student Paper
+Award finalist PDFs are preserved in `assets/news/` as
+`lt-mem-iros2026-best-paper-finalist-certificate.pdf` and
+`lt-mem-iros2026-best-student-paper-finalist-certificate.pdf`. These two PDFs
+certify finalist selection; the separate award news links to the winning certificate.
