@@ -35,3 +35,8 @@ Award finalist PDFs are preserved in `assets/news/` as
 `lt-mem-iros2026-best-paper-finalist-certificate.pdf` and
 `lt-mem-iros2026-best-student-paper-finalist-certificate.pdf`. These two PDFs
 certify finalist selection; the separate award news links to the winning certificate.
+
+The winning Best Paper Award and WiRA finalist certificate photos are cropped
+and rotated from the original photographs without generated content. Their
+full-resolution PNG edits and bounded WebP previews are kept in `assets/news/`;
+both English and Korean news entries link to the corresponding preview.
