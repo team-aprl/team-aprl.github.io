@@ -2723,12 +2723,6 @@ h1 {
   color: var(--muted);
 }
 
-.team-collaborator-note {
-  margin: -2px 0 10px;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
 .team-members-subsection-heading {
   margin-top: 36px;
   margin-bottom: 6px;
@@ -2758,14 +2752,6 @@ h1 {
 
 .team-student-programs:not([open]) > :not(summary) {
   display: none;
-}
-
-.team-collaborator-list {
-  columns: 2;
-  margin: 0;
-  padding-left: 20px;
-  color: var(--muted);
-  line-height: 1.65;
 }
 
 .publications-section {
@@ -6610,10 +6596,6 @@ body.theme-dark .research-recent-visual {
     order: 2;
     width: min(180px, calc(50vw - 30px));
     justify-self: center;
-  }
-
-  .team-collaborator-list {
-    columns: 1;
   }
 
   .home-hero h1 {

@@ -54,8 +54,7 @@ body .team-page .member-contact-links :is(a, button):hover,
 body .team-page .member-contact-links :is(a, button):focus-visible { border-color: var(--link); background: var(--panel); }
 body .team-page .team-simple-list { background: var(--team-surface); border-color: var(--team-border); border-radius: 10px; }
 body .team-page .team-simple-list b { color: var(--text); font-weight: 600; }
-.team-page .team-simple-list a,
-.team-page .team-collaborator-list a { color: var(--link); font-weight: 600; }
+.team-page .team-simple-list a { color: var(--link); font-weight: 600; }
 .team-page .team-intern-cohort + .team-intern-cohort { padding-top: 12px; border-top: 1px solid var(--team-border); }
 .team-page .team-ugrp-project-label { border-radius: 5px; }
 .team-page .team-open-position-mark { color: var(--link); background: var(--panel); border: 1px solid var(--team-border); border-radius: 7px; }
