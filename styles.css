@@ -28,6 +28,9 @@
   --tag-award-bg: #fee2e2;
   --tag-award-border: #fecaca;
   --tag-award-solid: #dc2626;
+  --tag-service-text: #155e75;
+  --tag-service-bg: #cffafe;
+  --tag-service-border: #a5f3fc;
   --tag-event-text: #5b21b6;
   --tag-event-bg: #ede9fe;
   --tag-event-border: #ddd6fe;
@@ -91,6 +94,9 @@ body.theme-dark {
   --tag-award-text: #fecaca;
   --tag-award-bg: #450a0a;
   --tag-award-border: #b91c1c;
+  --tag-service-text: #a5f3fc;
+  --tag-service-bg: #083344;
+  --tag-service-border: #0e7490;
   --tag-event-text: #ddd6fe;
   --tag-event-bg: #2e1065;
   --tag-event-border: #7c3aed;
@@ -4133,7 +4139,11 @@ h1 {
   border-color: var(--tag-award-border);
 }
 
-.tag-service,
+.tag-service {
+  color: var(--tag-service-text);
+  background: var(--tag-service-bg);
+  border-color: var(--tag-service-border);
+}
 .tag-event {
   color: var(--tag-event-text);
   background: var(--tag-event-bg);
