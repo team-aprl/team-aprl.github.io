@@ -145,3 +145,22 @@ body .home-page .home-recruiting > a:focus-visible {
   border-color: #005c8c;
   color: #fff;
 }
+
+/* Home photo carousel: two photos remain visible at every width. */
+.home-photo-carousel { position: relative; min-width: 0; }
+.home-photo-viewport { overflow: hidden; border-radius: 16px; }
+.home-page .home-photo-track { display: flex; gap: 18px; }
+.home-photo-track > a { flex: 0 0 calc((100% - 18px) / 2); min-width: 0; }
+.home-photo-track.is-animated { transition: transform 500ms ease; }
+.home-photo-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; display: grid; place-items: center; width: 42px; height: 42px; padding: 0 0 3px; border: 1px solid rgba(255,255,255,.65); border-radius: 50%; background: rgba(18, 31, 40, .68); color: #fff; font: 32px/1 sans-serif; cursor: pointer; }
+.home-photo-arrow:hover, .home-photo-arrow:focus-visible { background: #0076b3; outline: 2px solid white; outline-offset: 2px; }
+.home-photo-prev { left: 10px; }
+.home-photo-next { right: 10px; }
+@media (max-width: 650px) {
+  .home-page .home-photo-track { gap: 12px; }
+  .home-photo-track > a { flex-basis: calc((100% - 12px) / 2); }
+  .home-photo-arrow { width: 34px; height: 34px; font-size: 27px; }
+  .home-photo-prev { left: 5px; }
+  .home-photo-next { right: 5px; }
+}
+@media (prefers-reduced-motion: reduce) { .home-photo-track.is-animated { transition: none; } }

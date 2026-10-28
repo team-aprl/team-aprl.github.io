@@ -7,6 +7,7 @@ body_class: home-brand
 extra_styles:
   - /home-design.css
 extra_scripts:
+  - /home-photo-carousel.js
   - /home-video-scroll.js?v=20260822-boundary-handoff
   - /news-language.js?v=20260912-award-photo-link
   - /news-award-carousel.js?v=20260830-icros
@@ -33,9 +34,16 @@ extra_scripts:
         <a href="joining-aprl.html">Joining APRL</a>
       </section>
 
-      <section class="home-image-pair" aria-label="APRL photos">
-        <a href="assets/home/welcome-dgist-20260907-preview.webp"><img src="assets/home/thumbs/welcome-dgist-20260907-thumb.webp" alt="APRL welcome visual" width="800" height="373" loading="eager" fetchpriority="high" decoding="async" /></a>
-        <a href="assets/home/welcome-2.png"><img src="assets/home/thumbs/welcome-2-thumb.webp" alt="APRL research and lab overview" width="800" height="463" loading="lazy" decoding="async" /></a>
+      <section class="home-photo-carousel" aria-label="APRL photos" aria-roledescription="carousel">
+        <div class="home-photo-viewport">
+          <div class="home-image-pair home-photo-track">
+            <a href="assets/home/welcome-dgist-20260907-preview.webp"><img src="assets/home/thumbs/welcome-dgist-20260907-thumb.webp" alt="APRL welcome visual" width="800" height="373" loading="eager" fetchpriority="high" decoding="async" /></a>
+            <a href="assets/home/welcome-2.png"><img src="assets/home/thumbs/welcome-2-thumb.webp" alt="APRL group at DGIST" width="800" height="463" loading="lazy" decoding="async" /></a>
+            <a href="assets/home/aprl-lab-20261028-preview.webp"><img src="assets/home/thumbs/aprl-lab-20261028-thumb.webp" alt="APRL members in the laboratory" width="800" height="534" loading="lazy" decoding="async" /></a>
+          </div>
+        </div>
+        <button class="home-photo-arrow home-photo-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <button class="home-photo-arrow home-photo-next" type="button" aria-label="Next photo">&#8250;</button>
       </section>
 
       <section class="home-news">
