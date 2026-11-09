@@ -25,6 +25,9 @@ assets/gallery; WebP thumbnails and bounded lightbox previews are stored in
 assets/gallery/thumbs and assets/gallery/previews. Image generation and
 validation guidance is in skills/aprl-site-images/SKILL.md.
 
+The 2026 gallery includes a photo from the joint i-SAIRAS and iSpaRo conference
+in Cologne (November 3–6).
+
 Conference attendance galleries also include member-provided photos: ICRA 2026
 (four photos), IFAC 2026 (two), ICROS 2026 (two), and IROS 2025 (four). Each
 carousel retains its existing first photo, date, and caption.
